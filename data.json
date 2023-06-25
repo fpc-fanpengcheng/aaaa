@@ -1,0 +1,266 @@
+[
+  {
+    "swiper1": [
+      {
+        "id": 1,
+        "pic": "./image/swiper1/sw-1.jpg",
+        "background": "./image/swiper1/sw-1-bg.jpg"
+      },
+      {
+        "id": 2,
+        "pic": "./image/swiper1/sw-2.jpg",
+        "background": "./image/swiper1/sw-2-bg.jpg"
+      },
+      {
+        "id": 3,
+        "pic": "./image/swiper1/sw-3.jpg",
+        "background": "./image/swiper1/sw-3-bg.jpg"
+      },
+      {
+        "id": 4,
+        "pic": "./image/swiper1/sw-4.jpg",
+        "background": "./image/swiper1/sw-4-bg.jpg"
+      },
+      {
+        "id": 5,
+        "pic": "./image/swiper1/sw-5.jpg",
+        "background": "./image/swiper1/sw-5-bg.jpg"
+      },
+      {
+        "id": 6,
+        "pic": "./image/swiper1/sw-6.jpg",
+        "background": "./image/swiper1/sw-6-bg.jpg"
+      },
+      {
+        "id": 7,
+        "pic": "./image/swiper1/sw-7.jpg",
+        "background": "./image/swiper1/sw-7-bg.jpg"
+      },
+      {
+        "id": 8,
+        "pic": "./image/swiper1/sw-8.jpg",
+        "background": "./image/swiper1/sw-8-bg.jpg"
+      }
+    ]
+  },
+  {
+    "swiper2": [
+      {
+        "id": 1,
+        "pic": "./image/swiper2/swp-1.jpg",
+        "title": "中国乒乓之绝地反击 电影原声带",
+        "creator": "Lorne Balfe / Andrew Kawczynski"
+      },
+      {
+        "id": 2,
+        "pic": "./image/swiper2/swp-2.jpg",
+        "title": "V",
+        "creator": "SawanoHiroyuki[nZk]"
+      },
+      {
+        "id": 3,
+        "pic": "./image/swiper2/swp-3.jpg",
+        "title": "《想见你》电影原声带",
+        "creator": "群星"
+      },
+      {
+        "id": 4,
+        "pic": "./image/swiper2/swp-4.jpg",
+        "title": "ユーモア",
+        "creator": "back number"
+      },
+      {
+        "id": 5,
+        "pic": "./image/swiper2/swp-5.jpg",
+        "title": "CASANOVA",
+        "creator": "thomeboydontkill"
+      },
+      {
+        "id": 6,
+        "pic": "./image/swiper2/swp-6.jpg",
+        "title": "Gloria",
+        "creator": "Sam Smith"
+      },
+      {
+        "id": 7,
+        "pic": "./image/swiper2/swp-7.jpg",
+        "title": "Diamonds & Dancefloors",
+        "creator": "Ava Max"
+      },
+      {
+        "id": 8,
+        "pic": "./image/swiper2/swp-8.jpg",
+        "title": "Remember you",
+        "creator": "浜崎あゆみ"
+      },
+      {
+        "id": 9,
+        "pic": "./image/swiper2/swp-9.jpg",
+        "title": "满江红电影原声音乐",
+        "creator": "韩红"
+      },
+      {
+        "id": 10,
+        "pic": "./image/swiper2/swp-10.jpg",
+        "title": "流浪地球2电影原声大碟",
+        "creator": "阿鲲"
+      }
+    ]
+  },
+  {
+    "recommend": [
+      {
+        "id": 1,
+        "pic": "./image/recommend/109951167875709379.jpg",
+        "nb": "2537万",
+        "tit": "华语经典丨不容错过的神级Live现场",
+        "i": ""
+      },
+      {
+        "id": 2,
+        "pic": "./image/recommend/109951163910753373.jpg",
+        "nb": "2337万",
+        "tit": "你曾经有多认真的喜欢一个人",
+        "i": ""
+      },
+      {
+        "id": 3,
+        "pic": "./image/recommend/109951168264705611.jpg",
+        "nb": "2583万",
+        "tit": "丁肆's 推荐 | 极具包容性的hiphop(1) : COFFEE BEAN 属于你的午夜微醺指南!!",
+        "i": "<i></i>"
+      },
+      {
+        "id": 4,
+        "pic": "./image/recommend/109951168133135384.jpg",
+        "nb": "1537万",
+        "tit": "我在三界开茶馆 第001集 江湖百晓生",
+        "i": "<i></i>"
+      },
+      {
+        "id": 5,
+        "pic": "./image/recommend/109951166711664533.jpg",
+        "nb": "3537万",
+        "tit": "【R&B】在璀璨星河下微醺 喝杯小酒吧！",
+        "i": ""
+      },
+      {
+        "id": 6,
+        "pic": "./image/recommend/109951167875709379.jpg",
+        "nb": "2987万",
+        "tit": "Saddle of My Heart - Teloupe",
+        "i": ""
+      },
+      {
+        "id": 7,
+        "pic": "./image/recommend/109951165764406932.jpg",
+        "nb": "2007万",
+        "tit": "失恋日记 | 换不同的场景 但哪里都是你",
+        "i": ""
+      },
+      {
+        "id": 8,
+        "pic": "./image/recommend/109951166269856073.jpg",
+        "nb": "3417万",
+        "tit": "一个双子座的听歌列表",
+        "i": ""
+      }
+    ]
+  },
+  [
+    {
+      "music": "Time Stop"
+    },
+    {
+      "music": "爱如火"
+    },
+    {
+      "music": "谁家"
+    },
+    {
+      "music": "是妈妈是女儿"
+    },
+    {
+      "music": "我不曾忘记"
+    },
+    {
+      "music": "唯你何求Give Me All I Wish"
+    },
+    {
+      "music": "下一个是谁"
+    },
+    {
+      "music": "有我呢"
+    },
+    {
+      "music": "入秋（Feat.江楠）"
+    },
+    {
+      "music": "背上悲伤北上"
+    }
+  ],
+  [
+    {
+      "music": "合拍"
+    },
+    {
+      "music": "乌云"
+    },
+    {
+      "music": "寂寞烟火"
+    },
+    {
+      "music": "寂寞烟火"
+    },
+    {
+      "music": "Time Stop"
+    },
+    {
+      "music": "我不曾忘记"
+    },
+    {
+      "music": "是妈妈是女儿"
+    },
+    {
+      "music": "1 AM"
+    },
+    {
+      "music": "寂寞烟火·2023"
+    },
+    {
+      "music": "望"
+    }
+  ],
+  [
+    {
+      "music": "只有一个你的世界"
+    },
+    {
+      "music": "又到天黑"
+    },
+    {
+      "music": "新春蹦蹦"
+    },
+    {
+      "music": "回家的崽"
+    },
+    {
+      "music": "心年快乐"
+    },
+    {
+      "music": "当你们忘了你们相遇的起点"
+    },
+    {
+      "music": "我们互相隐瞒"
+    },
+    {
+      "music": "跨"
+    },
+    {
+      "music": "Chill We Chill We"
+    },
+    {
+      "music": "Pink Flavor"
+    }
+  ]
+]

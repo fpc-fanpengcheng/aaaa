@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网易云音乐</title>
+  <link rel="stylesheet" href="./css/reset.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  <div id="app">
+    <!-- 顶部 -->
+    <div class="top">
+      <!-- 第一行 -->
+      <div class="top_nav">
+        <!-- 版心内容 -->
+        <div class="wrap">
+          <!-- logo -->
+          <h1 class="logo">
+            <a href="#"></a>
+          </h1>
+          <!-- 中间导航栏 -->
+          <ul class="wrap_nav">
+            <sub class="cor">&nbsp;</sub>
+            <li>发现音乐</li>
+            <li>我的音乐</li>
+            <li>关注</li>
+            <li>商城</li>
+            <li>音乐人</li>
+            <li>下载客户端
+              <sup class="hot">&nbsp;</sup>
+            </li>
+          </ul>
+          <!-- 右侧搜索框及登录 -->
+          <div class="search">
+            <input type="text" placeholder="音乐/视频/电台/用户" onfocus="this.placeholder=''"
+              onblur="this.placeholder='音乐/视频/电台/用户'">
+            <button>创作者中心</button>
+            <div class="log">
+              <a href="">登录</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 第二行 -->
+      <div class="top_nav2">
+        <ul class="nav">
+          <li><em>推荐</em></li>
+          <li><em>排行榜</em></li>
+          <li><em>歌单</em></li>
+          <li><em>主播电台</em></li>
+          <li><em>歌手</em></li>
+          <li><em>新碟上架</em></li>
+        </ul>
+      </div>
+    </div>
+    <!-- 内容部分 -->
+    <div class="container">
+      <!-- 发现音乐页面 -->
+      <div class="container_1">
+        <!-- 轮播图背景 -->
+        <div class="bg swiper mySwiperOnebg">
+          <div class="swiper-wrapper">
+            <!-- <div class="swiper-slide">
+			      <img src="./image/swiper1/sw-1-bg.jpg"  alt="">
+			  </div> -->
+          </div>
+        </div>
+        <!-- 轮播图 -->
+        <div class="sw_bg">
+          <!-- Swiper -->
+          <div class="swiper-container swiper mySwiperOne">
+            <div class="swiper-wrapper">
+              <!-- <div class="swiper-slide">
+                <img src="./image/swiper1/sw-1.jpg" alt="">
+              </div> -->
+            </div>
+            <div class="swiper-pagination pag"></div>
+            <div class="swiper-button-next next"></div>
+            <div class="swiper-button-prev prev"></div>
+            <!-- 下载客户端 -->
+            <div class="download">
+              <div class="download_button"></div>
+              <p>PC 安卓 iPhone WP iPad Mac 六大客户端</p>
+              <!-- 两侧阴影 -->
+              <span class="shadow"></span>
+              <span class="shadowr"></span>
+            </div>
+          </div>
+        </div>
+        <!-- 主体内容 -->
+        <div class="main">
+          <!-- 左侧内容 -->
+          <div class="main_left">
+            <!-- 热门推荐 -->
+            <div class="l_hot_recommend">
+              <!-- 导航 -->
+              <div class="l_hot_recommend_nav">
+                <div class="nav_title">
+                  <div class="dot"></div>
+                  <div class="title">热门推荐</div>
+                  <ul class="tab">
+                    <li><a href="">华语</a></li>
+                    <li><a href="">流行</a></li>
+                    <li><a href="">摇滚</a></li>
+                    <li><a href="">民谣</a></li>
+                    <li><a href="">电子</a></li>
+                  </ul>
+                </div>
+                <div class="more">
+                  <span>更多</span>
+                  <div class="cor"></div>
+                </div>
+              </div>
+              <!-- 热门推荐：内容 -->
+              <ul class="wrap" id="hotbox">
+                <!--  <li>
+                  <div class="img">
+                    <img src="./image/recommend/109951167875709379.jpg" alt="">
+                    <a class="eff" href=""></a>
+                    <div class="btm">
+                      <a href=""></a>
+                      <span class="icon-headset"></span>
+                      <span class="nb">3546万</span>
+                    </div>
+                  </div>
+                  <p><i></i><a href="">最陈奕迅·精选</a></p>
+                </li> -->
+              </ul>
+            </div>
+            <!-- 新碟上架 -->
+            <div class="l_new_music">
+              <!-- 导航 -->
+              <div class="l_new_music_nav">
+                <div class="nav_title">
+                  <div class="dot"></div>
+                  <div class="title">新碟上架</div>
+                </div>
+                <div class="more">
+                  <span>更多</span>
+                  <div class="cor"></div>
+                </div>
+              </div>
+              <!-- 内容轮播图 -->
+              <div class="l_new_music_swiper">
+                <!-- Swiper -->
+                <div class="swiper-container swiper mySwiperTwo">
+                  <div class="swiper-wrapper">
+                    <!-- <div class="swiper-slide">
+                      <img src="./image/swiper2/swp-1.jpg"
+                        alt="">
+                      <a class="ply" href=""></a>
+                      <a class="msk" href=""></a>
+                      <p class="tit1"><a href="">Gloriawwwwwwwwwwwwwwwwwwwwwwwww</a></p>
+                      <p class="tit2"><a href="">Sam Smith</a></p>
+                    </div> -->
+                  </div>
+                  <div class="swiper-button-next next1"></div>
+                  <div class="swiper-button-prev prev1"></div>
+                </div>
+
+              </div>
+            </div>
+            <!-- 榜单 -->
+            <div class="l_music_list">
+              <!-- 导航 -->
+              <div class="l_music_list_nav">
+                <div class="nav_title">
+                  <div class="dot"></div>
+                  <div class="title">榜单</div>
+                </div>
+                <div class="more">
+                  <span>更多</span>
+                  <div class="cor"></div>
+                </div>
+              </div>
+              <!-- 内容 -->
+              <div class="l_music_list_wrap">
+                <!-- 第一列 -->
+                <div class="list_bd">
+                  <div class="list_top">
+                    <div class="top_img">
+                      <img src="https://p3.music.126.net/pcYHpMkdC69VVvWiynNklA==/109951166952713766.jpg?param=100y100"
+                        alt="">
+                      <a href=""></a>
+                    </div>
+                    <div class="top_tit">
+                      <a href="">
+                        <h3>飙升榜</h3>
+                      </a>
+                      <div class="btn">
+                        <a class="btn_1" href=""></a>
+                        <a class="btn_2" href=""></a>
+                      </div>
+                    </div>
+                  </div>
+                  <dd>
+                    <ol id="upsong">
+                      <!-- <li>
+                        <span>1</span>
+                        <a href="">财神到</a>
+                        <div class="oper">
+                          <a class="oper_1" href=""></a>
+                          <a class="oper_2" href=""></a>
+                          <a class="oper_3" href=""></a>
+                        </div>
+                      </li> -->
+                    </ol>
+                    <div class="more"><a href="">查看全部></a></div>
+                  </dd>
+                </div>
+                <!-- 第二列 -->
+                <div class="list_bd">
+                  <div class="list_top">
+                    <div class="top_img">
+                      <img src="http://p3.music.126.net/wVmyNS6b_0Nn-y6AX8UbpQ==/109951166952686384.jpg?param=100y100"
+                        alt="">
+                      <a href=""></a>
+                    </div>
+                    <div class="top_tit">
+                      <a href="">
+                        <h3>新歌榜</h3>
+                      </a>
+                      <div class="btn">
+                        <a class="btn_1" href=""></a>
+                        <a class="btn_2" href=""></a>
+                      </div>
+                    </div>
+                  </div>
+                  <dd>
+                    <ol id="newsong">
+                      <!-- <li>
+                        <span>1</span>
+                        <a href="">财神到</a>
+                        <div class="oper">
+                          <a class="oper_1" href=""></a>
+                          <a class="oper_2" href=""></a>
+                          <a class="oper_3" href=""></a>
+                        </div>
+                      </li> -->
+                    </ol>
+                    <div class="more"><a href="">查看全部></a></div>
+                  </dd>
+                </div>
+                <!-- 第三列 -->
+                <div class="list_bd">
+                  <div class="list_top">
+                    <div class="top_img">
+                      <img src="http://p4.music.126.net/iFZ_nw2V86IFk90dc50kdQ==/109951166961388699.jpg?param=100y100"
+                        alt="">
+                      <a href=""></a>
+                    </div>
+                    <div class="top_tit">
+                      <a href="">
+                        <h3>原创榜</h3>
+                      </a>
+                      <div class="btn">
+                        <a class="btn_1" href=""></a>
+                        <a class="btn_2" href=""></a>
+                      </div>
+                    </div>
+                  </div>
+                  <dd>
+                    <ol id="originsong">
+                      <!-- <li>
+                        <span>1</span>
+                        <a href="">财神到</a>
+                        <div class="oper">
+                          <a class="oper_1" href=""></a>
+                          <a class="oper_2" href=""></a>
+                          <a class="oper_3" href=""></a>
+                        </div>
+                      </li> -->
+                    </ol>
+                    <div class="more"><a href="">查看全部></a></div>
+                  </dd>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 右侧内容 -->
+          <div class="main_right">
+            <!-- 用户登录 -->
+            <div class="r_myinfo">
+              <p>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</p>
+              <a href="">用户登录</a>
+            </div>
+            <!-- 入驻歌手 -->
+            <div class="r_singer">
+              <h3>
+                <span>入驻歌手</span>
+                <a href="">查看全部></a>
+              </h3>
+              <ul>
+                <li>
+                  <a href="">
+                    <div class="head">
+                      <img src="https://p1.music.126.net/rCsLFXha6SLis0tV7yZ5fA==/109951165588539704.jpg?param=62y62"
+                        alt="">
+                    </div>
+                    <div class="ifo">
+                      <h4>
+                        <span>张惠妹aMEI</span>
+                      </h4>
+                      <p>台湾歌手张惠妹3456567</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="head">
+                      <img src="https://p1.music.126.net/rCsLFXha6SLis0tV7yZ5fA==/109951165588539704.jpg?param=62y62"
+                        alt="">
+                    </div>
+                    <div class="ifo">
+                      <h4>
+                        <span>张惠妹aMEI</span>
+                      </h4>
+                      <p>台湾歌手张惠妹3456567</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="head">
+                      <img src="https://p1.music.126.net/rCsLFXha6SLis0tV7yZ5fA==/109951165588539704.jpg?param=62y62"
+                        alt="">
+                    </div>
+                    <div class="ifo">
+                      <h4>
+                        <span>张惠妹aMEI</span>
+                      </h4>
+                      <p>台湾歌手张惠妹3456567</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="head">
+                      <img src="https://p1.music.126.net/rCsLFXha6SLis0tV7yZ5fA==/109951165588539704.jpg?param=62y62"
+                        alt="">
+                    </div>
+                    <div class="ifo">
+                      <h4>
+                        <span>张惠妹aMEI</span>
+                      </h4>
+                      <p>台湾歌手张惠妹3456567</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="">
+                    <div class="head">
+                      <img src="https://p1.music.126.net/rCsLFXha6SLis0tV7yZ5fA==/109951165588539704.jpg?param=62y62"
+                        alt="">
+                    </div>
+                    <div class="ifo">
+                      <h4>
+                        <span>张惠妹aMEI</span>
+                      </h4>
+                      <p>台湾歌手张惠妹3456567</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <div class="btn_sq">
+                <a href="">
+                  <i>申请成为网易音乐人</i>
+                </a>
+              </div>
+            </div>
+            <!-- 热门主播 -->
+            <div class="r_anchor">
+              <h3>
+                <span>热门主播</span>
+              </h3>
+              <ul>
+                <li>
+                  <a href="">
+                    <img src="https://p2.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40"
+                      alt="">
+                  </a>
+                  <div class="info">
+                    <p><a href="">陈立</a></p>
+                    <p>心理学家、美食家陈立教授aaaa</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="https://p2.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40"
+                      alt="">
+                  </a>
+                  <div class="info">
+                    <p><a href="">陈立</a></p>
+                    <p>心理学家、美食家陈立教授aaaa</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="https://p2.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40"
+                      alt="">
+                  </a>
+                  <div class="info">
+                    <p><a href="">陈立</a></p>
+                    <p>心理学家、美食家陈立教授aaaa</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="https://p2.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40"
+                      alt="">
+                  </a>
+                  <div class="info">
+                    <p><a href="">陈立</a></p>
+                    <p>心理学家、美食家陈立教授aaaa</p>
+                  </div>
+                </li>
+                <li>
+                  <a href="">
+                    <img src="https://p2.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg?param=40y40"
+                      alt="">
+                  </a>
+                  <div class="info">
+                    <p><a href="">陈立</a></p>
+                    <p>心理学家、美食家陈立教授aaaa</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部内容 -->
+    <div class="bottom">
+      <div class="btm">
+        <div class="btm_wrap">
+          <!-- 图标 -->
+          <ul>
+            <li>
+              <a href=""></a>
+              <span>音乐开放平台</span>
+            </li>
+            <li>
+              <a href=""></a>
+              <span>音乐开放平台</span>
+            </li>
+            <li>
+              <a href=""></a>
+              <span>音乐开放平台</span>
+            </li>
+            <li>
+              <a href=""></a>
+              <span>音乐开放平台</span>
+            </li>
+            <li>
+              <a href=""></a>
+              <span>音乐开放平台</span>
+            </li>
+            <li>
+              <a href=""></a>
+              <span>音乐开放平台</span>
+            </li>
+            <li>
+              <a href=""></a>
+              <span>音乐开放平台</span>
+            </li>
+          </ul>
+          <!-- 文字部分 -->
+          <div class="copy">
+            <p class="link">
+              <a href="">服务条款</a>
+              <a href="">服务条款</a>
+              <a href="">服务条款</a>
+              <a href="">服务条款</a>
+              <a href="">服务条款</a>
+              <a href="">服务条款</a>
+              <a href="">服务条款</a>
+            </p>
+            <p class="btm_1">
+              <a class="sep" href="">廉正举报</a><span class="sep">不良信息举报邮箱:
+                51jubao@service.netease.com</span><span>客服热线：95163298</span>
+            </p>
+            <p class="btm_1">
+              <span>互联网宗教信息服务许可证：浙（2022）0000120</span><span>增值电信业务经营许可证：浙B2-20150198</span>
+              <a href="">粤B2-20090191-18 工业和信息化部备案管理系统网站</a>
+            </p>
+            <p class="btm_1">
+              <span class="sep">网易公司版权所有©1997-2023</span><span>杭州乐读科技有限公司运营：</span>
+              <a href="">浙网文[2021] 1186-054号</a><a href=""><span class="police-logo"></span><span
+                  class="police-text">浙公网安备 33010902002564号</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 回到顶部 -->
+      <a class="back" href="#"></a>
+    </div>
+    <!-- 播放器 -->
+    <div class="myplayer" id="myplayer">
+      <div class="backg">
+        <div class="bg_r"></div>
+        <div class="lock">
+          <a href="javascript:;"></a>
+        </div>
+        <div class="lock_r"></div>
+      </div>
+      <div class="assemble">
+        <div class="btns">
+          <a class="pre" href="javascript:;" title="上一首"></a>
+          <a class="play" href="javascript:;" id="play"></a>
+          <a class="nex" href="javascript:;" title="下一首"></a>
+        </div>
+        <div class="cov">
+          <!-- <img src="https://s4.music.126.net/style/web2/img/default/default_album.jpg" alt=""> -->
+          <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fsafe-img.xhscdn.com%2Fbw1%2Ff20bd3fe-4c34-4367-a5e2-7dd5d7eb391c%3FimageView2%2F2%2Fw%2F1080%2Fformat%2Fjpg&refer=http%3A%2F%2Fsafe-img.xhscdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1683774872&t=74702a6e436ec9fb0dc753b11c894c17" 
+          id="musicPic" alt="">
+          <a href=""></a>
+        </div>
+        <div class="pro">
+          <div class="pro_2">
+            <span class="tit_mus">晴天</span>
+            <span class="tit_aur">周杰伦</span>
+          </div>
+          <div class="pro_1">
+            <div class="line">
+              <div class="rdy"></div>
+              <div class="cur" id="cur">
+                <span id="criclebox">
+                  <i></i>
+                </span>
+              </div>
+            </div>
+            <span class="mus_tim" id="mus_time"><em>00:00</em> <span>/ 00:00</span></span>
+          </div>
+        </div>
+        <div class="oper">
+          <a class="icn" href="javascript:;" title="画中画歌词"></a>
+          <a class="like" href="javascript:;" title="收藏"></a>
+          <a class="share" href="javascript:;" title="分享"></a>
+        </div>
+        <div class="ctrl">
+          <div class="vol">
+            <div class="vol_bg"></div>
+            <div class="vol_line">
+              <div class="curr"></div>
+              <span class="btn"></span>
+            </div>
+          </div>
+          <a class="icn_vol" href="javascript:;"></a>
+          <a class="icn_c icn_loop" href="javascript:;"></a>
+          <span class="add">
+            <span class="tip">已添加到播放器列表</span>
+            <a class="icn_list" href="javascript:;" title="播放列表">0</a>
+          </span>
+          <div class="loop_tip">循环</div>
+        </div>
+      </div>
+    </div>
+    <!-- audio插件 -->
+    <audio src="./media/1晴天.m4a" preload="metadata" id="audioBox">
+  </div>>
+</body>
+<!-- Swiper JS -->
+<script src="./js/axios.min.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/two.js"></script>
+<!-- <script src="./js/fastclick.js"></script> -->
+<!-- <script src="./js/subscribe.js"></script> -->
+<!-- <script src="./js/one.js"></script>  -->
+<!-- <script src="./js/index.js"></script> -->
+
+
+
+</html>

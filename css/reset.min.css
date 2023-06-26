@@ -179,9 +179,9 @@ textarea {
 button,
 html [type='button'],
 [type='reset'],
-[type='submit'] {
+/* [type='submit'] {
   -webkit-appearance: button;
-}
+} */
 
 button::-moz-focus-inner,
 [type='button']::-moz-focus-inner,
@@ -210,7 +210,7 @@ button:-moz-focusring,
 }
 
 [type='search'] {
-  -webkit-appearance: textfield;
+  /* -webkit-appearance: textfield; */
   outline-offset: -2px;
 }
 

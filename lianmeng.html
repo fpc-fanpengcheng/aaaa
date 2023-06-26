@@ -1,0 +1,3233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>英雄联盟全新官方网站-腾讯游戏</title>
+  <link rel="icon" href="https://img1.baidu.com/it/u=615288564,2586303529&fm=253&fmt=auto&app=138&f=PNG?w=200&h=200">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/reset.min.css">
+  <link rel="stylesheet" href="./css/lianmeng.css">
+  <!-- 它是由 animate.css 库提供的，该库包含了一系列预定义的动画效果，可以通过添加相应的 CSS 类名来实现动画效果。 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+
+</head>
+
+<body>
+  <!-- 页头 -->
+  <div class="comm-head">
+    <!-- 居中盒子 -->
+    <div class="head-normal">
+      <!-- logo -->
+      <a class="logo" href="https://lol.qq.com/main.shtml" title="英雄联盟官网">
+        <img src="//game.gtimg.cn/images/lol/v3/logo-public.png" width="167" height="60" alt="英雄联盟">
+      </a>
+      <!--官网导航-->
+      <ul class="head-nav" id="J_headNav">
+        <li>
+          <a href="https://101.qq.com/#/page-index/tab-index" target="_blank"
+            onclick="PTTSendClick('topnav','topnav-0','游戏资料');" title="游戏资料">
+            <span class="head-nav-title">游戏资料</span>
+            <span class="head-nav-subtitle">GAME INFO</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="head-nav-title">商城/合作</span>
+            <span class="head-nav-subtitle">STORE</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="head-nav-title">社区互动</span>
+            <span class="head-nav-subtitle">COMMUNITY</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://lpl.qq.com/" target="_blank" onclick="PTTSendClick('topnav','topnav-3','赛事官网');"
+            title="赛事官网">
+            <span class="head-nav-title">赛事官网</span>
+            <span class="head-nav-subtitle">ESPORTS</span>
+          </a>
+        </li>
+        <li>
+          <a>
+            <span class="head-nav-title">自助系统</span>
+            <span class="head-nav-subtitle">SYSTEM</span>
+          </a>
+        </li>
+      </ul>
+      <!--玩家信息-->
+      <div class="head-userinfo-normal">
+        <div class="head-userinfo-avatar">
+          <img src="//game.gtimg.cn/images/lol/v2/personal/avatar/default.png" width="36" height="auto" alt="玩家头像">
+          <span></span>
+        </div>
+        <div class="head-userinfo-brief">
+          <p class="unlogin">亲爱的召唤师，欢迎<a href="javascript:T_Login.login()">登录</a></p>
+          <p class="login-unbindarea" style="display: none">请<a href="javascript:T_Login.changeArea()">绑定大区</a>或<a
+              href="javascript:T_Login.logout()">注销</a></p>
+          <p class="logined" style="display: none"><a class="logined-name"></a><a class="logined-logout"
+              href="javascript:T_Login.logout()">[注销]</a></p>
+        </div>
+      </div>
+      <!--玩家信息下拉-->
+      <div class="head-login-hover">
+        <div class="unlogin">
+          <p class="p1">
+            登录并且绑定大区后才可以查看您的具体信息哦<br>
+            (包括战绩、资产、声望）
+          </p>
+          <p class="p2">
+            官网个人信息显示略有延迟，请以游戏数据为准
+          </p>
+        </div>
+      </div>
+      <!--掌盟图标-->
+      <span class="head-app-normal">
+        <a target="_blank" href="//lol.qq.com/app/index.html" onclick="pgvSendClick({hottag:'v3.top.top.zmpc'})"
+          class="comm-icon-phone"></a>
+      </span>
+      <!-- 掌盟二维码 -->
+      <div class="head-app-hover">
+        <i class="head-zm-qrcode">
+          <img src="//game.gtimg.cn/images/lol/v3/zm-qrcode-new.jpg" width="119" height="119" alt="掌盟App二维码">
+        </i>
+        <p class="p1">扫码下载掌上英雄联盟</p>
+        <img class="polo" src="//game.gtimg.cn/images/lol/v3/polo.gif" alt="魄罗" width="50" height="50">
+      </div>
+      <!--搜索按钮-->
+      <a class="head-search-btn" id="J_headSearchBtn" href="javascript:" title="搜索">
+        <i class="comm-icon-search eject"></i>
+      </a>
+    </div>
+    <!-- 搜索弹出框 -->
+    <div class="search-hover-wrap">
+      <div class="search-hover-inner">
+        <a href="javascript:" class="btn-search" id="J_hoverSearchBtn" title="点击搜索">
+          <i class="comm-icon-search"></i>
+        </a>
+        <input type="text" id="J_hoverSearchInput" class="input-search" placeholder="搜索 lol.qq.com" autocomplete="off">
+        <a class="btn-close-search" id="J_btnCloseSearch" href="javascript:" title="关闭搜索">
+          <i class="icon-xx-1"></i>
+        </a>
+        <!-- <div class="search-hover-bottom">
+          <span class="hover-bottom-s1">搜索记录</span>
+          <ul class="search-direct-href"></ul>
+          <a class="hover-bottom-s2" href="javascript:" id="J_hoverClearRecord">清除记录</a>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- 页头图片 -->
+  <div class="comm-topact" exposure-tag="topact,头部广告">
+    <img class="topact-small-img"
+      src="//img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_ccf095a2d42ec69a7c166a150cb4dac2/0">
+    <div class="dark-mask"></div>
+    <div class="comm-topact-inner">
+      <a class="top-act-link middle"
+        href="https://lol.qq.com/act/a20230602drxsell/index.html?ADTAG=media.innerenter.esports?_code=507041"
+        onclick="PTTSendClick('topact','topact-detail','查看详情')" target="_blank">查看详情</a>
+      <div id="J_topActVersion" class="top-version">当前游戏版本：<em>Ver 13.11</em> <a class="top-version-link"
+          href="https://lol.qq.com/gicp/news/410/37029113.html"
+          onclick="pgvSendClick({hottag:'v3.topact.version.link'})" target="_blank">版本详情</a></div>
+    </div>
+  </div>
+  <!-- 首页内容 -->
+  <div class="countbox">
+    <!-- 居中大盒子 -->
+    <div class="centerbox">
+      <!-- 第一层 -->
+      <div class="leftone" id="leftoneA">
+        <ul class="Carousel" id="CarouselList">
+          <li class="Carousel-item">
+            <a href="https://lol.qq.com/act/a20230613tft/?e_code=500130">
+              <img src="//ossweb-img.qq.com/upload/adw/image/977/20230613/ffcd2f23d9940797c6e39bcda009598c.jpeg"
+                alt="云顶之弈 第9赛季">
+            </a>
+          </li>
+          <li class="Carousel-item ">
+            <a href="https://lol.qq.com/act/a20230613tft/?e_code=500130">
+              <img src="https://ossweb-img.qq.com/upload/adw/image/977/20230613/41f4077f4cec5aa49191dfc775621132.jpeg"
+                alt="云顶之弈 第9赛季">
+            </a>
+          </li>
+          <li class="Carousel-item ">
+            <a href="https://lol.qq.com/act/a20230613tft/?e_code=500130">
+              <img src="//ossweb-img.qq.com/upload/adw/image/977/20230613/323b972d3a4f7c78207ed95a6c7d0388.jpeg"
+                alt="云顶之弈 第9赛季">
+            </a>
+          </li>
+          <li class="Carousel-item ">
+            <a href="https://lol.qq.com/act/a20230613tft/?e_code=500130">
+              <img src="//ossweb-img.qq.com/upload/adw/image/977/20230602/dbe8672e9bafd936caaf04624442282e.jpeg"
+                alt="云顶之弈 第9赛季">
+            </a>
+          </li>
+          <li class="Carousel-item ">
+            <a href="https://lol.qq.com/act/a20230613tft/?e_code=500130">
+              <img src="//ossweb-img.qq.com/upload/adw/image/977/20230613/4a5cf928decdc6b1a2fccd0b89a66c31.jpeg"
+                alt="云顶之弈 第9赛季">
+            </a>
+          </li>
+          <li class="Carousel-item">
+            <a href="https://lol.qq.com/act/a20230613tft/?e_code=500130">
+              <img src="//ossweb-img.qq.com/upload/adw/image/977/20230613/ffcd2f23d9940797c6e39bcda009598c.jpeg"
+                alt="云顶之弈 第9赛季">
+            </a>
+          </li>
+        </ul>
+        <div class="promo-title-list " id="promoTitleList">
+          <span class="title selected" index="0">云顶之弈 第9赛季</span>
+          <span class="title" index="1">魔王宝藏</span>
+          <span class="title" index="2">抓魄罗</span>
+          <span class="title" index="3">DRX冠军皮肤</span>
+          <span class="title" index="4">剑灵夺宝</span>
+        </div>
+      </div>
+      <div class="rightone">
+        <!-- 选项卡头部 -->
+        <div class="part-top-tab">
+          <ul class="part-tab-title">
+            <li class="part-tab-title-li selected">综合</li>
+            <li class="part-tab-title-li">公告</li>
+            <li class="part-tab-title-li">赛事</li>
+            <li class="part-tab-title-li">攻略</li>
+            <li class="part-tab-title-li">社区</li>
+          </ul>
+        </div>
+        <!-- 选项卡内容 -->
+        <div class="new-tab-content">
+          <ul class="new-tab-content-ul selected">
+            <!-- li头部 -->
+            <li class="first">
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=12659456336421083104">
+                6月16日不停机更新公告
+              </a>
+            </li>
+            <!-- 其余li -->
+            <li class="newsitem amusement">
+              <span class="item-type">公告</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=7823179161414145657">
+                冰爽浪花宝典 现已上线
+              </a>
+              <span class="item-time">06-15</span>
+            </li>
+            <li class="newsitem amusement">
+              <span class="item-type">视频</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=7823179161414145657">
+                大嘴羊刀为何削弱？亚索永恩如何平衡？设计师有话说！
+              </a>
+              <span class="item-time">06-15</span>
+            </li>
+            <li class="newsitem amusement">
+              <span class="item-type">新闻</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=7823179161414145657">
+                活动预告：云顶之弈“出征之日”，玩就送限定奖励!
+              </a>
+              <span class="item-time">06-15</span>
+            </li>
+            <li class="newsitem amusement">
+              <span class="item-type">视频</span>
+              <a class="item-href" target="_blank"
+                href="//lol.qq.com/news/detail.shtml?docid=7823179161414145657">亚运倒计时100天选手视频
+              </a>
+              <span class="item-time">06-15</span>
+            </li>
+            <li class="newsitem amusement">
+              <span class="item-type">公告</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=7823179161414145657">
+                山海绘卷2023系列皮肤与水晶圣骑 蕾欧娜现已上线
+              </a>
+              <span class="item-time">06-15</span>
+            </li>
+            <li class="newsitem amusement">
+              <span class="item-type">公告</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=7823179161414145657">
+                山海宝箱活动现已上线
+              </a>
+              <span class="item-time">06-15</span>
+            </li>
+          </ul>
+          <ul class="new-tab-content-ul" id="J_newsListContainer">
+
+            <li class="first">
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=14526410467525621012"
+                onclick="PTTSendClick('Notice','Notice-0','端午节活动一览');SendEAS.sendNewsPV('index','//lol.qq.com/news/detail.shtml?docid=14526410467525621012','14526410467525621012')">
+                端午节活动一览
+              </a>
+            </li>
+
+
+
+            <li class="newsitem inform">
+              <span class="item-type">公告</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=7414021948196326564"
+                onclick="PTTSendClick('Notice','Notice-1','6月21日不停机更新公告');SendEAS.sendNewsPV('index','//lol.qq.com/news/detail.shtml?docid=7414021948196326564','7414021948196326564')">
+                6月21日不停机更新公告
+              </a>
+              <span class="item-time">06-21</span>
+            </li>
+
+
+
+            <li class="newsitem inform">
+              <span class="item-type">公告</span>
+              <a class="item-href" target="_blank" href="https://lol.qq.com/act/a20200421weekfree/index.html?siteId=604"
+                onclick="PTTSendClick('Notice','Notice-2','6月23日周免英雄更新公告');SendEAS.sendNewsPV('index','https://lol.qq.com/act/a20200421weekfree/index.html?siteId=604','5673650524919137323')">
+                6月23日周免英雄更新公告
+              </a>
+              <span class="item-time">06-21</span>
+            </li>
+
+
+
+            <li class="newsitem inform">
+              <span class="item-type">公告</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=12659456336421083104"
+                onclick="PTTSendClick('Notice','Notice-3','6月16日不停机更新公告');SendEAS.sendNewsPV('index','//lol.qq.com/news/detail.shtml?docid=12659456336421083104','12659456336421083104')">
+                6月16日不停机更新公告
+              </a>
+              <span class="item-time">06-16</span>
+            </li>
+
+
+
+            <li class="newsitem inform">
+              <span class="item-type">公告</span>
+              <a class="item-href" target="_blank" href="https://lol.qq.com/act/a20200421weekfree/index.html?siteId=603"
+                onclick="PTTSendClick('Notice','Notice-4','6月16日周免英雄更新公告');SendEAS.sendNewsPV('index','https://lol.qq.com/act/a20200421weekfree/index.html?siteId=603','6700068172549141750')">
+                6月16日周免英雄更新公告
+              </a>
+              <span class="item-time">06-16</span>
+            </li>
+
+
+
+            <li class="newsitem inform">
+              <span class="item-type">公告</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=7823179161414145657"
+                onclick="PTTSendClick('Notice','Notice-5','冰爽浪花宝典 现已上线');SendEAS.sendNewsPV('index','//lol.qq.com/news/detail.shtml?docid=7823179161414145657','7823179161414145657')">
+                冰爽浪花宝典 现已上线
+              </a>
+              <span class="item-time">06-15</span>
+            </li>
+
+
+
+            <li class="newsitem news">
+              <span class="item-type">新闻</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=6746760718979498376"
+                onclick="PTTSendClick('Notice','Notice-6','活动预告：云顶之弈“出征之日”，玩就送限定奖励!');SendEAS.sendNewsPV('index','//lol.qq.com/news/detail.shtml?docid=6746760718979498376','6746760718979498376')">
+                活动预告：云顶之弈“出征之日”，玩就送限定奖励!
+              </a>
+              <span class="item-time">06-15</span>
+            </li>
+
+          </ul>
+          <ul class="new-tab-content-ul" id="J_newsListContainer">
+
+            <li class="first">
+              <a class="item-href" target="_blank" href="//lol.qq.com/v/v2/detail.shtml?docid=14863179888232592765"
+                onclick="PTTSendClick('Notice','Notice-0','TOP5：BIN巨鳄狂袭统领怒之域');SendEAS.sendNewsPV('index','//lol.qq.com/v/v2/detail.shtml?docid=14863179888232592765','14863179888232592765')">
+                TOP5：BIN巨鳄狂袭统领怒之域
+              </a>
+            </li>
+
+
+
+            <li class="newsitem event">
+              <span class="item-type">赛事</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=11143592998856838499"
+                onclick="PTTSendClick('Notice','Notice-1','LPL夏季赛6月22日首发名单，Breathe交手Ale');SendEAS.sendNewsPV('index','//lol.qq.com/news/detail.shtml?docid=11143592998856838499','11143592998856838499')">
+                LPL夏季赛6月22日首发名单，Breathe交手Ale
+              </a>
+              <span class="item-time">06-21</span>
+            </li>
+
+
+
+            <li class="newsitem amusement">
+              <span class="item-type">视频</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/v/v2/detail.shtml?docid=16695531129004674443"
+                onclick="PTTSendClick('Notice','Notice-2','TOP5：DOGGO暴风羽刃迎刃展利钩');SendEAS.sendNewsPV('index','//lol.qq.com/v/v2/detail.shtml?docid=16695531129004674443','16695531129004674443')">
+                TOP5：DOGGO暴风羽刃迎刃展利钩
+              </a>
+              <span class="item-time">06-21</span>
+            </li>
+
+
+
+            <li class="newsitem amusement">
+              <span class="item-type">视频</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=6011794793055993169"
+                onclick="PTTSendClick('Notice','Notice-3','LPL夏季赛6月21日首发名单， Elk下路交锋GALA');SendEAS.sendNewsPV('index','//lol.qq.com/news/detail.shtml?docid=6011794793055993169','6011794793055993169')">
+                LPL夏季赛6月21日首发名单， Elk下路交锋GALA
+              </a>
+              <span class="item-time">06-21</span>
+            </li>
+
+
+
+            <li class="newsitem event">
+              <span class="item-type">赛事</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=17820059749570813090"
+                onclick="PTTSendClick('Notice','Notice-4','2023LPL夏季赛赛程更新');SendEAS.sendNewsPV('index','//lol.qq.com/news/detail.shtml?docid=17820059749570813090','17820059749570813090')">
+                2023LPL夏季赛赛程更新
+              </a>
+              <span class="item-time">06-19</span>
+            </li>
+
+
+
+            <li class="newsitem event">
+              <span class="item-type">赛事</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=3186543559480395173"
+                onclick="PTTSendClick('Notice','Notice-5','青春风暴：灵性开团铸王者之师——MISSING');SendEAS.sendNewsPV('index','//lol.qq.com/news/detail.shtml?docid=3186543559480395173','3186543559480395173')">
+                青春风暴：灵性开团铸王者之师——MISSING
+              </a>
+              <span class="item-time">06-19</span>
+            </li>
+
+
+
+            <li class="newsitem amusement">
+              <span class="item-type">视频</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/v/v2/detail.shtml?docid=8829887116823386869"
+                onclick="PTTSendClick('Notice','Notice-6','英雄麦克疯：JDG下路爆C中野光速变脸');SendEAS.sendNewsPV('index','//lol.qq.com/v/v2/detail.shtml?docid=8829887116823386869','8829887116823386869')">
+                英雄麦克疯：JDG下路爆C中野光速变脸
+              </a>
+              <span class="item-time">06-19</span>
+            </li>
+
+          </ul>
+          <ul class="new-tab-content-ul" id="J_newsListContainer">
+
+            <li class="first">
+              <a class="item-href" target="_blank" href="//lol.qq.com/v/v2/detail.shtml?docid=13290918931258772452"
+                onclick="PTTSendClick('Notice','Notice-0','UZI的秘密武器，卢锡安新出装伤害看不懂');SendEAS.sendNewsPV('index','//lol.qq.com/v/v2/detail.shtml?docid=13290918931258772452','13290918931258772452')">
+                UZI的秘密武器，卢锡安新出装伤害看不懂
+              </a>
+            </li>
+
+
+
+            <li class="newsitem amusement">
+              <span class="item-type">视频</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/v/v2/detail.shtml?docid=13330912216867958737"
+                onclick="PTTSendClick('Notice','Notice-1','你不得不知的大乱斗符文理解');SendEAS.sendNewsPV('index','//lol.qq.com/v/v2/detail.shtml?docid=13330912216867958737','13330912216867958737')">
+                你不得不知的大乱斗符文理解
+              </a>
+              <span class="item-time">06-15</span>
+            </li>
+
+
+
+            <li class="newsitem amusement">
+              <span class="item-type">视频</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/v/v2/detail.shtml?docid=16721082135786116971"
+                onclick="PTTSendClick('Notice','Notice-2','13.12卡莎加强，进化Q出装优化！兰博红温终极加强！');SendEAS.sendNewsPV('index','//lol.qq.com/v/v2/detail.shtml?docid=16721082135786116971','16721082135786116971')">
+                13.12卡莎加强，进化Q出装优化！兰博红温终极加强！
+              </a>
+              <span class="item-time">06-12</span>
+            </li>
+
+
+
+            <li class="newsitem amusement">
+              <span class="item-type">视频</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/v/v2/detail.shtml?docid=6126952712786334041"
+                onclick="PTTSendClick('Notice','Notice-3','究极拉扯怪！有输出有坦度完美契合版本生态，特效流千珏');SendEAS.sendNewsPV('index','//lol.qq.com/v/v2/detail.shtml?docid=6126952712786334041','6126952712786334041')">
+                究极拉扯怪！有输出有坦度完美契合版本生态，特效流千珏
+              </a>
+              <span class="item-time">06-09</span>
+            </li>
+
+
+
+            <li class="newsitem amusement">
+              <span class="item-type">视频</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/v/v2/detail.shtml?docid=7852199760401765191"
+                onclick="PTTSendClick('Notice','Notice-4','13.11韩服套路总结，三项千珏');SendEAS.sendNewsPV('index','//lol.qq.com/v/v2/detail.shtml?docid=7852199760401765191','7852199760401765191')">
+                13.11韩服套路总结，三项千珏
+              </a>
+              <span class="item-time">06-05</span>
+            </li>
+
+
+
+            <li class="newsitem amusement">
+              <span class="item-type">视频</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/v/v2/detail.shtml?docid=3061612943898132772"
+                onclick="PTTSendClick('Notice','Notice-5','13.11T1英雄推荐，雷克塞登顶，猫咪重回T1');SendEAS.sendNewsPV('index','//lol.qq.com/v/v2/detail.shtml?docid=3061612943898132772','3061612943898132772')">
+                13.11T1英雄推荐，雷克塞登顶，猫咪重回T1
+              </a>
+              <span class="item-time">06-04</span>
+            </li>
+
+
+
+            <li class="newsitem tutorial">
+              <span class="item-type">教学</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/space-detail.shtml?docid=2836807172285861076"
+                onclick="PTTSendClick('Notice','Notice-6','【枸杞】辅助装备大更新！娜美应该怎么玩？');SendEAS.sendNewsPV('index','//lol.qq.com/news/space-detail.shtml?docid=2836807172285861076','2836807172285861076')">
+                【枸杞】辅助装备大更新！娜美应该怎么玩？
+              </a>
+              <span class="item-time">06-03</span>
+            </li>
+
+          </ul>
+          <ul class="new-tab-content-ul" id="J_newsListContainer">
+
+            <li class="first">
+              <a class="item-href" target="_blank" href="//lol.qq.com/v/v2/detail.shtml?docid=11717474670382151911"
+                onclick="PTTSendClick('Notice','Notice-0','山海背景：蛤蟆大嘴是烬小弟？巴德出山拯救世界！');SendEAS.sendNewsPV('index','//lol.qq.com/v/v2/detail.shtml?docid=11717474670382151911','11717474670382151911')">
+                山海背景：蛤蟆大嘴是烬小弟？巴德出山拯救世界！
+              </a>
+            </li>
+
+
+
+            <li class="newsitem amusement">
+              <span class="item-type">视频</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/v/v2/detail.shtml?docid=9239792735805619869"
+                onclick="PTTSendClick('Notice','Notice-1','【联盟宇宙】黑色玫瑰？娜迦卡波洛斯？势力组织介绍');SendEAS.sendNewsPV('index','//lol.qq.com/v/v2/detail.shtml?docid=9239792735805619869','9239792735805619869')">
+                【联盟宇宙】黑色玫瑰？娜迦卡波洛斯？势力组织介绍
+              </a>
+              <span class="item-time">06-03</span>
+            </li>
+
+
+
+            <li class="newsitem inform">
+              <span class="item-type">其他</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=14741063921781439614"
+                onclick="PTTSendClick('Notice','Notice-2','谁能拒绝一只羊驼呢？DRX守卫眼羊驼表情包奉上！');SendEAS.sendNewsPV('index','//lol.qq.com/news/detail.shtml?docid=14741063921781439614','14741063921781439614')">
+                谁能拒绝一只羊驼呢？DRX守卫眼羊驼表情包奉上！
+              </a>
+              <span class="item-time">06-02</span>
+            </li>
+
+
+
+            <li class="newsitem news">
+              <span class="item-type">娱乐</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=16535786071445206476"
+                onclick="PTTSendClick('Notice','Notice-3','英雄联盟不再支持32位操作系统！两步教你如何鉴别与升级系统');SendEAS.sendNewsPV('index','//lol.qq.com/news/detail.shtml?docid=16535786071445206476','16535786071445206476')">
+                英雄联盟不再支持32位操作系统！两步教你如何鉴别与升级系统
+              </a>
+              <span class="item-time">05-30</span>
+            </li>
+
+
+
+            <li class="newsitem news">
+              <span class="item-type">娱乐</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=11705974761015269458"
+                onclick="PTTSendClick('Notice','Notice-4','英雄联盟背景故事中，游戏人物龙王是怎样的一个角色');SendEAS.sendNewsPV('index','//lol.qq.com/news/detail.shtml?docid=11705974761015269458','11705974761015269458')">
+                英雄联盟背景故事中，游戏人物龙王是怎样的一个角色
+              </a>
+              <span class="item-time">05-26</span>
+            </li>
+
+
+
+            <li class="newsitem news">
+              <span class="item-type">新闻</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/news/detail.shtml?docid=3277317523274240852"
+                onclick="PTTSendClick('Notice','Notice-5','被束缚的我,却不会屈服 是我们的敌人造就了我们!');SendEAS.sendNewsPV('index','//lol.qq.com/news/detail.shtml?docid=3277317523274240852','3277317523274240852')">
+                被束缚的我,却不会屈服 是我们的敌人造就了我们!
+              </a>
+              <span class="item-time">05-25</span>
+            </li>
+
+
+
+            <li class="newsitem amusement">
+              <span class="item-type">视频</span>
+              <a class="item-href" target="_blank" href="//lol.qq.com/v/v2/detail.shtml?docid=3936761079026261198"
+                onclick="PTTSendClick('Notice','Notice-6','我索拉卡不动了【LOL动画】');SendEAS.sendNewsPV('index','//lol.qq.com/v/v2/detail.shtml?docid=3936761079026261198','3936761079026261198')">
+                我索拉卡不动了【LOL动画】
+              </a>
+              <span class="item-time">05-21</span>
+            </li>
+
+          </ul>
+          <a target="_blank" class="btn-morenews" href="/news/index.shtml"
+            onclick="PTTSendClick('Notice','Notice-more','阅读更多最新资讯')">
+            <span class="c1">阅读更多</span><span class="c2">最新资讯</span><i class="more-arrow"></i>
+          </a>
+        </div>
+      </div>
+      <!-- 第二层 -->
+      <div class="m-act" exposure-tag="act,热门活动">
+        <div class="part-top-tab">
+          <h2 class="part-h2-title">热门活动</h2>
+          <ul class="part-tab-title">
+            <li class="selected m-actpart-tab-title-li" data-tabindex="0" data-tabstatus="closed">正在进行</li>
+            <li class="m-actpart-tab-title-li">商城特惠</li>
+            <li class="m-actpart-tab-title-li">长期活动</li>
+          </ul>
+          <a href="/activity/index.shtml" class="herf-more">更多<i class="more-arrow"></i></a>
+        </div>
+        <div class="m-act-list">
+          <ul class="selected m-act-list-ul">
+            <li class="act-item">
+              <img src="//ossweb-img.qq.com/images/clientpop/act/lol_1686620592_uploadnewsImg.jpg" alt="第9新赛季小小英雄"
+                width="193" height="207">
+              <p>第9新赛季小小英雄</p>
+
+              <a class="overtime">长期活动</a>
+
+
+              <div class="innerhover-border">
+                <i class="hover-border-1"></i>
+                <div class="innerhover-border-inner">
+                  <h4 class="p1">第9新赛季小小英雄</h4>
+                  <p class="p2">鸡哥鸡哥救救我！收到，我来了！还有2位新伙伴 组队吗？</p>
+
+                  <p class="p2">开启时间: 2023-06-13</p>
+
+                </div>
+              </div>
+              <a class="herf-mask"
+                href="https://daoju.qq.com/lol/list/439-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_439&amp;e_code=524631"
+                target="_blank" title="第9新赛季小小英雄" onclick="PTTSendClick('act','act-15079','第9新赛季小小英雄')"></a>
+            </li>
+
+            <li class="act-item">
+              <img src="//ossweb-img.qq.com/images/clientpop/act/lol_1680589897_uploadnewsImg.jpg" alt="瑞兹的英雄学院现已上线"
+                width="193" height="207">
+              <p>瑞兹的英雄学院现已上线</p>
+
+              <a class="overtime">长期活动</a>
+
+
+              <div class="innerhover-border">
+                <i class="hover-border-1"></i>
+                <div class="innerhover-border-inner">
+                  <h4 class="p1">瑞兹的英雄学院现已上线</h4>
+                  <p class="p2">学习英雄并赢取奖励</p>
+
+                  <p class="p2">开启时间: 2023-04-04</p>
+
+                </div>
+              </div>
+              <a class="herf-mask" href="https://lol.qq.com/act/a20230401heroacademy/index.html?e_code=535501"
+                target="_blank" title="瑞兹的英雄学院现已上线" onclick="PTTSendClick('act','act-14845','瑞兹的英雄学院现已上线')"></a>
+            </li>
+
+            <li class="act-item">
+              <img src="//ossweb-img.qq.com/images/clientpop/act/lol_1679630190_uploadnewsImg.jpg" alt="明烛 米利欧专题站"
+                width="193" height="207">
+              <p>明烛 米利欧专题站</p>
+
+              <a class="overtime">长期活动</a>
+
+
+              <div class="innerhover-border">
+                <i class="hover-border-1"></i>
+                <div class="innerhover-border-inner">
+                  <h4 class="p1">明烛 米利欧专题站</h4>
+                  <p class="p2">全新护阵法师英雄上线——为对于提供伤害与攻击速度等增益，终极技能群体解控。</p>
+
+                  <p class="p2">开启时间: 2023-03-24</p>
+
+                </div>
+              </div>
+              <a class="herf-mask" href="https://lol.qq.com/act/a20230323milio/index.html?e_code=535297" target="_blank"
+                title="明烛 米利欧专题站" onclick="PTTSendClick('act','act-14805','明烛 米利欧专题站')"></a>
+            </li>
+
+            <li class="act-item">
+              <img src="//ossweb-img.qq.com/images/clientpop/act/lol_1679627973_uploadnewsImg.jpg" alt="花仙子" width="193"
+                height="207">
+              <p>花仙子</p>
+
+              <a class="overtime">长期活动</a>
+
+
+              <div class="innerhover-border">
+                <i class="hover-border-1"></i>
+                <div class="innerhover-border-inner">
+                  <h4 class="p1">花仙子</h4>
+                  <p class="p2">峡谷惊蛰 仙灵萌生。全新花仙子系列皮肤现已正式上线！</p>
+
+                  <p class="p2">开启时间: 2023-03-24</p>
+
+                </div>
+              </div>
+              <a class="herf-mask" href="https://lol.qq.com/act/a20230324faeriecourt/index.html?e_code=535296"
+                target="_blank" title="花仙子" onclick="PTTSendClick('act','act-14804','花仙子')"></a>
+            </li>
+          </ul>
+          <ul class="m-act-list-ul">
+            <li class="act-item">
+              <img src="//ossweb-img.qq.com/images/clientpop/act/lol_1686917967_uploadnewsImg.jpg" alt="年中回馈好物福利来袭！"
+                width="193" height="207">
+              <p>年中回馈好物福利来袭！</p>
+
+              <a class="overtime">已结束</a>
+
+
+
+              <div class="innerhover-border">
+                <i class="hover-border-1"></i>
+                <div class="innerhover-border-inner">
+                  <h4 class="p1">年中回馈好物福利来袭！</h4>
+                  <p class="p2">经典手办限量返场，雕塑玩偶等秒杀商品可供抢购，更多满赠超值好礼限量发放，先到先得~</p>
+
+                  <p class="p2">2023-06-16 - 2023-06-20</p>
+
+                </div>
+              </div>
+              <a class="herf-mask"
+                href="https://lolriotmall.qq.com/list.shtml?saleid=1688&amp;ADTAG=lolriotmall.pc.lolhdzx.ad&amp;e_code=463346"
+                target="_blank" title="年中回馈好物福利来袭！" onclick="PTTSendClick('act','act-15103','年中回馈好物福利来袭！')"></a>
+            </li>
+
+            <li class="act-item">
+              <img src="//ossweb-img.qq.com/images/clientpop/act/lol_1686809854_uploadnewsImg.jpg" alt="星之守护者主题产品合集！"
+                width="193" height="207">
+              <p>星之守护者主题产品合集！</p>
+
+              <a class="overtime">69天后结束</a>
+
+
+              <div class="innerhover-border">
+                <i class="hover-border-1"></i>
+                <div class="innerhover-border-inner">
+                  <h4 class="p1">星之守护者主题产品合集！</h4>
+                  <p class="p2">世界的美好 由我们守护！星之守护者阿狸&amp;金克丝雕塑发售中！</p>
+
+                  <p class="p2">2023-06-15 - 2023-08-30</p>
+
+                </div>
+              </div>
+              <a class="herf-mask"
+                href="https://lolriotmall.qq.com/list.shtml?tagid=631&amp;ADTAG=lolriotmall.pc.lolgw.ad&amp;e_code=463346"
+                target="_blank" title="星之守护者主题产品合集！" onclick="PTTSendClick('act','act-15088','星之守护者主题产品合集！')"></a>
+            </li>
+
+            <li class="act-item">
+              <img src="//ossweb-img.qq.com/images/clientpop/act/lol_1686740217_uploadnewsImg.jpg"
+                alt="寒冰射手艾希新品雕塑预售倒计时！" width="193" height="207">
+              <p>寒冰射手艾希新品雕塑预售倒计时！</p>
+
+              <a class="overtime">45天后结束</a>
+
+
+              <div class="innerhover-border">
+                <i class="hover-border-1"></i>
+                <div class="innerhover-border-inner">
+                  <h4 class="p1">寒冰射手艾希新品雕塑预售倒计时！</h4>
+                  <p class="p2">集美殿堂联名款寒冰射手 艾希雕塑限量预售倒计时！</p>
+
+                  <p class="p2">2023-05-22 - 2023-08-06</p>
+
+                </div>
+              </div>
+              <a class="herf-mask"
+                href="https://lolriotmall.qq.com/detail.shtml?id=26282&amp;ADTAG=lolriotmall.pc.lolgw.ad&amp;e_code=481128"
+                target="_blank" title="寒冰射手艾希新品雕塑预售倒计时！"
+                onclick="PTTSendClick('act','act-15025','寒冰射手艾希新品雕塑预售倒计时！')"></a>
+            </li>
+
+            <li class="act-item">
+              <img src="//ossweb-img.qq.com/images/clientpop/act/lol_1685582837_uploadnewsImg.jpg" alt="周边神秘商店 限时开启！"
+                width="193" height="207">
+              <p>周边神秘商店 限时开启！</p>
+
+              <a class="overtime">8天后结束</a>
+
+
+              <div class="innerhover-border">
+                <i class="hover-border-1"></i>
+                <div class="innerhover-border-inner">
+                  <h4 class="p1">周边神秘商店 限时开启！</h4>
+                  <p class="p2">周边商城年中福利来袭！神秘商店限时开启，精品周边低至三折起！快来抽取你的专属神秘折扣吧~</p>
+
+                  <p class="p2">2023-06-01 - 2023-06-30</p>
+
+                </div>
+              </div>
+              <a class="herf-mask"
+                href="https://lolriotmall.qq.com/act/a20230601smsd/index.html?ADTAG=lolriotmall.pc.lolhdzx.ad&amp;e_code=536476"
+                target="_blank" title="周边神秘商店 限时开启！" onclick="PTTSendClick('act','act-15055','周边神秘商店 限时开启！')"></a>
+            </li>
+          </ul>
+          <ul class="m-act-list-ul">
+            <li class="act-item">
+              <img src="//ossweb-img.qq.com/images/clientpop/act/lol_1686620592_uploadnewsImg.jpg" alt="第9新赛季小小英雄"
+                width="193" height="207">
+              <p>第9新赛季小小英雄</p>
+
+              <a class="overtime">长期活动</a>
+
+
+              <div class="innerhover-border">
+                <i class="hover-border-1"></i>
+                <div class="innerhover-border-inner">
+                  <h4 class="p1">第9新赛季小小英雄</h4>
+                  <p class="p2">鸡哥鸡哥救救我！收到，我来了！还有2位新伙伴 组队吗？</p>
+
+                  <p class="p2">开启时间: 2023-06-13</p>
+
+                </div>
+              </div>
+              <a class="herf-mask"
+                href="https://daoju.qq.com/lol/list/439-0-0-0-0-0-0-0-0-0-0-00-0-0-1-1.shtml?ADTAG=innercop.lol.SY.shoppinglist_new_439&amp;e_code=524631"
+                target="_blank" title="第9新赛季小小英雄" onclick="PTTSendClick('act','act-15079','第9新赛季小小英雄')"></a>
+            </li>
+
+            <li class="act-item">
+              <img src="//ossweb-img.qq.com/images/clientpop/act/lol_1680589897_uploadnewsImg.jpg" alt="瑞兹的英雄学院现已上线"
+                width="193" height="207">
+              <p>瑞兹的英雄学院现已上线</p>
+
+              <a class="overtime">长期活动</a>
+
+
+              <div class="innerhover-border">
+                <i class="hover-border-1"></i>
+                <div class="innerhover-border-inner">
+                  <h4 class="p1">瑞兹的英雄学院现已上线</h4>
+                  <p class="p2">学习英雄并赢取奖励</p>
+
+                  <p class="p2">开启时间: 2023-04-04</p>
+
+                </div>
+              </div>
+              <a class="herf-mask" href="https://lol.qq.com/act/a20230401heroacademy/index.html?e_code=535501"
+                target="_blank" title="瑞兹的英雄学院现已上线" onclick="PTTSendClick('act','act-14845','瑞兹的英雄学院现已上线')"></a>
+            </li>
+
+            <li class="act-item">
+              <img src="//ossweb-img.qq.com/images/clientpop/act/lol_1679630190_uploadnewsImg.jpg" alt="明烛 米利欧专题站"
+                width="193" height="207">
+              <p>明烛 米利欧专题站</p>
+
+              <a class="overtime">长期活动</a>
+
+
+              <div class="innerhover-border">
+                <i class="hover-border-1"></i>
+                <div class="innerhover-border-inner">
+                  <h4 class="p1">明烛 米利欧专题站</h4>
+                  <p class="p2">全新护阵法师英雄上线——为对于提供伤害与攻击速度等增益，终极技能群体解控。</p>
+
+                  <p class="p2">开启时间: 2023-03-24</p>
+
+                </div>
+              </div>
+              <a class="herf-mask" href="https://lol.qq.com/act/a20230323milio/index.html?e_code=535297" target="_blank"
+                title="明烛 米利欧专题站" onclick="PTTSendClick('act','act-14805','明烛 米利欧专题站')"></a>
+            </li>
+
+            <li class="act-item">
+              <img src="//ossweb-img.qq.com/images/clientpop/act/lol_1679627973_uploadnewsImg.jpg" alt="花仙子" width="193"
+                height="207">
+              <p>花仙子</p>
+
+              <a class="overtime">长期活动</a>
+
+
+              <div class="innerhover-border">
+                <i class="hover-border-1"></i>
+                <div class="innerhover-border-inner">
+                  <h4 class="p1">花仙子</h4>
+                  <p class="p2">峡谷惊蛰 仙灵萌生。全新花仙子系列皮肤现已正式上线！</p>
+
+                  <p class="p2">开启时间: 2023-03-24</p>
+
+                </div>
+              </div>
+              <a class="herf-mask" href="https://lol.qq.com/act/a20230324faeriecourt/index.html?e_code=535296"
+                target="_blank" title="花仙子" onclick="PTTSendClick('act','act-14804','花仙子')"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="m-gamefunc-nav" exposure-tag="gameNav,游戏功能导航">
+        <ul class="slide-nav-ul">
+          <li class="herf-download" title="下载游戏">
+            <video class="side-down-video" autoplay="" loop="" muted="" width="366" height="168">
+              <source src="//ossweb-img.qq.com/images/lol/v3/btn-download.mp4" type="video/mp4">
+            </video>
+            <a href="download.shtml?ADTAG=lolweb.v3" class="herf-mask">下载游戏</a>
+          </li>
+          <li class="btn-flashmen p1" title="新手必备">
+            新手必备
+            <div class="inner-hover">
+              <a href="/data/newbie-what.shtml">
+                <i class="icon-zhiyin"></i>
+                指引
+              </a>
+              <a href="//lol.qq.com/act/djc_qt_rookie/web/a20141205rookie/index.htm">
+                <i class="icon-gift"></i>
+                礼包
+              </a>
+            </div>
+          </li>
+          <li class="p2" title="领取中心">
+            <a class="herf-type-0" href="//lol.qq.com/act/a20180929awards/index.html?ADTAG=lolweb.v3#box2"
+              target="_blank" onclick="PTTSendClick('gameNav','gameNav-Receive','领取中心')">领取中心</a>
+          </li>
+          <li class="p3" title="在线客服">
+            <a class="herf-type-1 herfType11" href="//kf.qq.com/product/lol.html?pc_scene=web" >
+              <i class="icon-kh"></i>在线客服
+            </a>
+          </li>
+          <li class="p3" title="秩序殿堂">
+            <a class="herf-type-1 herfType12" href="//lol.qq.com/act/a20171108ambient/index.html" >
+              <i class="icon-fhcx"></i>秩序殿堂
+            </a>
+          </li>
+          <li class="p3" title="游戏资料">
+            <a class="herf-type-1 herfType13" href="https://101.qq.com/?ADTAG=cooperation.glzx.web#/page-index/tab-index"
+              >
+              <i class="icon-yxzl"></i>游戏资料
+            </a>
+          </li>
+          <li class="p4" title="峡谷之巅">
+            <a class="herf-type-1 herfType14" href="//lol.qq.com/act/a20191210super/index.shtml" >
+              <i class="icon-xgzd"></i>峡谷之巅
+            </a>
+          </li>
+          <li class="p3" title="云顶之弈">
+            <a class="herf-type-1 herfType15" href="//lol.qq.com/tft/#/index" >
+              <i class="icon-tft"></i>云顶之弈<b class="icon-new-1"></b>
+            </a>
+          </li>
+          <li class="p3" title="攻略中心">
+            <a class="herf-type-1 herfType16" href="//101.qq.com/" >
+              <i class="icon-101"></i>攻略中心
+            </a>
+          </li>
+          <li class="p3" title="LOL宇宙">
+            <a class="herf-type-1 herfType17" href="//yz.lol.qq.com/zh_CN/" >
+              <i class="icon-yz"></i>LOL宇宙
+            </a>
+          </li>
+          <li class="p4" title="微信绑定">
+            <a class="herf-type-1 herfType18" href="//lol.qq.com/act/a20180607wechatbinding/index.html?primary=qq">
+              <i class="icon-wxbd"></i>微信绑定
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      <!-- 第三层 -->
+      <div class="m-new-championskin indexpart-show">
+        <div class="m-new-champion-one" id="J_newChampionContainer">
+          <img src="//img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_c372f11527f791dc510e76fb27ba0c2b/0"
+            alt="全新护阵法师英雄上线!" width="402" height="254">
+          <i class="pic-mask-0"></i>
+          <a class="tip-championskin">英雄更新</a>
+          <p class="intro-championskin">明烛 米利欧专题站</p>
+          <p class="name-championskin"><a>全新护阵法师英雄上线!</a></p>
+          <!--英雄详情hover-->
+          <div class="inner-hover" id="J_championAbility" data-championid="">
+            <i class="border"></i>
+            <p class="p1">全新护阵法师英雄上线!</p> <a class="inner-hover-href"
+              href="https://lol.qq.com/act/a20230323milio/index.html">查看详情<i class="more-arrow-2"></i></a>
+          </div>
+        </div>
+        <div class="m-new-skin-one" id="J_newSkinContainer">
+          <img src="//img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_4d93ebbf621f4068b2a29ee021df2d7e/0"
+            alt="">
+          <i class="pic-mask-0"></i>
+          <a class="tip-championskin">新皮肤</a>
+          <p class="intro-championskin">山海绘卷</p>
+          <p class="name-championskin">
+            <a href="javascript:">山海绘卷2023系列皮肤！</a>
+          </p>
+          <div class="innerhover-out">
+            <video src="https://apd-vlive.apdcdn.tc.qq.com/vhot2.qqvideo.tc.qq.com/AwknyTv2QPOuEvHweBwu3eAXSgO_EOIJmBaPEQherwy4/B_9LhzPzw8agpeEeKUHV_JXtukbKYwhHyho6qA16fUh2U/svp_50069/gzc_1000035_0bc3qma74aablaao3v3w6zsjja6d72bqd7sa.f622.mp4?sdtfrom=v1104&guid=7cff91d9df79f89d7d00a15023d44a64&vkey=3F2506F4C3F8626E3EEAF93FA404A6B4EADE2BBBEB2E5B702241845750E1CEA2C42C1BE9496754FC8974C6BE5264EAA2DA6444B3D9AE0B4FCED3A5702F68F8820DB95321DD9688B0B2DC17D9A516C59F17A950D40FA8B80E784BABCE8EA6D34E367872789C51338A703FD6C77076A04443FB9FCDE32A31CEE4E34E0A7D67A5A8B3B4821D2403C0B2" controls width=435px
+              autoplay muted loop></video>
+            <p class="p1">猫狗大战2023</p>
+            <p class="p2">谁说，猫狗不能做朋友？全新皮肤上线召唤师峡谷</p>
+            <a href="https://lol.qq.com/act/a20230407catdog/index.html" class="a1"
+              title="谁说，猫狗不能做朋友？全新皮肤上线召唤师峡谷">查看详情</a>
+          </div>
+        </div>
+      </div>
+      <div class="m-version-nav indexpart-show">
+        <div class="new-version">
+          <img src="//img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_a13c694a9b9d4604a87aad3af6b5cfc6/0" alt="版本更新">
+        </div>
+        <div class="club-developer">
+          <img src="//img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_298f3f143a3137abc8ba1bc49fb8f832/0"
+            alt="英雄剖析：米利欧">
+          <div class="innerhover-border">
+            <i class="hover-border-2"></i>
+            <div class="innerhover-border-inner">
+              <h4 class="p1">英雄剖析：米利欧</h4>
+              <p class="p2">“谁家小孩，好可爱!”——尚未迎来后期团战的你看到米利欧时不禁感叹道。</p>
+            </div>
+          </div>
+        </div>
+        <div class="new-model">
+          <img src="//img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_4ba6a5ccf8376725ff4688548c095b2c/0"
+            alt="《英雄联盟：双城之战》动画官网正式上线！">
+        </div>
+        <div class="week-free-champion">
+          <a class="week-free-a" href="javascript:">
+            <i class="inline-icon-0-left"></i>周免<i class="more-arrow-1"></i><i class="inline-icon-0-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="m-more-skin" exposure-tag="moreskin,更多新皮肤">
+        <div class="content">
+          <ul id="J_moreNewSkinContainer">
+            <li class="more-skin-item"> <img
+                src="//img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_772324006b299f93c954aded135e733d/0">
+              <p class="skinname">
+                <a class="a2">峡谷惊蛰 仙灵萌生。全新花仙子系列皮肤现已正式上线！</a>
+              </p>
+              <a class="herf-mask" href="https://lol.qq.com/act/a20230324faeriecourt/index.html"
+                title="峡谷惊蛰 仙灵萌生。全新花仙子系列皮肤现已正式上线！"></a>
+            </li>
+            <li class="more-skin-item"> <img
+                src="//img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_32db86899661780346e3297c733a1ab4/0"
+                alt="$value.title">
+              <p class="skinname">
+                <a class="a2">破碎之所，圣魔之战。</a>
+              </p>
+              <a class="herf-mask" href="https://lol.qq.com/act/a20230310brokencovenent/index.html"
+                title="破碎之所，圣魔之战。"></a>
+            </li>
+            <li class="more-skin-item"> <img
+                src="//img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_0dde8a79162f4362cdfb205506d10329/0"
+                alt="$value.title">
+              <p class="skinname">
+                <a class="a2">星辰大海，扬帆远航！宇航员系列全新皮肤上线！</a>
+              </p>
+              <a class="herf-mask" href="https://lol.qq.com/act/a20230224astronaut/index.html"
+                title="星辰大海，扬帆远航！宇航员系列全新皮肤上线！"></a>
+            </li>
+            <li class="more-skin-item"> <img
+                src="//img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_ef621bce41897164db8cfb54149d83d6/0"
+                alt="$value.title">
+              <p class="skinname">
+                <a class="a2">怦然降临，为你而动！</a>
+              </p>
+              <a class="herf-mask" href="https://lol.qq.com/act/a20230210heartthrobs/index.html" title="怦然降临，为你而动！"></a>
+            </li>
+            <li class="more-skin-item"> <img
+                src="//img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_f087bc904cbe8694e2a8c7f62ab46397/0"
+                alt="$value.title">
+              <p class="skinname">
+                <a class="a2">众神赐福 春晖大地，跟随艾希一起领略新春佳节时的众神风采</a>
+              </p>
+              <a class="herf-mask" href="https://lol.qq.com/act/a20230113lunargods/index.html"
+                title="众神赐福 春晖大地，跟随艾希一起领略新春佳节时的众神风采"></a>
+            </li>
+            <li class="more-skin-item"> <img
+                src="//img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_c281fac48fc347937b3b21eb40007c9f/0"
+                alt="$value.title">
+              <p class="skinname">
+                <a class="a2">千年纸蕴 万剪不断</a>
+              </p>
+              <a class="herf-mask" href="https://lol.qq.com/act/a20230112mythmaker/index.html" title="千年纸蕴 万剪不断"></a>
+            </li>
+            <li class="more-skin-item"> <img
+                src="//img.crawler.qq.com/lolwebschool/0/JAutoCMS_LOLWeb_5292cf010d034e64004cacdbae3cc8a3/0"
+                alt="$value.title">
+              <p class="skinname">
+                <a class="a2">冰雪节限定北极星系列皮肤上线</a>
+              </p>
+              <a class="herf-mask" href="https://lol.qq.com/act/a20221209winterblessed/index.html"
+                title="冰雪节限定北极星系列皮肤上线"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 视频区 -->
+    <div class="g-wrap-vp">
+      <div class="g-wrap">
+        <div class="m-fresh-video indexpart-show">
+          <div class="part-top-tab">
+            <h2 class="part-h2-title">最新视频</h2>
+            <ul class="part-tab-title">
+              <li class="video-part-tab-title selected" data-tabstatus="closed">推荐
+              </li>
+              <li class="video-part-tab-title">官方</li>
+              <li class="video-part-tab-title">娱乐</li>
+              <li class="video-part-tab-title">赛事</li>
+              <li class="video-part-tab-title">云顶之弈
+                <i class="icon-new-1"></i>
+              </li>
+              <li class="video-part-tab-title">教学</li>
+            </ul>
+            <a href="//lol.qq.com/v/v2/index.shtml" class="herf-more">更多<i class="more-arrow"></i></a>
+            <a href="javascript:;" id="change-batche"><span class="change-batche">换一批<i class="icon-hyp"></i></span></a>
+          </div>
+          <ul class="fresh-video-content selected " id="J_flashVideoContainer">
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="https://img.tgl.qq.com/cover/20230408/0123413a8afbe41cee91780bbb9fa6bd_1680940012.png"
+                  class="video-cover" width="198" height="110" alt="13.7T1英雄推荐！暴击男枪全球T1！别杀了石头人！">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=3970598677948377969" class="herf-mask"></a>
+              </div>
+              <a class="video-length">09:11</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=3970598677948377969">
+                  13.7T1英雄推荐！暴击男枪全球T1！别杀了石头人！</a>
+              </p>
+              <a class="play-times">7.3万次播放</a>
+              <a class="update-time">6小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img
+                  src="//icreate-mobile-prod-1258344700.cos.ap-shanghai.myqcloud.com/public/ios/cover/935ed9d4-b9b9-45bc-a4b4-eaa67d580df6/6E4774F2-9FCE-4BCC-A197-0F2FC03497A5.jpg"
+                  class="video-cover" width="198" height="110" alt="13.8版本神话商店轮换名单">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=8283996023277978726" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:15</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=8283996023277978726">
+                  13.8版本神话商店轮换名单</a>
+              </p>
+              <a class="play-times">5.4万次播放</a>
+              <a class="update-time">2023-04-07</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230405/c2fd6a57fb75827de0358d77aa9213e3_1680671073.png"
+                  class="video-cover" width="198" height="110" alt="13.7版本研究所：亚索后期多200点盾，男枪回归纯暴击">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=14908380212665474953" class="herf-mask"></a>
+              </div>
+              <a class="video-length">11:46</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=14908380212665474953">
+                  13.7版本研究所：亚索后期多200点盾，男枪回归纯暴击</a>
+              </p>
+              <a class="play-times">38.5万次播放</a>
+              <a class="update-time">2023-04-05</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230407/e9204c5b394a9b9602f179bca59dd3c5_1680872591.jpg"
+                  class="video-cover" width="198" height="110" alt="新版本AP亚索实战测评，给你一点AP亚索的小震撼">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=13070869419058302059" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:17</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=13070869419058302059">
+                  新版本AP亚索实战测评，给你一点AP亚索的小震撼</a>
+              </p>
+              <a class="play-times">1.3万次播放</a>
+              <a class="update-time">2023-04-07</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/87ab3d3d13b7e4c89b30a99de6368e00/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="谁说猫狗不能做朋友？猫狗大战2023正式上线！">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=3597174670621226287" class="herf-mask"></a>
+              </div>
+              <a class="video-length">01:47</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=3597174670621226287">
+                  谁说猫狗不能做朋友？猫狗大战2023正式上线！</a>
+              </p>
+              <a class="play-times">2.3万次播放</a>
+              <a class="update-time">2023-04-07</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img
+                  src="//icreate-mobile-prod-1258344700.cos.ap-shanghai.myqcloud.com/public/ios/cover/cb3673fc-1e9a-4ac9-9060-6eb0c2471f70/F40FF9D5-3026-47F9-AFBB-EC9C8AB2D811.jpg"
+                  class="video-cover" width="198" height="110" alt="最新至臻商店轮换名单">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=17853253071630155231" class="herf-mask"></a>
+              </div>
+              <a class="video-length">01:16</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=17853253071630155231">
+                  最新至臻商店轮换名单</a>
+              </p>
+              <a class="play-times">1.4万次播放</a>
+              <a class="update-time">2023-04-07</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230408/e1ad47c6c2acb9da158f042c9a848516_1680934353.jpg"
+                  class="video-cover" width="198" height="110" alt="观赛指南双败赛特别版：泰酷啦！">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=2353401725322437661" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:38</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=2353401725322437661">
+                  观赛指南双败赛特别版：泰酷啦！</a>
+              </p>
+              <a class="play-times">3702次播放</a>
+              <a class="update-time">8小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//puui.qpic.cn/vpic_cover/d0046qjh27w/d0046qjh27w_hz.jpg/640" class="video-cover" width="198"
+                  height="110" alt="LPL季后赛 EDG vs OMG_04">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=3113417928292361441" class="herf-mask"></a>
+              </div>
+              <a class="video-length">39:12</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=3113417928292361441">
+                  LPL季后赛 EDG vs OMG_04</a>
+              </p>
+              <a class="play-times">3.1万次播放</a>
+              <a class="update-time">2023-04-06</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//puui.qpic.cn/vpic_cover/y0046swtvmr/y0046swtvmr_hz.jpg/640" class="video-cover" width="198"
+                  height="110" alt="LPL季后赛 EDG vs OMG_02">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=14218450954997885452" class="herf-mask"></a>
+              </div>
+              <a class="video-length">42:54</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=14218450954997885452">
+                  LPL季后赛 EDG vs OMG_02</a>
+              </p>
+              <a class="play-times">2.9万次播放</a>
+              <a class="update-time">2023-04-06</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//puui.qpic.cn/vpic_cover/a0046y4fcw3/a0046y4fcw3_hz.jpg/640" class="video-cover" width="198"
+                  height="110" alt="LPL季后赛 EDG vs OMG_03">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=15832657581333325673" class="herf-mask"></a>
+              </div>
+              <a class="video-length">34:03</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=15832657581333325673">
+                  LPL季后赛 EDG vs OMG_03</a>
+              </p>
+              <a class="play-times">2.2万次播放</a>
+              <a class="update-time">2023-04-06</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="https://img.tgl.qq.com/cover/20230408/d8bb3345b4df2c721ad271a3232d945e_1680947495.jpg"
+                  class="video-cover" width="198" height="110" alt="亚索小技巧之《吹拉+Q闪拉》">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=12288633670178415422" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:13</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=12288633670178415422">
+                  亚索小技巧之《吹拉+Q闪拉》</a>
+              </p>
+              <a class="play-times">2034次播放</a>
+              <a class="update-time">3小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230407/ff107cb6e4d41b244292fa1c4c7d0a4d_1680810064.png"
+                  class="video-cover" width="198" height="110" alt="13.8版本 神话商店轮换：阿卡丽你是真能躲啊">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=3294354600480514341" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:27</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=3294354600480514341">
+                  13.8版本 神话商店轮换：阿卡丽你是真能躲啊</a>
+              </p>
+              <a class="play-times">1.2万次播放</a>
+              <a class="update-time">2023-04-07</a>
+            </li>
+          </ul>
+          <ul class="fresh-video-content" id="J_flashVideoContainer">
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/bd8a3e23226a128a1614c98c0ff0170c/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【英雄联盟】墨之影武者 永恩皮肤预览">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=15753656977171484881" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:23</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=15753656977171484881">
+                  【英雄联盟】墨之影武者 永恩皮肤预览</a>
+              </p>
+              <a class="play-times">973次播放</a>
+              <a class="update-time">2023-04-06</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/2251a117e4a96244042d047d7aeed6db/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【英雄联盟】黑夜使者 嘉文四世皮肤预览">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=11022394781490453616" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:04</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=11022394781490453616">
+                  【英雄联盟】黑夜使者 嘉文四世皮肤预览</a>
+              </p>
+              <a class="play-times">523次播放</a>
+              <a class="update-time">2023-04-06</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/b0f069a20e480c73a62530c36f103c23/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【英雄联盟】黑夜使者 内瑟斯皮肤预览">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=4204007836415353574" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:15</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=4204007836415353574">
+                  【英雄联盟】黑夜使者 内瑟斯皮肤预览</a>
+              </p>
+              <a class="play-times">366次播放</a>
+              <a class="update-time">2023-04-06</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/6b2618e8a5673991e1ba338abd1c2b4a/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【英雄联盟】黎明使者 薇恩皮肤预览">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=5604195229250125785" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:01</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=5604195229250125785">
+                  【英雄联盟】黎明使者 薇恩皮肤预览</a>
+              </p>
+              <a class="play-times">435次播放</a>
+              <a class="update-time">2023-04-06</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/00e44b0c1d00b571557d6caab7de58ca/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【英雄联盟】墨影之灵 奥瑞利安·索尔皮肤预览">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=13551789406714299770" class="herf-mask"></a>
+              </div>
+              <a class="video-length">01:54</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=13551789406714299770">
+                  【英雄联盟】墨影之灵 奥瑞利安·索尔皮肤预览</a>
+              </p>
+              <a class="play-times">540次播放</a>
+              <a class="update-time">2023-04-06</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/ea3046b8319008ce33d5992c23e7657c/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【英雄联盟】墨之影武者 卡莎皮肤预览">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=14945303429658155765" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:04</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=14945303429658155765">
+                  【英雄联盟】墨之影武者 卡莎皮肤预览</a>
+              </p>
+              <a class="play-times">504次播放</a>
+              <a class="update-time">2023-04-06</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/a0426293131276abc07a41c8b7f362a8/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【英雄联盟】黎明使者 雷克顿皮肤预览">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=7445607986931208477" class="herf-mask"></a>
+              </div>
+              <a class="video-length">01:51</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=7445607986931208477">
+                  【英雄联盟】黎明使者 雷克顿皮肤预览</a>
+              </p>
+              <a class="play-times">342次播放</a>
+              <a class="update-time">2023-04-06</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/4f3a337f654cbea9d4934f3fc2380cdf/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【英雄联盟】墨之影武者 亚索皮肤预览">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=14496392588046224795" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:26</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=14496392588046224795">
+                  【英雄联盟】墨之影武者 亚索皮肤预览</a>
+              </p>
+              <a class="play-times">536次播放</a>
+              <a class="update-time">2023-04-06</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/564cec49ec994d47fce70d23bf9cc66b/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【英雄联盟】黎明黑夜使者PBE皮肤视频预览">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=5423691829622857322" class="herf-mask"></a>
+              </div>
+              <a class="video-length">01:27</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=5423691829622857322">
+                  【英雄联盟】黎明黑夜使者PBE皮肤视频预览</a>
+              </p>
+              <a class="play-times">2.3万次播放</a>
+              <a class="update-time">2023-04-02</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/a7b57e6058fcd103ed58a78e5c0b9cc8/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【英雄联盟】墨之影系列皮肤PBE皮肤视频预览">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=16686641031699783549" class="herf-mask"></a>
+              </div>
+              <a class="video-length">03:30</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=16686641031699783549">
+                  【英雄联盟】墨之影系列皮肤PBE皮肤视频预览</a>
+              </p>
+              <a class="play-times">3.7万次播放</a>
+              <a class="update-time">2023-04-02</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/f74c64046c785f020ef927ff8a1567b1/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【英雄联盟】花仙子系列皮肤宣传视频">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=9934411656330300399" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:09</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=9934411656330300399">
+                  【英雄联盟】花仙子系列皮肤宣传视频</a>
+              </p>
+              <a class="play-times">5171次播放</a>
+              <a class="update-time">2023-03-31</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/682fbd5bbbef790364d1acb8aefb53d8/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="自选模式好像有些怪怪的，上线便知！">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=11845335813646119568" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:15</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=11845335813646119568">
+                  自选模式好像有些怪怪的，上线便知！</a>
+              </p>
+              <a class="play-times">6.4万次播放</a>
+              <a class="update-time">2023-03-30</a>
+            </li>
+          </ul>
+          <ul class="fresh-video-content" id="J_flashVideoContainer">
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230408/94d433dd0f625a92f4a8e8163b2ccb96_1680962670.jpg"
+                  class="video-cover" width="198" height="110" alt="乌兹看ON辅助有R有闪不交，被Elk双杀：啊？这凭什么？">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=16474398306933785115" class="herf-mask"></a>
+              </div>
+              <a class="video-length">07:18</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=16474398306933785115">
+                  乌兹看ON辅助有R有闪不交，被Elk双杀：啊？这凭什么？</a>
+              </p>
+              <a class="play-times">0次播放</a>
+              <a class="update-time">1分钟前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230408/e45e886c5983fbab44f83de74680a286_1680959913.jpg"
+                  class="video-cover" width="198" height="110" alt="阿水看BLG最后一波团，我是ELK下来左右两边一人一巴掌">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=4206832965687776548" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:50</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=4206832965687776548">
+                  阿水看BLG最后一波团，我是ELK下来左右两边一人一巴掌</a>
+              </p>
+              <a class="play-times">123次播放</a>
+              <a class="update-time">1小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230408/e15fa09012523cce861995116f8b5cc4_1680959865.jpg"
+                  class="video-cover" width="198" height="110" alt="乌兹看Able一打四关键时刻Q空：戴志春！怎么能Q空？">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=14051749262198214826" class="herf-mask"></a>
+              </div>
+              <a class="video-length">07:34</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=14051749262198214826">
+                  乌兹看Able一打四关键时刻Q空：戴志春！怎么能Q空？</a>
+              </p>
+              <a class="play-times">835次播放</a>
+              <a class="update-time">1小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230408/f3e4aec0a6cfb3ce6c5959b1cd3273f3_1680960965.jpg"
+                  class="video-cover" width="198" height="110" alt="蛮王vs狼人，“蛮三刀”打得过“嗜血狼人”吗？">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=81733430370069975" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:13</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=81733430370069975">
+                  蛮王vs狼人，“蛮三刀”打得过“嗜血狼人”吗？</a>
+              </p>
+              <a class="play-times">83次播放</a>
+              <a class="update-time">1小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230408/0fe2ea7d026cc6fb3649dfdb5e29b915_1680958918.jpg"
+                  class="video-cover" width="198" height="110" alt="让小兵“加班工作”，他们竟这样反抗……">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=10525284194030164999" class="herf-mask"></a>
+              </div>
+              <a class="video-length">01:21</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=10525284194030164999">
+                  让小兵“加班工作”，他们竟这样反抗……</a>
+              </p>
+              <a class="play-times">94次播放</a>
+              <a class="update-time">1小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230408/533d16e088d32b030bb4d441db1a75ae_1680956379.jpg"
+                  class="video-cover" width="198" height="110" alt="乌兹看BLG轻取OMG：BLG好强，对线优势打团不虚！">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=13236498030238061727" class="herf-mask"></a>
+              </div>
+              <a class="video-length">05:23</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=13236498030238061727">
+                  乌兹看BLG轻取OMG：BLG好强，对线优势打团不虚！</a>
+              </p>
+              <a class="play-times">119次播放</a>
+              <a class="update-time">2小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230408/3b19155999ec9e02146a0a795eba3975_1680957298.png"
+                  class="video-cover" width="198" height="110" alt="BLG领先一万四火龙被翻？阿水锐评：这种我上不了我打不到这！">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=7359476671328304999" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:25</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=7359476671328304999">
+                  BLG领先一万四火龙被翻？阿水锐评：这种我上不了我打不到这！</a>
+              </p>
+              <a class="play-times">1401次播放</a>
+              <a class="update-time">2小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230408/e53cc590edfc62ac0ffe691d2cddc8b9_1680957244.png"
+                  class="video-cover" width="198" height="110" alt="这把让你们知道什么叫节奏大师。">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=13017965631719433815" class="herf-mask"></a>
+              </div>
+              <a class="video-length">03:43</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=13017965631719433815">
+                  这把让你们知道什么叫节奏大师。</a>
+              </p>
+              <a class="play-times">57次播放</a>
+              <a class="update-time">2小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230408/02c35256777a3d7c0bcd1dd6518fefc9_1680954743.png"
+                  class="video-cover" width="198" height="110" alt="13.8版本至臻轮换特效预览，至臻凯隐携手至臻赛娜回归">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=2760533411748331936" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:25</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=2760533411748331936">
+                  13.8版本至臻轮换特效预览，至臻凯隐携手至臻赛娜回归</a>
+              </p>
+              <a class="play-times">137次播放</a>
+              <a class="update-time">2小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img
+                  src="https://icreate-mobile-prod-1258344700.cos.ap-shanghai.myqcloud.com/public/ios/cover/935ed9d4-b9b9-45bc-a4b4-eaa67d580df6/306B2CF4-D1CE-4F97-8CBA-CFF7C5A80F2A.jpg"
+                  class="video-cover" width="198" height="110" alt="墨之影武者与灵魂莲华永恩对比">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=16343282839971158604" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:09</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=16343282839971158604">
+                  墨之影武者与灵魂莲华永恩对比</a>
+              </p>
+              <a class="play-times">570次播放</a>
+              <a class="update-time">2小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img
+                  src="https://icreate-mobile-prod-1258344700.cos.ap-shanghai.myqcloud.com/public/ios/cover/935ed9d4-b9b9-45bc-a4b4-eaa67d580df6/C34F8B96-8A2D-42F5-BEFC-36AE2FD39B2C.jpg"
+                  class="video-cover" width="198" height="110" alt="黑夜使者（T3）VS 炼狱魔犬（T2）内瑟斯对照">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=17329576568530826465" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:07</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=17329576568530826465">
+                  黑夜使者（T3）VS 炼狱魔犬（T2）内瑟斯对照</a>
+              </p>
+              <a class="play-times">272次播放</a>
+              <a class="update-time">2小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="https://img.tgl.qq.com/cover/20230408/117da7843b42e4988081908e23f6140f_1680953123.png"
+                  class="video-cover" width="198" height="110" alt="OMG上演惊天大逆转！姿态：这把打完直接把教练整不会了">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=13289295697436266727" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:24</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=13289295697436266727">
+                  OMG上演惊天大逆转！姿态：这把打完直接把教练整不会了</a>
+              </p>
+              <a class="play-times">602次播放</a>
+              <a class="update-time">2小时前</a>
+            </li>
+          </ul>
+          <ul class="fresh-video-content" id="J_flashVideoContainer">
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="https://img.tgl.qq.com/cover/20230408/43b1ab388fa0bf61461856721e5c28b2_1680964046.png"
+                  class="video-cover" width="198" height="110" alt="BLGvsOMG败者组G2：OMG落后一万惊天大逆转！">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=12261663556881503564" class="herf-mask"></a>
+              </div>
+              <a class="video-length">13:12</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=12261663556881503564">
+                  BLGvsOMG败者组G2：OMG落后一万惊天大逆转！</a>
+              </p>
+              <a class="play-times">0次播放</a>
+              <a class="update-time">34秒前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="https://img.tgl.qq.com/cover/20230408/16c20e8c536c2d8861b8a29306548265_1680964079.png"
+                  class="video-cover" width="198" height="110" alt="BLGvsOMG败者组G4：Able极限2v5输出一万三！">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=2252356683621466636" class="herf-mask"></a>
+              </div>
+              <a class="video-length">09:55</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=2252356683621466636">
+                  BLGvsOMG败者组G4：Able极限2v5输出一万三！</a>
+              </p>
+              <a class="play-times">0次播放</a>
+              <a class="update-time">36秒前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//puui.qpic.cn/vpic_cover/r0046px7kio/r0046px7kio_hz.jpg/640" class="video-cover" width="198"
+                  height="110" alt="BIN纳尔入侵野区先斩山鸡 ABLE厄斐琉斯收割BIN">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=4936707007785855483" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:31</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=4936707007785855483">
+                  BIN纳尔入侵野区先斩山鸡 ABLE厄斐琉斯收割BIN</a>
+              </p>
+              <a class="play-times">0次播放</a>
+              <a class="update-time">38秒前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//puui.qpic.cn/vpic_cover/a0046ueqow7/a0046ueqow7_hz.jpg/640" class="video-cover" width="198"
+                  height="110" alt="牙膏安妮河道闪现强开 ELK泽丽社会保障收割双杀">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=15630870520016642794" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:53</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=15630870520016642794">
+                  牙膏安妮河道闪现强开 ELK泽丽社会保障收割双杀</a>
+              </p>
+              <a class="play-times">0次播放</a>
+              <a class="update-time">39秒前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//puui.qpic.cn/vpic_cover/s0046v7xsgs/s0046v7xsgs_hz.jpg/640" class="video-cover" width="198"
+                  height="110" alt="【高光时刻】BLG vs OMG 第2局">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=16743600761840946064" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:28</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=16743600761840946064">
+                  【高光时刻】BLG vs OMG 第2局</a>
+              </p>
+              <a class="play-times">0次播放</a>
+              <a class="update-time">41秒前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//puui.qpic.cn/vpic_cover/r0046orjjzq/r0046orjjzq_hz.jpg/640" class="video-cover" width="198"
+                  height="110" alt="XUN佛耶戈下路蹲草 ELK厄斐琉斯斩获PPGOD一血">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=10573569334740713788" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:31</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=10573569334740713788">
+                  XUN佛耶戈下路蹲草 ELK厄斐琉斯斩获PPGOD一血</a>
+              </p>
+              <a class="play-times">0次播放</a>
+              <a class="update-time">44秒前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//puui.qpic.cn/vpic_cover/b00462e6nva/b00462e6nva_hz.jpg/640" class="video-cover" width="198"
+                  height="110" alt="ON洛河道先手强开 牙膏小法伤害爆炸收割双杀">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=7896810392796214851" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:48</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=7896810392796214851">
+                  ON洛河道先手强开 牙膏小法伤害爆炸收割双杀</a>
+              </p>
+              <a class="play-times">0次播放</a>
+              <a class="update-time">45秒前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//puui.qpic.cn/vpic_cover/p0046vfxyoo/p0046vfxyoo_hz.jpg/640" class="video-cover" width="198"
+                  height="110" alt="ABLE泽丽河道秒杀XUN 牙膏小法超高伤害极限抢龙">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=8259736474403123138" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:28</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=8259736474403123138">
+                  ABLE泽丽河道秒杀XUN 牙膏小法超高伤害极限抢龙</a>
+              </p>
+              <a class="play-times">0次播放</a>
+              <a class="update-time">47秒前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//puui.qpic.cn/vpic_cover/q00469nnzwf/q00469nnzwf_hz.jpg/640" class="video-cover" width="198"
+                  height="110" alt="BIN武器龙坑先斩AKI 山鸡奎桑提伤害爆炸收割双杀">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=11584032972735741191" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:33</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=11584032972735741191">
+                  BIN武器龙坑先斩AKI 山鸡奎桑提伤害爆炸收割双杀</a>
+              </p>
+              <a class="play-times">0次播放</a>
+              <a class="update-time">49秒前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//puui.qpic.cn/vpic_cover/r0046c2dvr2/r0046c2dvr2_hz.jpg/640" class="video-cover" width="198"
+                  height="110" alt="【高光时刻】BLG vs OMG 第5局">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=7420557213764300571" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:18</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=7420557213764300571">
+                  【高光时刻】BLG vs OMG 第5局</a>
+              </p>
+              <a class="play-times">0次播放</a>
+              <a class="update-time">51秒前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//puui.qpic.cn/vpic_cover/m004679j063/m004679j063_hz.jpg/640" class="video-cover" width="198"
+                  height="110" alt="XUN猴子上路支援越塔 BIN凯南斩获山鸡一血">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=10107518915870491521" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:29</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=10107518915870491521">
+                  XUN猴子上路支援越塔 BIN凯南斩获山鸡一血</a>
+              </p>
+              <a class="play-times">0次播放</a>
+              <a class="update-time">54秒前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//puui.qpic.cn/vpic_cover/l0046clkzz1/l0046clkzz1_hz.jpg/640" class="video-cover" width="198"
+                  height="110" alt="【赛后采访】牙膏&amp;XUN：打了四个BO5对于我这种老头顶不住">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=9329161261259557118" class="herf-mask"></a>
+              </div>
+              <a class="video-length">04:51</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=9329161261259557118">
+                  【赛后采访】牙膏&amp;XUN：打了四个BO5对于我这种老头顶不住</a>
+              </p>
+              <a class="play-times">0次播放</a>
+              <a class="update-time">1分钟前</a>
+            </li>
+          </ul>
+          <ul class="fresh-video-content" id="J_flashVideoContainer">
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/7ab060852e552adae361362ac9ee15c7/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【云顶之弈】小小安妮展示">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=750904504320816505" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:38</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=750904504320816505">
+                  【云顶之弈】小小安妮展示</a>
+              </p>
+              <a class="play-times">6603次播放</a>
+              <a class="update-time">2023-01-17</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230115/51b8788fdf3c2d6665aeba8ec0963e31_1673765274.jpg"
+                  class="video-cover" width="198" height="110" alt="云顶之弈2023春节创意CG 新春弈棋接好运">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=16304142265684271017" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:44</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=16304142265684271017">
+                  云顶之弈2023春节创意CG 新春弈棋接好运</a>
+              </p>
+              <a class="play-times">1939次播放</a>
+              <a class="update-time">2023-01-15</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/e8bd144cbbf06b9426751fcaafb5d7d9/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="云顶之弈 春宴四方版本介绍 新春弈棋胡一把！">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=3519349754542012252" class="herf-mask"></a>
+              </div>
+              <a class="video-length">01:14</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=3519349754542012252">
+                  云顶之弈 春宴四方版本介绍 新春弈棋胡一把！</a>
+              </p>
+              <a class="play-times">2203次播放</a>
+              <a class="update-time">2023-01-14</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/81144f0c61f63548dc9c9d6f9045c811/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【云顶之弈】兔年新春小小英雄 黏黏">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=2965605868361643122" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:24</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=2965605868361643122">
+                  【云顶之弈】兔年新春小小英雄 黏黏</a>
+              </p>
+              <a class="play-times">1346次播放</a>
+              <a class="update-time">2023-01-12</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/383313bf1ac62fa22ea699011ab55613/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【云顶之弈】兔年新春小小英雄 兔兔">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=14749832793647513721" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:23</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=14749832793647513721">
+                  【云顶之弈】兔年新春小小英雄 兔兔</a>
+              </p>
+              <a class="play-times">1859次播放</a>
+              <a class="update-time">2023-01-12</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/871086fb489104f21b900b1cdbd40a7f/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【云顶之弈】舞狮本狮 啵啵龙">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=13026087000254522585" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:25</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=13026087000254522585">
+                  【云顶之弈】舞狮本狮 啵啵龙</a>
+              </p>
+              <a class="play-times">716次播放</a>
+              <a class="update-time">2023-01-12</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/768c0029f3f5797dcd8569b77ca4a51d/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【云顶之弈】小小安妮进攻特效">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=9094294665967011259" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:09</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=9094294665967011259">
+                  【云顶之弈】小小安妮进攻特效</a>
+              </p>
+              <a class="play-times">1498次播放</a>
+              <a class="update-time">2023-01-12</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/42d486535021071c46e0c7195e5dab6f/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【云顶之弈】兔年春节联欢晚会入场仪式（棋盘特效）">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=17477313924837600946" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:50</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=17477313924837600946">
+                  【云顶之弈】兔年春节联欢晚会入场仪式（棋盘特效）</a>
+              </p>
+              <a class="play-times">713次播放</a>
+              <a class="update-time">2023-01-12</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/48ae95edb1ab2690b69f94ecbf196446/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【云顶之弈】兔年新春小小英雄 魔力玛">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=9600513578972087569" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:27</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=9600513578972087569">
+                  【云顶之弈】兔年新春小小英雄 魔力玛</a>
+              </p>
+              <a class="play-times">780次播放</a>
+              <a class="update-time">2023-01-12</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/117ef16461fc5e66f22691c6a5d6eec0/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="【云顶之弈】“你看见过我的胖达吗？”小小安妮淘汰特效">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=17936732701151426376" class="herf-mask"></a>
+              </div>
+              <a class="video-length">00:15</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=17936732701151426376">
+                  【云顶之弈】“你看见过我的胖达吗？”小小安妮淘汰特效</a>
+              </p>
+              <a class="play-times">1094次播放</a>
+              <a class="update-time">2023-01-12</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//shp.qpic.cn/cfwebcap/0/a51e616acef77405609196754cebbe4a/0/?width=686&amp;height=368"
+                  class="video-cover" width="198" height="110" alt="“怪兽来袭！”赛季介绍 | 云顶之弈">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=14056299157838875697" class="herf-mask"></a>
+              </div>
+              <a class="video-length">06:52</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=14056299157838875697">
+                  “怪兽来袭！”赛季介绍 | 云顶之弈</a>
+              </p>
+              <a class="play-times">8289次播放</a>
+              <a class="update-time">2022-12-14</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20221117/b9ba3a19fb1f5c61a763a5620ffe53d0_1668668532.png"
+                  class="video-cover" width="198" height="110" alt="巨龙之境全球总决赛LPL助威篇">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=12006094273210090549" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:57</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=12006094273210090549">
+                  巨龙之境全球总决赛LPL助威篇</a>
+              </p>
+              <a class="play-times">2653次播放</a>
+              <a class="update-time">2022-11-17</a>
+            </li>
+          </ul>
+          <ul class="fresh-video-content" id="J_flashVideoContainer">
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230408/b90c941dd9447462e9efd123c79a1e51_1680961236.png"
+                  class="video-cover" width="198" height="110" alt="13.7版本10个最OP出装套路！">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=7148048874744438887" class="herf-mask"></a>
+              </div>
+              <a class="video-length">10:09</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=7148048874744438887">
+                  13.7版本10个最OP出装套路！</a>
+              </p>
+              <a class="play-times">23次播放</a>
+              <a class="update-time">53分钟前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="https://img.tgl.qq.com/cover/20230408/4b28b58a1cd47a62cf96065de4146935_1680953510.jpg"
+                  class="video-cover" width="198" height="110" alt="技能伤害上万！新版本超强套路，太猛了建议偷着玩">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=13660969563268921549" class="herf-mask"></a>
+              </div>
+              <a class="video-length">04:49</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=13660969563268921549">
+                  技能伤害上万！新版本超强套路，太猛了建议偷着玩</a>
+              </p>
+              <a class="play-times">82次播放</a>
+              <a class="update-time">2小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="https://img.tgl.qq.com/cover/20230408/8b58e4d13ba45fe73ac47ad5e1eff4c4_1680953314.jpg"
+                  class="video-cover" width="198" height="110" alt="乌兹看BLG纯种火龙魂被OMG翻盘：Able厄斐太肿了！">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=10931596983354249836" class="herf-mask"></a>
+              </div>
+              <a class="video-length">10:43</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=10931596983354249836">
+                  乌兹看BLG纯种火龙魂被OMG翻盘：Able厄斐太肿了！</a>
+              </p>
+              <a class="play-times">506次播放</a>
+              <a class="update-time">2小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="https://img.tgl.qq.com/cover/20230408/828baf1c5b82ccb8007ccf1894de71f3_1680949267.jpg"
+                  class="video-cover" width="198" height="110" alt="乌兹看BLG状态火热爆杀OMG：牙膏开团，Elk泽丽收割！">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=1653792593795026035" class="herf-mask"></a>
+              </div>
+              <a class="video-length">05:45</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=1653792593795026035">
+                  乌兹看BLG状态火热爆杀OMG：牙膏开团，Elk泽丽收割！</a>
+              </p>
+              <a class="play-times">203次播放</a>
+              <a class="update-time">3小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="https://img.tgl.qq.com/cover/20230408/0123413a8afbe41cee91780bbb9fa6bd_1680940012.png"
+                  class="video-cover" width="198" height="110" alt="13.7T1英雄推荐！暴击男枪全球T1！别杀了石头人！">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=3970598677948377969" class="herf-mask"></a>
+              </div>
+              <a class="video-length">09:11</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=3970598677948377969">
+                  13.7T1英雄推荐！暴击男枪全球T1！别杀了石头人！</a>
+              </p>
+              <a class="play-times">7.3万次播放</a>
+              <a class="update-time">6小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230408/2ef3dc376143913fb897acd52445d899_1680931761.png"
+                  class="video-cover" width="198" height="110" alt="黎明使者 锐雯再添炫彩！这次变成黑夜使者了~">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=7053453728329810514" class="herf-mask"></a>
+              </div>
+              <a class="video-length">04:24</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=7053453728329810514">
+                  黎明使者 锐雯再添炫彩！这次变成黑夜使者了~</a>
+              </p>
+              <a class="play-times">252次播放</a>
+              <a class="update-time">8小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230407/3ddcc522a71bcc8e55bc566db1900ece_1680882867.jpg"
+                  class="video-cover" width="198" height="110" alt="乌兹：暴击VN出岚切，简直是虐菜神器！24杀韩服砍瓜切菜！">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=15557577499170279460" class="herf-mask"></a>
+              </div>
+              <a class="video-length">14:07</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=15557577499170279460">
+                  乌兹：暴击VN出岚切，简直是虐菜神器！24杀韩服砍瓜切菜！</a>
+              </p>
+              <a class="play-times">133次播放</a>
+              <a class="update-time">10小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230408/0f9510b852a5e79e2add2621dcc62c06_1680922865.png"
+                  class="video-cover" width="198" height="110" alt="暴击流腕豪还能玩？单挑心之钢一拳超人流腕豪，上演一秒空血">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=4710396331719252528" class="herf-mask"></a>
+              </div>
+              <a class="video-length">01:01</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=4710396331719252528">
+                  暴击流腕豪还能玩？单挑心之钢一拳超人流腕豪，上演一秒空血</a>
+              </p>
+              <a class="play-times">161次播放</a>
+              <a class="update-time">10小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img
+                  src="//icreate-mobile-prod-1258344700.cos.ap-shanghai.myqcloud.com/public/ios/cover/cb3673fc-1e9a-4ac9-9060-6eb0c2471f70/7EC340F0-7BB1-4708-A7CF-3096F05B7030.jpg"
+                  class="video-cover" width="198" height="110" alt="黎明使者雷克顿 完整版">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=3904588530377095175" class="herf-mask"></a>
+              </div>
+              <a class="video-length">01:20</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=3904588530377095175">
+                  黎明使者雷克顿 完整版</a>
+              </p>
+              <a class="play-times">132次播放</a>
+              <a class="update-time">12小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img
+                  src="//icreate-mobile-prod-1258344700.cos.ap-shanghai.myqcloud.com/public/android/cover/ddc3a007-542f-4c87-ad29-0b5c1f3c8064/24a4580b-d900-4e74-98e9-36ac0732bc97.jpg"
+                  class="video-cover" width="198" height="110" alt="黎明使者与海克斯鳄鱼特效对比，这配色确定不是孪生兄弟？">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=10735147647844694132" class="herf-mask"></a>
+              </div>
+              <a class="video-length">01:59</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=10735147647844694132">
+                  黎明使者与海克斯鳄鱼特效对比，这配色确定不是孪生兄弟？</a>
+              </p>
+              <a class="play-times">417次播放</a>
+              <a class="update-time">12小时前</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230407/7e5be3b1795f069613bb58f4a42f0351_1680875566.png"
+                  class="video-cover" width="198" height="110" alt="新星界驱驰：疯狂的移速，但不是每个人都能用！">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=9722321819405210320" class="herf-mask"></a>
+              </div>
+              <a class="video-length">01:17</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=9722321819405210320">
+                  新星界驱驰：疯狂的移速，但不是每个人都能用！</a>
+              </p>
+              <a class="play-times">1413次播放</a>
+              <a class="update-time">2023-04-07</a>
+            </li>
+            <li class="video-item">
+              <!--视频图片-->
+              <div class="mask-img">
+                <img src="//img.tgl.qq.com/cover/20230407/e9204c5b394a9b9602f179bca59dd3c5_1680872591.jpg"
+                  class="video-cover" width="198" height="110" alt="新版本AP亚索实战测评，给你一点AP亚索的小震撼">
+                <span class="btn-play-1"><i></i><a></a></span>
+                <div class="video-pre-wrap" style="display:none">
+                  <img class="video-pre-img" width="198" height="110">
+                  <span class="video-pre-bg"></span>
+                  <span class="video-pre-bar"><i></i></span>
+                </div>
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=13070869419058302059" class="herf-mask"></a>
+              </div>
+              <a class="video-length">02:17</a>
+              <p class="name-video">
+                <a href="//lol.qq.com/v/v2/detail.shtml?docid=13070869419058302059">
+                  新版本AP亚索实战测评，给你一点AP亚索的小震撼</a>
+              </p>
+              <a class="play-times">1.3万次播放</a>
+              <a class="update-time">2023-04-07</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 赛事区 -->
+    <div class="g-wrap-match indexpart-show">
+      <div class="part-top-tab">
+        <h2 class="part-h2-title part-h2-title-p1">赛事中心</h2>
+        <ul class="part-tab-title" id="mode3-wrap_title">
+          <li data-default="1" data-open="1" data-matchid="190" data-gametype="1" data-configid="190_1"
+            class="part-tab-title-race-li selected" data-tabindex="0" data-tabstatus="opened">春季赛常规赛</li>
+          <li data-default="1" data-open="1" data-matchid="190" data-gametype="5" data-configid="190_5"
+            class="part-tab-title-race-li" data-tabindex="1" data-tabstatus="closed">春季赛季后赛</li>
+        </ul>
+        <a href="https://lpl.qq.com/es/lpl/2023/" class="toptip-event" style="display: block;"
+          id="J_eventTopNews">2023职业联赛</a>
+        <a href="//lpl.qq.com" class="herf-more">更多<i class="more-arrow"></i></a>
+      </div>
+      <div class="m-events-container">
+        <div class="match-show match-show-selected">
+          <div class="event-type-0 lpl-regular-season template">
+            <div class="power-rank">
+              <div class="part-top-tab">
+                <h2 class="part-h2-title">每周最佳阵容</h2>
+              </div>
+              <ul class="LPL_R_power-rank-list LPL_R_best_player_C">
+                <li class="LPL_R_player-item">
+                  <div class="LPL_R_pic-player">
+                    <img class="player"
+                      src="//img.crawler.qq.com/lolwebvideo/20230111232643/82b97c4f2be9abc4c948d095f4b9daef/0"
+                      width="151" alt="shanji">
+                    <a class="LPL_R_power-rank-role"><i class="p-top"></i></a>
+                    <img class="player-team-logo"
+                      src="//img.crawler.qq.com/lolwebvideo/20230103152756/56c5bb71d14d13ec280908542ac8e1a9/0"
+                      width="35" alt="OMG">
+                  </div>
+                  <p class="player-name">shanji</p>
+                </li>
+                <li class="LPL_R_player-item">
+                  <div class="LPL_R_pic-player">
+                    <img class="player"
+                      src="//img.crawler.qq.com/lolwebvideo/20230112124619/4384b05d2a391a0ea1136822a86f26e5/0"
+                      width="151" alt="Kanavi">
+                    <a class="LPL_R_power-rank-role"><i class="p-jungle"></i></a>
+                    <img class="player-team-logo"
+                      src="//img.crawler.qq.com/lolwebvideo/20230103153036/f54d06108c3b6108677769ce7f21c6e9/0"
+                      width="35" alt="北京JDG英特尔">
+                  </div>
+                  <p class="player-name">Kanavi</p>
+                </li>
+                <li class="LPL_R_player-item">
+                  <div class="LPL_R_pic-player">
+                    <img class="player"
+                      src="//img.crawler.qq.com/lolwebvideo/20230111231632/b2983dfc8217ae094da2ca8b078b111b/0"
+                      width="151" alt="Scout">
+                    <a class="LPL_R_power-rank-role"><i class="p-mid"></i></a>
+                    <img class="player-team-logo"
+                      src="//img.crawler.qq.com/lolwebvideo/20230103153008/47bfafb617f878195438a7a27234c7bc/0"
+                      width="35" alt="苏州LNG">
+                  </div>
+                  <p class="player-name">Scout</p>
+                </li>
+                <li class="LPL_R_player-item">
+                  <div class="LPL_R_pic-player">
+                    <img class="player"
+                      src="//img.crawler.qq.com/lolwebvideo/20230111230455/7f80464552206689c9f0d3f8a291895b/0"
+                      width="151" alt="Ruler">
+                    <a class="LPL_R_power-rank-role"><i class="p-bottom"></i></a>
+                    <img class="player-team-logo"
+                      src="//img.crawler.qq.com/lolwebvideo/20230103153036/f54d06108c3b6108677769ce7f21c6e9/0"
+                      width="35" alt="北京JDG英特尔">
+                  </div>
+                  <p class="player-name">Ruler</p>
+                </li>
+                <li class="LPL_R_player-item">
+                  <div class="LPL_R_pic-player">
+                    <img class="player"
+                      src="//img.crawler.qq.com/lolwebvideo/20230111230831/74306389f8ff16c35031d9ac7bf7f0f1/0"
+                      width="151" alt="MISSING">
+                    <a class="LPL_R_power-rank-role"><i class="p-sup"></i></a>
+                    <img class="player-team-logo"
+                      src="//img.crawler.qq.com/lolwebvideo/20230103153036/f54d06108c3b6108677769ce7f21c6e9/0"
+                      width="35" alt="北京JDG英特尔">
+                  </div>
+                  <p class="player-name">MISSING</p>
+                </li>
+              </ul>
+            </div>
+            <div class="score-rank">
+              <div class="part-top-tab">
+                <h2 class="part-h2-title">积分榜</h2>
+              </div>
+              <div class="score-rank-content">
+                <h4 class="score-rank-list-title">
+                  <a class="a-1">排名</a>
+                  <a class="a-2">俱乐部</a>
+                  <a class="a-3">胜负</a>
+                  <a class="a-4">积分</a>
+                </h4>
+                <div class="score-rank-list-container swiper-container LPL_R_score_rank_container swiper-free-mode"
+                  id="LPL_R_score_rank_container_190_1" style="cursor: -webkit-grab;">
+                  <div class="swiper-wrapper"
+                    style="transition-duration: 0s; transform: translate3d(0px, 0px, 0px); width: 532px; height: 782px;">
+                    <ul class="score-rank-list swiper-slide swiper-slide-visible swiper-slide-active">
+                      <li>
+                        <a class="a-1 n1">1</a>
+                        <span class="a-2"><img
+                            src="//img.crawler.qq.com/lolwebvideo/20230103153036/f54d06108c3b6108677769ce7f21c6e9/0"
+                            width="25" alt="北京JDG英特尔">北京JDG英特尔</span>
+                        <a class="a-3">13/3</a>
+                        <a class="a-4">13</a>
+                      </li>
+                      <li>
+                        <a class="a-1 n2">2</a>
+                        <span class="a-2"><img
+                            src="//img.crawler.qq.com/lolwebvideo/20230103153103/7c5a8db3be3d7c93114ac47a801d64cb/0"
+                            width="25" alt="上海EDG合创汽车">上海EDG合创汽车</span>
+                        <a class="a-3">13/3</a>
+                        <a class="a-4">13</a>
+                      </li>
+                      <li>
+                        <a class="a-1 n3">3</a>
+                        <span class="a-2"><img
+                            src="//img.crawler.qq.com/lolwebvideo/20230103153008/47bfafb617f878195438a7a27234c7bc/0"
+                            width="25" alt="苏州LNG">苏州LNG</span>
+                        <a class="a-3">13/3</a>
+                        <a class="a-4">13</a>
+                      </li>
+                      <li>
+                        <a class="a-1 n4">4</a>
+                        <span class="a-2"><img
+                            src="//img.crawler.qq.com/lolwebvideo/20230103153023/1237a5f532c3a8e87ee2dd355099f9a5/0"
+                            width="25" alt="WBG一汽奥迪">WBG一汽奥迪</span>
+                        <a class="a-3">10/5</a>
+                        <a class="a-4">10</a>
+                      </li>
+                      <li>
+                        <a class="a-1 n5">5</a>
+                        <span class="a-2"><img
+                            src="//img.crawler.qq.com/lolwebvideo/20230103152953/ab0b0ff4d9a75927cf7d8bb58ba27d64/0"
+                            width="25" alt="BLG平安银行">BLG平安银行</span>
+                        <a class="a-3">10/6</a>
+                        <a class="a-4">10</a>
+                      </li>
+                      <li>
+                        <a class="a-1 n6">6</a>
+                        <span class="a-2"><img
+                            src="//img.crawler.qq.com/lolwebvideo/20230103152756/56c5bb71d14d13ec280908542ac8e1a9/0"
+                            width="25" alt="OMG">OMG</span>
+                        <a class="a-3">10/6</a>
+                        <a class="a-4">10</a>
+                      </li>
+                      <li>
+                        <a class="a-1 n7">7</a>
+                        <span class="a-2"><img
+                            src="//img.crawler.qq.com/lolwebvideo/20230103152833/5d7b9de32e642e06f1ad0958a00a25f5/0"
+                            width="25" alt="TES">TES</span>
+                        <a class="a-3">9/7</a>
+                        <a class="a-4">9</a>
+                      </li>
+                      <li>
+                        <a class="a-1 n8">8</a>
+                        <span class="a-2"><img
+                            src="//img.crawler.qq.com/lolwebvideo/20230103152930/f1e243799a62f73f37af8f10be9dd977/0"
+                            width="25" alt="TT">TT</span>
+                        <a class="a-3">8/7</a>
+                        <a class="a-4">8</a>
+                      </li>
+                      <li>
+                        <a class="a-1 n9">9</a>
+                        <span class="a-2"><img
+                            src="//img.crawler.qq.com/lolwebvideo/20230103152940/3cbf5f4d26c24711602996fd3f3b0eca/0"
+                            width="25" alt="RNG">RNG</span>
+                        <a class="a-3">8/8</a>
+                        <a class="a-4">8</a>
+                      </li>
+                      <li>
+                        <a class="a-1 n10">10</a>
+                        <span class="a-2"><img
+                            src="//img.crawler.qq.com/lolwebvideo/20230103153050/5c22150153baa973f73adf4909a041ec/0"
+                            width="25" alt="西安WE">西安WE</span>
+                        <a class="a-3">8/8</a>
+                        <a class="a-4">8</a>
+                      </li>
+                      <li>
+                        <a class="a-1 n11">11</a>
+                        <span class="a-2"><img
+                            src="//img.crawler.qq.com/lolwebvideo/20230103152918/562affbb9f99b0e472644f93a19291e7/0"
+                            width="25" alt="IG">IG</span>
+                        <a class="a-3">7/9</a>
+                        <a class="a-4">7</a>
+                      </li>
+                      <li>
+                        <a class="a-1 n12">12</a>
+                        <span class="a-2"><img
+                            src="//img.crawler.qq.com/lolwebvideo/20230103152819/e7e523c53e540d1c9221445082622936/0"
+                            width="25" alt="RA">RA</span>
+                        <a class="a-3">5/10</a>
+                        <a class="a-4">5</a>
+                      </li>
+                      <li>
+                        <a class="a-1 n13">13</a>
+                        <span class="a-2"><img
+                            src="//img.crawler.qq.com/lolwebvideo/20230103152746/c8a8f59fadc0da0bda0c4997e3f62afb/0"
+                            width="25" alt="深圳NIP">深圳NIP</span>
+                        <a class="a-3">5/11</a>
+                        <a class="a-4">5</a>
+                      </li>
+                      <li>
+                        <a class="a-1 n14">14</a>
+                        <span class="a-2"><img
+                            src="//img.crawler.qq.com/lolwebvideo/20230103153121/0cef697fa6d0416e672c2fd90f30718c/0"
+                            width="25" alt="杭州LGD">杭州LGD</span>
+                        <a class="a-3">5/11</a>
+                        <a class="a-4">5</a>
+                      </li>
+                      <li>
+                        <a class="a-1 n15">15</a>
+                        <span class="a-2"><img
+                            src="//img.crawler.qq.com/lolwebvideo/20230103152856/4afad949fdd8b7728b9936dc92483e50/0"
+                            width="25" alt="FPX">FPX</span>
+                        <a class="a-3">4/12</a>
+                        <a class="a-4">4</a>
+                      </li>
+                      <li>
+                        <a class="a-1 n16">16</a>
+                        <span class="a-2"><img
+                            src="//img.crawler.qq.com/lolwebvideo/20220113160852/948dda878f0b042d290d6bdc84325e22/0"
+                            width="25" alt="AL">AL</span>
+                        <a class="a-3">3/12</a>
+                        <a class="a-4">3</a>
+                      </li>
+                      <li>
+                        <a class="a-1 n17">17</a>
+                        <span class="a-2"><img
+                            src="//img.crawler.qq.com/lolwebvideo/20230103152805/12c63663ab401c815ccded42a5ad47e6/0"
+                            width="25" alt="UP">UP</span>
+                        <a class="a-3">3/13</a>
+                        <a class="a-4">3</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!--滚动条-->
+                  <div class="scrollbar">
+                    <div class="swiper-scrollbar-drag swiper-scrollbar-cursor-drag"
+                      style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px); height: 97.4118px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="match-show ">
+          <div class="event-type-1 lpl-play-offs lpl-play-offs-21" id="LPL_PO_C">
+            <div class="lpl-play-offs-21-bubbling">
+              <div class="format list-col">
+                <div class="format-name">冒泡赛</div>
+                <div class="format-name format-name-both">双败赛</div>
+              </div>
+              <div class="list-col">
+                <div class="list-col-one over">
+                  <!--比赛轮数-->
+                  <h3 class="match-part-name"><span class="sheaves-num">第一轮</span></h3>
+                  <!--对局上方的游戏状态,时间等信息栏-->
+                  <p class="info">
+                    <span class="status">已结束</span>
+                    <span class="time">3月30日 17:00</span> <a class="herf-video"
+                      href="//lpl.qq.com/es/video_detail.shtml?nid=52369&amp;bMatchId=10005">视频</a>
+                    <a class="herf-data" href="//lpl.qq.com/es/stats.shtml?bmid=10005">数据</a>
+                  </p>
+                  <!--两支战队-->
+                  <p class="team ">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103152930/f1e243799a62f73f37af8f10be9dd977/0"
+                        alt=""></span>
+                    <a class="team-name">TT</a>
+                    <a class="score">1</a>
+                  </p>
+                  <p class="team win">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103152940/3cbf5f4d26c24711602996fd3f3b0eca/0"
+                        alt=""></span>
+                    <a class="team-name">RNG</a>
+                    <a class="score">3</a>
+                  </p>
+                </div>
+                <div class="list-col-one over">
+                  <!--比赛轮数-->
+                  <h3 class="match-part-name"><span class="sheaves-num"></span></h3>
+                  <!--对局上方的游戏状态,时间等信息栏-->
+                  <p class="info">
+                    <span class="status">已结束</span>
+                    <span class="time">3月31日 17:00</span> <a class="herf-video"
+                      href="//lpl.qq.com/es/video_detail.shtml?nid=52395&amp;bMatchId=10006">视频</a>
+                    <a class="herf-data" href="//lpl.qq.com/es/stats.shtml?bmid=10006">数据</a>
+                  </p>
+                  <!--两支战队-->
+                  <p class="team win">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103152833/5d7b9de32e642e06f1ad0958a00a25f5/0"
+                        alt=""></span>
+                    <a class="team-name">TES</a>
+                    <a class="score">3</a>
+                  </p>
+                  <p class="team ">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103153050/5c22150153baa973f73adf4909a041ec/0"
+                        alt=""></span>
+                    <a class="team-name">西安WE</a>
+                    <a class="score">1</a>
+                  </p>
+                </div>
+                <div class="list-col-one over">
+                  <!--比赛轮数-->
+                  <h3 class="match-part-name"><span class="sheaves-num">胜者组-第一轮</span></h3>
+                  <!--对局上方的游戏状态,时间等信息栏-->
+                  <p class="info">
+                    <span class="status">已结束</span>
+                    <span class="time">4月05日 17:00</span> <a class="herf-video"
+                      href="//lpl.qq.com/es/video_detail.shtml?nid=52534&amp;bMatchId=10011">视频</a>
+                    <a class="herf-data" href="//lpl.qq.com/es/stats.shtml?bmid=10011">数据</a>
+                  </p>
+                  <!--两支战队-->
+                  <p class="team win">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103153036/f54d06108c3b6108677769ce7f21c6e9/0"
+                        alt=""></span>
+                    <a class="team-name">北京JDG英特尔</a>
+                    <a class="score">3</a>
+                  </p>
+                  <p class="team ">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103152953/ab0b0ff4d9a75927cf7d8bb58ba27d64/0"
+                        alt=""></span>
+                    <a class="team-name">BLG平安银行</a>
+                    <a class="score">2</a>
+                  </p>
+                </div>
+                <div class="list-col-one over">
+                  <!--比赛轮数-->
+                  <h3 class="match-part-name"><span class="sheaves-num"></span></h3>
+                  <!--对局上方的游戏状态,时间等信息栏-->
+                  <p class="info">
+                    <span class="status">已结束</span>
+                    <span class="time">4月06日 17:00</span> <a class="herf-video"
+                      href="//lpl.qq.com/es/video_detail.shtml?nid=52562&amp;bMatchId=10012">视频</a>
+                    <a class="herf-data" href="//lpl.qq.com/es/stats.shtml?bmid=10012">数据</a>
+                  </p>
+                  <!--两支战队-->
+                  <p class="team win">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103153103/7c5a8db3be3d7c93114ac47a801d64cb/0"
+                        alt=""></span>
+                    <a class="team-name">上海EDG合创汽车</a>
+                    <a class="score">3</a>
+                  </p>
+                  <p class="team ">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103152756/56c5bb71d14d13ec280908542ac8e1a9/0"
+                        alt=""></span>
+                    <a class="team-name">OMG</a>
+                    <a class="score">1</a>
+                  </p>
+                </div>
+                <div class="list-col-one over">
+                  <!--比赛轮数-->
+                  <h3 class="match-part-name"><span class="sheaves-num">败者组-第一轮</span></h3>
+                  <!--对局上方的游戏状态,时间等信息栏-->
+                  <p class="info">
+                    <span class="status">已结束</span>
+                    <span class="time">4月08日 17:00</span> <a class="herf-video"
+                      href="//lpl.qq.com/es/video_detail.shtml?nid=52595&amp;bMatchId=10013">视频</a>
+                    <a class="herf-data" href="//lpl.qq.com/es/stats.shtml?bmid=10013">数据</a>
+                  </p>
+                  <!--两支战队-->
+                  <p class="team win">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103152953/ab0b0ff4d9a75927cf7d8bb58ba27d64/0"
+                        alt=""></span>
+                    <a class="team-name">BLG平安银行</a>
+                    <a class="score">3</a>
+                  </p>
+                  <p class="team ">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103152756/56c5bb71d14d13ec280908542ac8e1a9/0"
+                        alt=""></span>
+                    <a class="team-name">OMG</a>
+                    <a class="score">2</a>
+                  </p>
+                </div>
+              </div>
+              <div class="list-col front-box list-wire">
+                <i class="link-0"></i>
+                <div class="link-wirebox">
+                  <div class="link-wire1"></div>
+                  <div class="link-wire2"></div>
+                </div>
+                <div class="link-line"></div>
+              </div>
+              <div class="list-col">
+                <div class="list-col-one over">
+                  <!--比赛轮数-->
+                  <h3 class="match-part-name"><span class="sheaves-num">第二轮</span></h3>
+                  <!--对局上方的游戏状态,时间等信息栏-->
+                  <p class="info">
+                    <span class="status">已结束</span>
+                    <span class="time">4月01日 17:00</span> <a class="herf-video"
+                      href="//lpl.qq.com/es/video_detail.shtml?nid=52424&amp;bMatchId=10007">视频</a>
+                    <a class="herf-data" href="//lpl.qq.com/es/stats.shtml?bmid=10007">数据</a>
+                  </p>
+                  <!--两支战队-->
+                  <p class="team win">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103152953/ab0b0ff4d9a75927cf7d8bb58ba27d64/0"
+                        alt=""></span>
+                    <a class="team-name">BLG平安银行</a>
+                    <a class="score">3</a>
+                  </p>
+                  <p class="team ">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103152940/3cbf5f4d26c24711602996fd3f3b0eca/0"
+                        alt=""></span>
+                    <a class="team-name">RNG</a>
+                    <a class="score">1</a>
+                  </p>
+                </div>
+                <div class="list-col-one over">
+                  <!--比赛轮数-->
+                  <h3 class="match-part-name"><span class="sheaves-num"></span></h3>
+                  <!--对局上方的游戏状态,时间等信息栏-->
+                  <p class="info">
+                    <span class="status">已结束</span>
+                    <span class="time">4月02日 17:00</span> <a class="herf-video"
+                      href="//lpl.qq.com/es/video_detail.shtml?nid=52452&amp;bMatchId=10008">视频</a>
+                    <a class="herf-data" href="//lpl.qq.com/es/stats.shtml?bmid=10008">数据</a>
+                  </p>
+                  <!--两支战队-->
+                  <p class="team win">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103152756/56c5bb71d14d13ec280908542ac8e1a9/0"
+                        alt=""></span>
+                    <a class="team-name">OMG</a>
+                    <a class="score">3</a>
+                  </p>
+                  <p class="team ">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103152833/5d7b9de32e642e06f1ad0958a00a25f5/0"
+                        alt=""></span>
+                    <a class="team-name">TES</a>
+                    <a class="score">2</a>
+                  </p>
+                </div>
+                <div class="list-col-one wait">
+                  <!--比赛轮数-->
+                  <h3 class="match-part-name"><span class="sheaves-num">胜者组-第二轮</span></h3>
+                  <!--对局上方的游戏状态,时间等信息栏-->
+                  <p class="info">
+                    <span class="status">未开始</span>
+                    <span class="time">4月09日 17:00</span> <a class="herf-video">敬请期待</a>
+                  </p>
+                  <!--两支战队-->
+                  <p class="team ">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103153036/f54d06108c3b6108677769ce7f21c6e9/0"
+                        alt=""></span>
+                    <a class="team-name">北京JDG英特尔</a>
+                    <a class="score">0</a>
+                  </p>
+                  <p class="team ">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103153103/7c5a8db3be3d7c93114ac47a801d64cb/0"
+                        alt=""></span>
+                    <a class="team-name">上海EDG合创汽车</a>
+                    <a class="score">0</a>
+                  </p>
+                </div>
+                <div class="list-col-one wait">
+                  <!--比赛轮数-->
+                  <h3 class="match-part-name"><span class="sheaves-num">败者组-第二轮</span></h3>
+                  <!--对局上方的游戏状态,时间等信息栏-->
+                  <p class="info">
+                    <span class="status">未开始</span>
+                    <span class="time">4月11日 17:00</span> <a class="herf-video">敬请期待</a>
+                  </p>
+                  <!--两支战队-->
+                  <p class="team ">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20210926185810/4b19d3c7a2030bc0c2e736d46d6118ee/0"
+                        alt=""></span>
+                    <a class="team-name">待定</a>
+                    <a class="score">0</a>
+                  </p>
+                  <p class="team ">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20210926185810/4b19d3c7a2030bc0c2e736d46d6118ee/0"
+                        alt=""></span>
+                    <a class="team-name">待定</a>
+                    <a class="score">0</a>
+                  </p>
+                </div>
+              </div>
+              <!-- 横线 -->
+              <div class="list-col front-box list-wire2">
+                <i class="link-0"></i>
+                <div class="link-wirebox">
+                  <div class="link-wire1"></div>
+                  <div class="link-wire2"></div>
+                </div>
+              </div>
+              <div class="list-col">
+                <div class="list-col-one over">
+                  <!--比赛轮数-->
+                  <h3 class="match-part-name"><span class="sheaves-num">第三轮</span></h3>
+                  <!--对局上方的游戏状态,时间等信息栏-->
+                  <p class="info">
+                    <span class="status">已结束</span>
+                    <span class="time">4月03日 17:00</span> <a class="herf-video"
+                      href="//lpl.qq.com/es/video_detail.shtml?nid=52485&amp;bMatchId=10009">视频</a>
+                    <a class="herf-data" href="//lpl.qq.com/es/stats.shtml?bmid=10009">数据</a>
+                  </p>
+                  <!--两支战队-->
+                  <p class="team ">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103153023/1237a5f532c3a8e87ee2dd355099f9a5/0"
+                        alt=""></span>
+                    <a class="team-name">WBG一汽奥迪</a>
+                    <a class="score">0</a>
+                  </p>
+                  <p class="team win">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103152953/ab0b0ff4d9a75927cf7d8bb58ba27d64/0"
+                        alt=""></span>
+                    <a class="team-name">BLG平安银行</a>
+                    <a class="score">3</a>
+                  </p>
+                </div>
+                <div class="list-col-one over">
+                  <!--比赛轮数-->
+                  <h3 class="match-part-name"><span class="sheaves-num"></span></h3>
+                  <!--对局上方的游戏状态,时间等信息栏-->
+                  <p class="info">
+                    <span class="status">已结束</span>
+                    <span class="time">4月04日 17:00</span> <a class="herf-video"
+                      href="//lpl.qq.com/es/video_detail.shtml?nid=52529&amp;bMatchId=10010">视频</a>
+                    <a class="herf-data" href="//lpl.qq.com/es/stats.shtml?bmid=10010">数据</a>
+                  </p>
+                  <!--两支战队-->
+                  <p class="team ">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103153008/47bfafb617f878195438a7a27234c7bc/0"
+                        alt=""></span>
+                    <a class="team-name">苏州LNG</a>
+                    <a class="score">1</a>
+                  </p>
+                  <p class="team win">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20230103152756/56c5bb71d14d13ec280908542ac8e1a9/0"
+                        alt=""></span>
+                    <a class="team-name">OMG</a>
+                    <a class="score">3</a>
+                  </p>
+                </div>
+                <div class="list-col-one wait">
+                  <!--比赛轮数-->
+                  <h3 class="match-part-name"><span class="sheaves-num">决赛</span></h3>
+                  <!--对局上方的游戏状态,时间等信息栏-->
+                  <p class="info">
+                    <span class="status">未开始</span>
+                    <span class="time">4月15日 0:00</span> <a class="herf-video">敬请期待</a>
+                  </p>
+                  <!--两支战队-->
+                  <p class="team ">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20210926185810/4b19d3c7a2030bc0c2e736d46d6118ee/0"
+                        alt=""></span>
+                    <a class="team-name">待定</a>
+                    <a class="score">0</a>
+                  </p>
+                  <p class="team ">
+                    <span class="img-wrap"><img
+                        src="//img.crawler.qq.com/lolwebvideo/20210926185810/4b19d3c7a2030bc0c2e736d46d6118ee/0"
+                        alt=""></span>
+                    <a class="team-name">待定</a>
+                    <a class="score">0</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 英雄资料 -->
+    <div class="g-wrap-championlist">
+      <div class="g-wrap indexpart-show">
+        <div class="part-top-tab">
+          <h2 class="part-h2-title">英雄资料</h2>
+          <ul class="hero-part-tab-title" id="J_championSortType">
+            <li class="hero-part-tab-title-li selected" data-sort="All">所有英雄</li>
+            <li data-sort="Fighter" class="hero-part-tab-title-li">战士</li>
+            <li data-sort="Mage" class="hero-part-tab-title-li">法师</li>
+            <li data-sort="Assassin" class="hero-part-tab-title-li">刺客</li>
+            <li data-sort="Tank" class="hero-part-tab-title-li">坦克</li>
+            <li data-sort="Marksman" class="hero-part-tab-title-li">射手</li>
+            <li data-sort="Support" class="hero-part-tab-title-li">辅助</li>
+          </ul>
+          <a href="https://101.qq.com/?ADTAG=cooperation.glzx.web#/page-index/tab-index" class="herf-more">资料库<i
+              class="more-arrow"></i></a>
+        </div>
+        <div class="m-champion-list-container swiper-container swiper-free-mode heroselected"
+          id="J_ChampionListContainer" style="cursor: -webkit-grab;">
+          <div class="m-champion-list-wrapper swiper-wrapper"
+            style="transform: translate3d(0px, 0px, 0px); transition-duration: 0s;  ">
+            <ul class="swiper-slide swiper-slide-visible swiper-slide-active" id="heroList">
+            </ul>
+          </div>
+          <!--滚动条-->
+          <div class="scrollbar">
+            <div class="swiper-scrollbar-drag swiper-scrollbar-cursor-drag"
+              style=" transition-duration: 0ms; transform: translate3d(0px, 0px, 0px); height: 131.761px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="./js/axios.min.js"></script>
+  <script src="./js/lianmeng.js"></script>
+  
+
+</body>
+
+</html>

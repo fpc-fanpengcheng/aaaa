@@ -1,0 +1,3891 @@
+body {
+  min-width: 1230px;
+  overflow-anchor: none;
+  background-color: #eee;
+  *zoom: 1;
+  // height: 8000px;
+
+  //官网通用页头
+  .comm-head {
+    width: 100%;
+    height: 78px;
+    overflow: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 11;
+
+    //头部剧中盒子
+    .head-normal {
+      width: 100%;
+      max-width: 1358px;
+      min-width: 1230px;
+      height: 78px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 10;
+
+      //logo
+      .logo {
+        float: left;
+        width: 132px;
+        height: 49px;
+        margin-top: 10px;
+      }
+
+      //官网导航
+      .head-nav {
+        float: left;
+        width: 55%;
+        height: 78px;
+        box-sizing: border-box;
+        margin-left: 30px;
+        padding-top: 16px;
+
+        li {
+          float: left;
+          list-style: none;
+          width: 20%;
+          height: 78px;
+          text-align: center;
+
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+
+            .head-nav-title {
+              display: block;
+              color: #fff;
+              font-size: 18px;
+              letter-spacing: 1px;
+            }
+
+            .head-nav-subtitle {
+              display: block;
+              color: #aeaeae;
+              font-size: 11px;
+              margin-top: -1px;
+              letter-spacing: 1px;
+            }
+          }
+        }
+      }
+
+      //玩家信息
+      .head-userinfo-normal {
+        float: right;
+        width: 244px;
+        height: 78px;
+        position: relative;
+        z-index: 3;
+
+        .head-userinfo-avatar {
+          float: left;
+          width: 48px;
+          height: 48px;
+          position: relative;
+          margin-top: 14px;
+          line-height: 48px;
+          text-align: center;
+          font-size: 0;
+
+          img {
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 50%;
+          }
+
+          span {
+            display: block;
+            background-image: url(//game.gtimg.cn/images/lol/v3/topfoot-spr.png);
+            background-size: 405px 178px;
+            background-repeat: no-repeat;
+            background-position: -216px -117px;
+            width: 48px;
+            height: 48px;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+
+        .head-userinfo-brief {
+          float: left;
+          margin-left: 10px;
+
+          .unlogin,
+          .login-unbindarea {
+            color: #fefefe;
+            font-size: 16px;
+            line-height: 78px;
+
+            a {
+              color: #fff3d0;
+            }
+          }
+
+          .logined {
+            color: #cdbe91;
+            line-height: 78px;
+            font-size: 0;
+
+            .logined-name {
+              font-size: 16px;
+              width: auto;
+              height: 78px;
+              max-width: 135px;
+              overflow: hidden;
+            }
+
+            .logined-logout {
+              font-size: 14px;
+              color: #cdbe91;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+
+      //玩家信息下拉
+      .head-userinfo-normal:hover+.head-login-hover {
+        display: block;
+      }
+
+      .head-login-hover {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: -38px;
+        width: 310px;
+        height: auto;
+        overflow: hidden;
+        background: url(//game.gtimg.cn/images/lol/v3/dark70-bg-repeat.png) repeat;
+        padding-top: 78px;
+        padding-bottom: 20px;
+
+        .unlogin {
+          .p1 {
+            margin-top: 30px;
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            padding: 0 24px;
+            font-size: 12px;
+            color: #848383;
+            text-align: center;
+          }
+
+          .p2 {
+            width: 100%;
+            height: auto;
+            box-sizing: border-box;
+            padding: 0 24px;
+            font-size: 12px;
+            color: #848383;
+            text-align: center;
+          }
+        }
+      }
+
+      //掌盟
+      .head-app-normal {
+        float: right;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin: 17px 31px 0 0;
+
+        a {
+          display: inline-block;
+          vertical-align: middle;
+          text-decoration: none;
+          background-image: url(//game.gtimg.cn/images/lol/v3/topfoot-spr.png);
+          background-size: 405px 178px;
+          background-repeat: no-repeat;
+          background-position: -303px -84px;
+          width: 16px;
+          height: 24px;
+        }
+      }
+
+      //搜索按钮
+      .head-search-btn {
+        float: right;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin: 17px 12px 0 0;
+
+        .comm-icon-search {
+          background-image: url(//game.gtimg.cn/images/lol/v3/topfoot-spr.png);
+          background-size: 405px 178px;
+          background-repeat: no-repeat;
+          display: inline-block;
+          vertical-align: middle;
+          background-position: -381px -39px;
+          width: 21px;
+          height: 21px;
+        }
+      }
+
+      //掌盟下拉二维码
+      .head-app-normal:hover+.head-app-hover {
+        display: block;
+      }
+
+      //掌盟二维码
+      .head-app-hover {
+        background-image: url(//game.gtimg.cn/images/lol/v3/topfoot-spr.png);
+        background-size: 405px 178px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        width: 211px;
+        height: 178px;
+        position: absolute;
+        top: 68px;
+        right: 190px;
+        display: none;
+
+        .head-zm-qrcode {
+          display: block;
+          width: 120px;
+          height: 120px;
+          text-align: center;
+          line-height: 117px;
+          background-color: #fff;
+          margin: 22px auto 0 auto;
+          border-radius: 10px;
+
+          img {
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+
+        .p1 {
+          color: #cdbe91;
+          font-size: 12px;
+          width: 100%;
+          margin-top: 10px;
+          text-align: center;
+        }
+
+        .polo {
+          width: 50px;
+          height: 50px;
+          display: block;
+          position: absolute;
+          right: -8px;
+          bottom: -2px;
+        }
+      }
+    }
+
+
+    //搜索弹出框 
+    .search-hover-wrap {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 78px;
+      overflow: visible;
+      background-color: #081322;
+      z-index: 11;
+      display: none;
+
+      .search-hover-inner {
+        min-width: 1230px;
+        max-width: 1358px;
+        height: 78px;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .btn-search {
+        float: right;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin: 17px 327px 0 0;
+
+        i {
+          display: inline-block;
+          vertical-align: middle;
+          background-image: url(//game.gtimg.cn/images/lol/v3/topfoot-spr.png);
+          background-size: 405px 178px;
+          background-repeat: no-repeat;
+          background-position: -381px -39px;
+          width: 21px;
+          height: 21px;
+        }
+      }
+
+      .input-search {
+        float: right;
+        width: 368px px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #081322;
+        box-sizing: border-box;
+        padding-left: 5px;
+        color: #fff;
+        font-size: 16px;
+        margin: 19px 200px 0 0;
+        border: none;
+      }
+
+      .btn-close-search {
+        float: right;
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        margin: 17px 6px 0 0;
+
+        .icon-xx-1 {
+          display: inline-block;
+          vertical-align: middle;
+          background-image: url(//game.gtimg.cn/images/lol/v3/topfoot-spr.png);
+          background-size: 405px 178px;
+          background-repeat: no-repeat;
+          background-position: -324px -84px;
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+
+    //点击显示搜索弹出框 
+    .show {
+      display: block;
+    }
+  }
+
+  //页头图片
+  .comm-topact {
+    width: 100%;
+    min-width: 1230px;
+    height: 360px;
+    overflow: hidden;
+    position: relative;
+
+
+    .topact-small-img {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 1920px;
+      height: 100%;
+      margin-left: -960px;
+    }
+
+    .dark-mask {
+      width: 100%;
+      height: 131px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: url(//game.gtimg.cn/images/lol/v3/dark-jianbian-repeatx-0.png) repeat center top;
+      z-index: 1;
+    }
+
+    .comm-topact-inner {
+      width: auto;
+      height: 100%;
+      position: relative;
+      margin: 0 auto;
+
+      .top-act-link {
+        display: block;
+        position: absolute;
+        background-image: url(//game.gtimg.cn/images/lol/v3/topfoot-spr.png);
+        z-index: 1;
+        left: 50%;
+        margin-left: -77px;
+        bottom: 32px;
+        background-size: 405px 178px;
+        background-repeat: no-repeat;
+        background-position: -216px -39px;
+        width: 160px;
+        height: 40px;
+        font-size: 0;
+        text-decoration: none;
+      }
+
+      .top-version {
+        position: absolute;
+        z-index: 2;
+        right: 100px;
+        bottom: 28px;
+        font-size: 14px;
+        color: #888787;
+
+        em {
+          color: #f5d185;
+          margin-right: 10px;
+          font-style: normal;
+        }
+
+        .top-version-link {
+          display: inline-block;
+          padding: 0 15px;
+          height: 22px;
+          border: 2px solid #f5d185;
+          text-align: center;
+          line-height: 22px;
+          background: #000;
+          background: rgba(0, 0, 0, .65);
+          font-size: 12px;
+          color: #f5d185;
+        }
+      }
+    }
+  }
+
+  //首页内容
+  .countbox {
+    width: 100%;
+    min-width: 1358px;
+    height: auto;
+    margin: 0 auto;
+
+    //居中大盒子
+    .centerbox {
+      width: 1358px;
+      height: auto;
+      margin: 0 auto;
+      padding: 40px 0 80px 0;
+      display: flow-root;
+
+      //第一层左轮播图
+      .leftone {
+        float: left;
+        width: 820px;
+        height: 380px;
+        overflow: hidden;
+        background-color: #e3e2e2;
+        position: relative;
+
+        //ul
+        .Carousel {
+          display: flex;
+          height: 340px;
+          position: relative;
+          width: 4920px;
+          transition: left 0.3s;
+          left: 0;
+
+          //li
+          .Carousel-item {
+            width: 820px;
+            height: 340px;
+
+            a {
+              img {
+                display: block;
+                width: 820px;
+                height: 340px;
+              }
+            }
+          }
+        }
+
+        .promo-title-list {
+          width: 820px;
+          height: 40px;
+          font-size: 0;
+
+
+          .title {
+            width: 164px;
+            height: 40px;
+            display: inline-block;
+            box-sizing: border-box;
+            background-color: #e3e2e2;
+            font-size: 14px;
+            text-align: center;
+            line-height: 40px;
+            color: #424242;
+            letter-spacing: 1px;
+          }
+
+          .selected {
+            color: #ab8e66;
+            background-color: #f7f6f6;
+            border-bottom: 2px #cea861 solid
+          }
+        }
+      }
+
+      // 选项卡
+      .rightone {
+        width: 496px;
+        height: 380px;
+        overflow: hidden;
+        float: right;
+
+        // 选项卡头部
+        .part-top-tab {
+          width: 496px;
+          height: 35px;
+          overflow: visible;
+          box-sizing: border-box;
+          border-bottom: 1px #e0e2e2 solid;
+          position: relative;
+
+          .part-tab-title {
+            position: absolute;
+            box-sizing: border-box;
+            border-bottom: 1px #e0e2e2 solid;
+            width: 596px;
+            height: 35px;
+            left: 0;
+
+            .selected:after {
+              content: '\0020';
+              position: absolute;
+              background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAAHCAYAAACbWWcuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3FpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyNDFjNjRhMS1kNzE0LWQ3NDktYjhjNS01MDZjNTM5ZWNjNTMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjVDNjlGQzM2NDZEMTFFQjgwMzlCQTk0Njk3OEI0RDEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjVDNjlGQzI2NDZEMTFFQjgwMzlCQTk0Njk3OEI0RDEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjI0MWM2NGExLWQ3MTQtZDc0OS1iOGM1LTUwNmM1MzllY2M1MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyNDFjNjRhMS1kNzE0LWQ3NDktYjhjNS01MDZjNTM5ZWNjNTMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz63ScDxAAAAlUlEQVR42uzcsQnDMBAFUMl7ONtkCC8Y7+Bsk0UUghuX6qJvvdcIhBoJwfE5uNpaKwAws8f+Tr/Cr5jX5At8tqePCMD0Fk8AAPHh/LoCAAI6APCncF6EdADIV9fXoZgDQFDt7gjjPWcAgMHooANAdlDv3QcARi/uhsQBMLvwIXHtDuHckDgA0EEHgHQ1PZwDAKevAAMANfYWgoRjiMUAAAAASUVORK5CYII=);
+              background-position: center center;
+              box-sizing: border-box;
+              // display: none;
+              width: 100%;
+              height: 7px;
+              left: 0;
+              bottom: 0;
+              transition: width .2s, left .2s, margin-left .2s;
+            }
+
+            .selected {
+              font-weight: 700;
+              color: #1da6ba;
+            }
+
+            &>li {
+              list-style: none;
+              position: relative;
+              cursor: pointer;
+              float: left;
+              width: auto;
+              min-width: 40px;
+              height: 37px;
+              overflow: visible;
+              color: #676767;
+              letter-spacing: 1px;
+              text-align: center;
+              font-size: 18px;
+              line-height: 24px;
+              margin-right: 74px;
+            }
+
+
+
+          }
+        }
+
+        // 选项卡内容
+        .new-tab-content {
+          width: 496px;
+          height: 345px;
+
+
+          .new-tab-content-ul {
+            width: 496px;
+            height: 305px;
+            position: relative;
+            display: none;
+
+            .first {
+              background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+              background-size: 638px 572px;
+              background-repeat: no-repeat;
+              list-style: none;
+              background-position: 0 -458px;
+              width: 496px;
+              height: 59px;
+              overflow: hidden;
+              line-height: 59px;
+              text-align: center;
+              font-size: 22px;
+              font-weight: 700;
+              box-sizing: border-box;
+              padding: 0 12px;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              color: #0da0b4;
+
+              &>a {
+                list-style: none;
+                line-height: 59px;
+                text-align: center;
+                font-size: 22px;
+                font-weight: 700;
+                white-space: nowrap;
+                text-decoration: none;
+                color: #0da0b4;
+              }
+            }
+
+            .newsitem.tutorial>.item-type {
+              color: #4ba36a;
+              border: 1px #4ba36a solid;
+            }
+
+            .newsitem.tutorial>.item-href:hover {
+              color: #4ba36a;
+            }
+
+            .newsitem.amusement>.item-type {
+              color: #e9852d;
+              border: 1px #e9852d solid;
+            }
+
+            .newsitem.amusement>.item-href:hover {
+              color: #e9852d;
+            }
+
+            .newsitem.inform>.item-type {
+              color: #bb9a6c;
+              border: 1px #c5ab86 solid;
+            }
+
+            .newsitem.inform>.item-href:hover {
+              color: #bb9a6c;
+            }
+
+            .newsitem.news>.item-type {
+              border: 1px #69c5d2 solid;
+              color: #1da6ba;
+            }
+
+            .newsitem.news>.item-href:hover {
+              color: #1da6ba;
+            }
+
+            .newsitem.event>.item-type {
+              color: #6388c5;
+              border: 1px #97afc5 solid;
+            }
+
+            .newsitem.event>.item-href:hover {
+              color: #6388c5;
+            }
+
+            .newsitem {
+              list-style: none;
+              width: 496px;
+              height: 40px;
+              line-height: 39px;
+              overflow: hidden;
+              box-sizing: border-box;
+              border-top: 1px #e0e2e2 solid;
+              text-align: left;
+              font-size: 0;
+
+              .item-type {
+                list-style: none;
+                display: inline-block;
+                vertical-align: middle;
+                width: 36px;
+                height: 20px;
+                box-sizing: border-box;
+                font-size: 12px;
+                line-height: 18px;
+                text-align: center;
+                color: #e9852d;
+                border: 1px #e9852d solid;
+              }
+
+              .item-href {
+                list-style: none;
+                line-height: 39px;
+                text-align: left;
+                text-decoration: none;
+                display: inline-block;
+                vertical-align: middle;
+                width: 370px;
+                height: 39px;
+                overflow: hidden;
+                margin-left: 20px;
+                color: #424242;
+                font-size: 14px;
+                letter-spacing: 1px;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+
+              .item-time {
+                list-style: none;
+                line-height: 39px;
+                display: inline-block;
+                vertical-align: middle;
+                width: 50px;
+                height: 39px;
+                overflow: hidden;
+                text-align: right;
+                font-size: 14px;
+                letter-spacing: 1px;
+                color: #9d9d9d;
+                margin-left: 18px;
+              }
+            }
+
+          }
+
+          .new-tab-content-ul>.first>.item-href:hover {
+            color: #bb9a6c;
+          }
+
+          .selected {
+            display: block;
+          }
+
+          .btn-morenews:hover {
+            background-color: #dad8d8;
+            border-radius: 4px;
+          }
+
+          .btn-morenews {
+            text-decoration: none;
+            display: block;
+            width: 496px;
+            height: 40px;
+            background-color: #e3e2e2;
+            line-height: 40px;
+            text-align: center;
+
+            .c1 {
+              font-size: 14px;
+              color: #676767;
+            }
+
+            .c2 {
+              font-size: 14px;
+              color: #7ea1a6;
+            }
+
+            .more-arrow {
+              line-height: 40px;
+              text-align: center;
+              background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+              background-size: 393px 200px;
+              background-repeat: no-repeat;
+              background-position: -213px -126px;
+              width: 15px;
+              height: 9px;
+              display: inline-block;
+              vertical-align: middle;
+              margin: -2px 0 0 5px;
+            }
+          }
+        }
+      }
+
+      // 第二层
+      .m-act {
+        width: 820px;
+        height: 335px;
+        float: left;
+        margin-top: 50px;
+        // background-color: goldenrod;
+
+        .part-top-tab {
+          width: 100%;
+          height: 35px;
+          overflow: visible;
+          position: relative;
+
+          .part-h2-title:before {
+            content: '\0020';
+            // box-sizing: border-box;
+            display: inline-block;
+            vertical-align: middle;
+            // zoom: 1;
+            // display: inline;
+            width: 4px;
+            height: 28px;
+            background-color: #1da6ba;
+            margin-right: 10px;
+            // float: auto;
+            // position: relative;
+            // z-index: 555;
+          }
+
+          .part-h2-title {
+            position: absolute;
+            width: auto;
+            height: 28px;
+            top: 5px;
+            left: -6px;
+            box-sizing: border-box;
+            color: #0b0b0b;
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 400;
+          }
+
+          .selected::after {
+            content: '\0020';
+            position: absolute;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAAHCAYAAACbWWcuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3FpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyNDFjNjRhMS1kNzE0LWQ3NDktYjhjNS01MDZjNTM5ZWNjNTMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjVDNjlGQzM2NDZEMTFFQjgwMzlCQTk0Njk3OEI0RDEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjVDNjlGQzI2NDZEMTFFQjgwMzlCQTk0Njk3OEI0RDEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjI0MWM2NGExLWQ3MTQtZDc0OS1iOGM1LTUwNmM1MzllY2M1MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyNDFjNjRhMS1kNzE0LWQ3NDktYjhjNS01MDZjNTM5ZWNjNTMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz63ScDxAAAAlUlEQVR42uzcsQnDMBAFUMl7ONtkCC8Y7+Bsk0UUghuX6qJvvdcIhBoJwfE5uNpaKwAws8f+Tr/Cr5jX5At8tqePCMD0Fk8AAPHh/LoCAAI6APCncF6EdADIV9fXoZgDQFDt7gjjPWcAgMHooANAdlDv3QcARi/uhsQBMLvwIXHtDuHckDgA0EEHgHQ1PZwDAKevAAMANfYWgoRjiMUAAAAASUVORK5CYII=);
+            background-position: center center;
+            box-sizing: border-box;
+            // display: none;
+            width: 100%;
+            height: 7px;
+            left: 0;
+            bottom: 0;
+            transition: width .2s, left .2s, margin-left .2s;
+          }
+
+          .part-tab-title {
+            position: absolute;
+            height: 35px;
+            left: 128px;
+            box-sizing: border-box;
+            border-bottom: 1px #e0e2e2 solid;
+            width: 692px;
+
+
+            &>li {
+              list-style: none;
+              position: relative;
+              cursor: pointer;
+              float: left;
+              width: auto;
+              min-width: 40px;
+              height: 37px;
+              overflow: visible;
+              color: #676767;
+              font-size: 16px;
+              letter-spacing: 1px;
+              line-height: 35px;
+              text-align: center;
+              margin-right: 40px;
+
+            }
+          }
+
+          .selected {
+            font-weight: 700;
+            color: #1da6ba !important;
+          }
+
+          .herf-more:hover {
+            color: #1da6ba;
+            font-weight: 700;
+            text-decoration: underline;
+          }
+
+          .herf-more {
+            text-decoration: none;
+            position: absolute;
+            top: 0;
+            right: 2px;
+            display: block;
+            width: auto;
+            height: 35px;
+            font-size: 12px;
+            color: #7ea1a6;
+            line-height: 35px;
+            z-index: 1;
+
+            .more-arrow {
+              font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+              font-size: 12px;
+              color: #7ea1a6;
+              line-height: 35px;
+
+              background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+              background-size: 393px 200px;
+              background-repeat: no-repeat;
+              background-position: -213px -126px;
+              width: 15px;
+              height: 9px;
+              display: inline-block;
+              vertical-align: middle;
+              margin: -2px 0 0 5px;
+
+            }
+          }
+
+        }
+
+        .m-act-list {
+
+          width: 820px;
+          height: 278px;
+          margin-top: 21px;
+
+          .selected {
+            display: block;
+          }
+
+          &>ul {
+            width: 840px;
+            height: 278px;
+            position: relative;
+            display: none;
+
+            .act-item:hover .innerhover-border {
+              display: block;
+            }
+
+            .act-item:hover>p {
+              color: #1da6ba;
+            }
+
+            .act-item:hover {
+              transform: translateY(-10px);
+            }
+
+            .act-item {
+              list-style: none;
+              float: left;
+              width: 193px;
+              height: 278px;
+              overflow: hidden;
+              position: relative;
+              transition: transform .3s;
+              transform: translateY(0);
+              background-color: #fefefe;
+
+              margin-right: 16px;
+
+              &>p {
+                font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                list-style: none;
+                width: 100%;
+                overflow: hidden;
+                box-sizing: border-box;
+                padding: 6px 10px 4px 10px;
+                font-size: 14px;
+                color: #424242;
+                line-height: 18px;
+                text-align: left;
+              }
+
+              .overtime {
+                position: absolute;
+                font-size: 12px;
+                color: #1da6ba;
+                left: 10px;
+                bottom: 6px;
+              }
+
+              .innerhover-border {
+                background: url(//game.gtimg.cn/images/lol/v3/dark70-bg-repeat.png) repeat;
+                display: none;
+                width: 193px;
+                height: 207px;
+                line-height: 207px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                text-align: center;
+
+                .hover-border-1 {
+                  line-height: 207px;
+                  text-align: center;
+                  background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+                  background-size: 393px 200px;
+                  background-repeat: no-repeat;
+                  display: block;
+                  position: absolute;
+                  left: 50%;
+                  margin-left: -94px;
+                  top: 50%;
+                  margin-top: -100px;
+                  background-position: 0 0;
+                  width: 188px;
+                  height: 200px;
+                }
+
+                .innerhover-border-inner {
+                  font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                  text-align: center;
+                  box-sizing: border-box;
+                  display: inline-block;
+                  vertical-align: middle;
+                  position: relative;
+                  line-height: 1.5;
+                  padding: 0 10px;
+
+                  .p1 {
+                    text-align: center;
+                    line-height: 1.5;
+                    margin-bottom: 2px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #cdbe91;
+                  }
+
+                  .p2 {
+                    font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                    list-style: none;
+                    text-align: center;
+                    line-height: 1.5;
+                    font-size: 12px;
+                    color: #9d9c9c;
+                    max-height: 73px;
+                    overflow: hidden;
+                  }
+                }
+              }
+
+              .herf-mask {
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-size: 0;
+              }
+            }
+          }
+        }
+      }
+
+      .m-gamefunc-nav {
+        width: 496px;
+        height: 335px;
+        float: right;
+        margin-top: 50px;
+        position: relative;
+        // background-color: pink;
+
+        .slide-nav-ul {
+
+
+
+          &>li {
+            float: left;
+            list-style: none;
+          }
+
+          .herf-download:hover {
+            filter: brightness(1.15);
+
+          }
+
+          .herf-download {
+
+
+            width: 366px;
+            height: 168px;
+            overflow: hidden;
+            background-image: url(//game.gtimg.cn/images/lol/v3/pic-download.png);
+            transition: filter .5s;
+            // -webkit-filter: brightness(1);
+            position: relative;
+            float: left;
+            list-style: none;
+
+            .side-down-video {
+              list-style: none;
+              aspect-ratio: auto 366 / 168;
+
+
+              display: block;
+              width: 366px;
+              height: 168px;
+            }
+
+            .herf-mask:after {
+              content: "\0020";
+              display: block;
+              width: 100%;
+              height: 100%;
+              font-size: 1000px;
+            }
+
+            .herf-mask {
+
+              text-decoration: none;
+              display: block;
+              width: 100%;
+              height: 100%;
+              position: absolute;
+              left: 0;
+              top: 0;
+              font-size: 0;
+
+            }
+          }
+
+          .btn-flashmen:hover .inner-hover {
+            display: block;
+          }
+
+          .btn-flashmen .inner-hover>a:hover {
+            color: #0da0b4;
+          }
+
+          .btn-flashmen {
+
+
+            background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+            background-size: 638px 572px;
+            background-repeat: no-repeat;
+            background-position: -193px -316px;
+            width: 118px;
+            height: 76px;
+            color: #fff;
+            font-size: 14px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 76px;
+            overflow: hidden;
+            position: relative;
+            float: left;
+            list-style: none;
+            margin-left: 12px;
+
+            .inner-hover {
+              font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+              color: #fff;
+              font-size: 14px;
+              font-weight: 700;
+              text-align: center;
+              line-height: 76px;
+              list-style: none;
+
+
+              display: none;
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 120px;
+              height: 100%;
+              overflow: hidden;
+              background-color: #fff;
+
+              &>a {
+                font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                font-weight: 700;
+                text-align: center;
+                list-style: none;
+
+
+                text-decoration: none;
+                float: left;
+                width: 60px;
+                box-sizing: border-box;
+                border-right: 1px #eee solid;
+                color: #424242;
+                font-size: 12px;
+                line-height: 30px;
+
+                .icon-zhiyin {
+                  font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                  font-weight: 700;
+                  text-align: center;
+                  list-style: none;
+                  color: #424242;
+                  font-size: 12px;
+                  line-height: 30px;
+
+                  background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+                  background-size: 393px 200px;
+                  background-repeat: no-repeat;
+                  background-position: -244px -72px;
+                  width: 20px;
+                  height: 22px;
+                  display: block;
+                  margin: 18px auto 0 auto;
+                }
+
+                .icon-gift {
+                  font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                  font-weight: 700;
+                  text-align: center;
+                  list-style: none;
+                  color: #424242;
+                  font-size: 12px;
+                  line-height: 30px;
+
+                  background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+                  background-size: 393px 200px;
+                  background-repeat: no-repeat;
+                  background-position: -285px -99px;
+                  width: 18px;
+                  height: 21px;
+                  display: block;
+                  margin: 18px auto 0 auto;
+                }
+              }
+            }
+          }
+
+          .p2:hover {
+            filter: brightness(1.15);
+
+          }
+
+          .p2 {
+            margin: 17px 0 0 12px;
+
+            .herf-type-0 {
+              list-style: none;
+
+
+              text-decoration: none;
+              background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+              background-size: 638px 572px;
+              background-repeat: no-repeat;
+              float: left;
+              background-position: -193px -316px;
+              width: 118px;
+              height: 76px;
+              color: #fff;
+              font-size: 14px;
+              font-weight: 700;
+              text-align: center;
+              line-height: 76px;
+              transition: filter .5s;
+              // -webkit-filter: brightness(1);
+            }
+          }
+
+          .herf-type-1:hover {
+            border-radius: 4px;
+            box-shadow: 0 0 10px #ccc;
+            color: #0da0b4;
+          }
+
+          .herf-type-1 {
+            list-style: none;
+
+
+            text-decoration: none;
+            float: left;
+            width: 112px;
+            height: 68px;
+            color: #424242;
+            text-align: center;
+            line-height: 68px;
+            background-color: #fefefe;
+            transition: box-shadow .2s;
+            position: relative;
+          }
+
+          .p3 {
+            margin: 15px 16px 0 0;
+
+            .herf-type-1 {
+              .icon-kh {
+                font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                list-style: none;
+                color: #424242;
+                text-align: center;
+                line-height: 68px;
+
+                background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+                background-size: 393px 200px;
+                background-repeat: no-repeat;
+                background-position: -316px -12px;
+                width: 22px;
+                height: 20px;
+                display: inline-block;
+                vertical-align: middle;
+                margin: -2px 4px 0 4px;
+                margin-top: -4px;
+              }
+
+              .icon-fhcx {
+                font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                list-style: none;
+                color: #424242;
+                text-align: center;
+                line-height: 68px;
+
+                background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+                background-size: 393px 200px;
+                background-repeat: no-repeat;
+                background-position: -219px -72px;
+                width: 20px;
+                height: 22px;
+                display: inline-block;
+                vertical-align: middle;
+                margin: -2px 4px 0 4px;
+              }
+
+              .icon-yxzl {
+                font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                list-style: none;
+                color: #424242;
+                text-align: center;
+                line-height: 68px;
+
+                background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+                background-size: 393px 200px;
+                background-repeat: no-repeat;
+                background-position: -343px -12px;
+                width: 23px;
+                height: 19px;
+                display: inline-block;
+                vertical-align: middle;
+                margin: -2px 4px 0 4px;
+              }
+
+
+
+              .icon-new-1 {
+                font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                list-style: none;
+                color: #424242;
+                text-align: center;
+                line-height: 68px;
+
+
+                font-style: normal;
+                background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+                background-size: 393px 200px;
+                background-repeat: no-repeat;
+                background-position: -301px -46px;
+                width: 29px;
+                height: 14px;
+                display: inline-block;
+                vertical-align: middle;
+                position: absolute;
+                left: 0;
+              }
+
+              .icon-tft {
+                font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                list-style: none;
+                color: #424242;
+                text-align: center;
+                line-height: 68px;
+
+                background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+                background-size: 393px 200px;
+                background-repeat: no-repeat;
+                background-position: -280px -125px;
+                width: 22px;
+                height: 19px;
+                display: inline-block;
+                vertical-align: middle;
+                margin: -2px 4px 0 4px;
+              }
+
+              .icon-101 {
+                font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                list-style: none;
+                color: #424242;
+                text-align: center;
+                line-height: 68px;
+
+                background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+                background-size: 393px 200px;
+                background-repeat: no-repeat;
+                background-position: -371px -12px;
+                width: 22px;
+                height: 19px;
+                display: inline-block;
+                vertical-align: middle;
+                margin: -2px 4px 0 4px;
+              }
+
+              .icon-yz {
+                font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                list-style: none;
+                color: #424242;
+                text-align: center;
+                line-height: 68px;
+
+                background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+                background-size: 393px 200px;
+                background-repeat: no-repeat;
+                background-position: -274px -46px;
+                width: 22px;
+                height: 19px;
+                display: inline-block;
+                vertical-align: middle;
+                margin: -2px 4px 0 4px;
+              }
+
+
+            }
+          }
+
+          .p4 {
+            margin-top: 15px;
+
+            .icon-wxbd {
+              font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+              list-style: none;
+              color: #424242;
+              text-align: center;
+              line-height: 68px;
+
+              background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+              background-size: 393px 200px;
+              background-repeat: no-repeat;
+              background-position: -193px -46px;
+              width: 22px;
+              height: 21px;
+              display: inline-block;
+              vertical-align: middle;
+              margin: -2px 4px 0 4px;
+              margin-top: 0;
+            }
+
+            .icon-xgzd {
+              font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+              list-style: none;
+              color: #424242;
+              text-align: center;
+              line-height: 68px;
+
+              background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+              background-size: 393px 200px;
+              background-repeat: no-repeat;
+              background-position: -193px -72px;
+              width: 21px;
+              height: 22px;
+              display: inline-block;
+              vertical-align: middle;
+              margin: -2px 4px 0 4px;
+            }
+          }
+        }
+      }
+
+      //第三层
+      .m-new-championskin {
+        float: left;
+        width: 820px;
+        height: 254px;
+        margin-top: 51px;
+
+        // background-color: lavender;
+        .m-new-champion-one:hover .inner-hover {
+          display: block;
+        }
+
+        .m-new-champion-one {
+
+          visibility: visible !important;
+
+
+          float: left;
+          position: relative;
+          width: 402px;
+          height: 254px;
+          background-color: #f7f6f6;
+
+
+        }
+
+
+        // .m-new-skin-one:hover .innerhover-out {
+        //   display: block;
+        // }
+
+        .showout {
+          display: block !important;
+        }
+
+        .m-new-skin-one {
+
+          visibility: visible !important;
+
+
+          float: left;
+          position: relative;
+          width: 402px;
+          height: 254px;
+          background-color: #f7f6f6;
+          margin-left: 16px;
+
+          .innerhover-out>.a1:hover {
+            color: #fefefe;
+            background-color: #bb9a6c;
+          }
+
+          .innerhover-out {
+            display: none;
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            top: -20px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 0 20px #aaa;
+            width: 435px;
+            margin-left: -217px;
+            // animation: bottomin-1 .6s ease;
+
+            &>video {
+
+              aspect-ratio: auto 435 / 244;
+
+              border: 0;
+              display: block;
+              width: 435px;
+              height: 244px;
+            }
+
+            .p1 {
+              font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+              visibility: visible !important;
+
+              margin-top: 10px;
+              width: 270px;
+              height: 24px;
+              overflow: hidden;
+              line-height: 24px;
+              box-sizing: border-box;
+              padding-left: 11px;
+              color: #0b0b0b;
+              font-size: 16px;
+              text-align: left;
+            }
+
+            .p2 {
+              font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+              visibility: visible !important;
+
+              width: 270px;
+              height: 20px;
+              overflow: hidden;
+              line-height: 20px;
+              box-sizing: border-box;
+              padding-left: 11px;
+              color: #a1a1a2;
+              font-size: 12px;
+              text-align: left;
+              margin-bottom: 10px;
+            }
+
+            .a1 {
+              font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+              visibility: visible !important;
+
+              text-decoration: none;
+              position: absolute;
+              right: 10px;
+              bottom: 17px;
+              display: block;
+              width: 86px;
+              height: 29px;
+              line-height: 27px;
+              overflow: hidden;
+              color: #bb9a6c;
+              font-size: 14px;
+              text-align: center;
+              box-sizing: border-box;
+              border: 1px #bb9a6c solid;
+              transition: background-color .2s;
+            }
+          }
+        }
+
+        .pic-mask-0 {
+
+          visibility: visible !important;
+
+
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          background: url(//game.gtimg.cn/images/lol/v3/pic-mask-0.png) repeat;
+          width: 100%;
+          height: 133px;
+        }
+
+        .tip-championskin {
+
+          visibility: visible !important;
+
+          text-decoration: none;
+          position: absolute;
+          display: block;
+          left: 9px;
+          top: 9px;
+          width: auto;
+          height: 20px;
+          padding: 0 6px;
+          border-radius: 2px;
+          font-size: 12px;
+          text-align: center;
+          color: #cdbe91;
+          line-height: 19px;
+          background-color: #000;
+        }
+
+        .intro-championskin {
+
+          visibility: visible !important;
+
+          width: 100%;
+          padding: 0 17px;
+          box-sizing: border-box;
+          position: absolute;
+          left: 0;
+          bottom: 33px;
+          font-size: 16px;
+          font-weight: 700;
+          color: #cdbe91;
+        }
+
+        .name-championskin {
+
+          visibility: visible !important;
+
+
+          width: 100%;
+          padding-left: 17px;
+          box-sizing: border-box;
+          position: absolute;
+          left: 0;
+          bottom: 12px;
+          font-size: 14px;
+
+          &>a {
+
+            visibility: visible !important;
+            font-size: 14px;
+
+
+            text-decoration: none;
+            color: #cfcfcf;
+          }
+        }
+
+
+        .inner-hover {
+          font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+          visibility: visible !important;
+
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 402px;
+          height: 254px;
+          overflow: hidden;
+          background: url(//game.gtimg.cn/images/lol/v3/dark70-bg-repeat.png) repeat;
+          display: none;
+          z-index: 11;
+          transition: filter .5s;
+
+          .border {
+            font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+            visibility: visible !important;
+            background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+            background-size: 638px 572px;
+            background-repeat: no-repeat;
+            display: block;
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            background-position: 0 0;
+            width: 396px;
+            height: 248px;
+
+          }
+
+          .p1 {
+            font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+            visibility: visible !important;
+
+
+            color: #cdbe91;
+            font-size: 18px;
+            position: absolute;
+            left: 27px;
+            top: 20px;
+          }
+
+          .inner-hover-href:hover {
+            filter: brightness(1.15);
+            -webkit-filter: brightness(1.15);
+          }
+
+          .inner-hover-href {
+            font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+            visibility: visible !important;
+
+
+            background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+            background-size: 638px 572px;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 25px;
+            bottom: 18px;
+            display: block;
+            background-position: -401px -179px;
+            width: 154px;
+            height: 42px;
+            color: #ffdb8b;
+            font-size: 14px;
+            text-align: center;
+            line-height: 42px;
+            transition: filter .5s;
+
+            .more-arrow-2 {
+              font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+              visibility: visible !important;
+              color: #ffdb8b;
+              font-size: 14px;
+              text-align: center;
+              line-height: 42px;
+
+              background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+              background-size: 393px 200px;
+              background-repeat: no-repeat;
+              background-position: -362px -99px;
+              width: 15px;
+              height: 9px;
+              display: inline-block;
+              vertical-align: middle;
+              margin: -2px 0 0 5px;
+
+            }
+          }
+        }
+      }
+
+      .m-version-nav {
+        width: 496px;
+        height: 255px;
+        float: right;
+        position: relative;
+        padding-top: 51px;
+        // background-color: hotpink;
+
+        .new-version {
+
+          visibility: visible !important;
+
+
+          background-color: #f7f6f6;
+          position: relative;
+          float: left;
+          width: 240px;
+          height: 120px;
+          overflow: visible;
+          margin-bottom: 15px;
+
+          &>img {
+            width: 240px;
+            height: 120px;
+
+          }
+        }
+
+        .club-developer:hover .innerhover-border {
+          display: block;
+        }
+
+        .club-developer {
+
+          visibility: visible !important;
+
+
+          float: right;
+          width: 242px;
+          height: 180px;
+          position: relative;
+          background-color: #f7f6f6;
+
+          &>img {
+            width: 242px;
+            height: 180px;
+          }
+
+          .innerhover-border {
+
+            font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+            visibility: visible !important;
+
+
+            background: url(//game.gtimg.cn/images/lol/v3/dark70-bg-repeat.png) repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            width: 242px;
+            height: 180px;
+            line-height: 180px;
+            display: none;
+
+            .hover-border-2 {
+              font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+              visibility: visible !important;
+              text-align: center;
+              line-height: 180px;
+
+              background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+              background-size: 638px 572px;
+              background-repeat: no-repeat;
+              display: block;
+              position: absolute;
+              left: 50%;
+              margin-left: -118.5px;
+              top: 50%;
+              margin-top: -87px;
+              background-position: -401px 0;
+              width: 237px;
+              height: 174px;
+            }
+
+            .innerhover-border-inner {
+              font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+              visibility: visible !important;
+              text-align: center;
+
+              display: inline-block;
+              vertical-align: middle;
+              position: relative;
+              line-height: 1.5;
+              box-sizing: border-box;
+              padding: 0 10px;
+
+              .p1 {
+                font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                visibility: visible !important;
+                text-align: center;
+                line-height: 1.5;
+
+
+                font-size: 16px;
+                font-weight: 400;
+                color: #cdbe91;
+                margin-bottom: 2px;
+              }
+
+              .p2 {
+                font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                visibility: visible !important;
+                text-align: center;
+                line-height: 1.5;
+
+
+                overflow: hidden;
+                font-size: 12px;
+                color: #9d9c9c;
+              }
+            }
+          }
+        }
+
+        .new-model {
+
+          visibility: visible !important;
+
+
+          background-color: #f7f6f6;
+          position: relative;
+          float: left;
+          width: 240px;
+          height: 120px;
+          overflow: visible;
+          margin-bottom: 15px;
+
+          &>img {
+            width: 240px;
+            height: 120px;
+          }
+        }
+
+        .week-free-champion {
+
+          visibility: visible !important;
+
+
+          float: right;
+          width: 239px;
+          height: 58px;
+          overflow: visible;
+          position: relative;
+          margin-top: 17px;
+
+          .week-free-a:hover {
+            filter: brightness(1.15);
+
+          }
+
+          .week-free-a {
+
+            visibility: visible !important;
+
+
+            text-decoration: none;
+            background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+            background-size: 638px 572px;
+            background-repeat: no-repeat;
+            display: block;
+            background-position: -193px -253px;
+            width: 239px;
+            height: 58px;
+            line-height: 58px;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            transition: filter .5s;
+
+            .inline-icon-0-left {
+              font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+              visibility: visible !important;
+              line-height: 58px;
+              text-align: center;
+              font-size: 16px;
+              color: #fff;
+              display: inline-block;
+              vertical-align: middle;
+              margin: -1px 12px 0 12px;
+              opacity: .7;
+              background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+              background-size: 638px 572px;
+              background-repeat: no-repeat;
+              background-position: -531px -226px;
+              width: 20px;
+              height: 9px;
+            }
+
+            .more-arrow-1 {
+              font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+              visibility: visible !important;
+              line-height: 58px;
+              text-align: center;
+              font-size: 16px;
+              color: #fff;
+
+              background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+              background-size: 393px 200px;
+              background-repeat: no-repeat;
+              background-position: -342px -99px;
+              width: 15px;
+              height: 9px;
+              display: inline-block;
+              vertical-align: middle;
+              margin: -2px 0 0 5px;
+
+            }
+
+            .inline-icon-0-right {
+              font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+              visibility: visible !important;
+              line-height: 58px;
+              text-align: center;
+              font-size: 16px;
+              color: #fff;
+
+              display: inline-block;
+              vertical-align: middle;
+              margin: -1px 12px 0 12px;
+              opacity: .7;
+              background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+              background-size: 638px 572px;
+              background-repeat: no-repeat;
+              background-position: -506px -226px;
+              width: 20px;
+              height: 9px;
+
+            }
+          }
+        }
+      }
+
+      .show {
+        height: 117px !important;
+        padding-top: 42px;
+      }
+
+
+      .m-more-skin {
+        font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+        height: 0;
+        width: 1358px;
+        transition: height .3s, margin-top .3s;
+        will-change: height;
+        float: left;
+        position: relative;
+        overflow: hidden;
+
+        .content {
+          width: 1368px;
+          height: 100%;
+          float: left;
+
+          &>ul {
+            width: 1379px;
+            float: left;
+
+            .more-skin-item {
+              font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+
+              width: 185px;
+              height: 117px;
+              overflow: hidden;
+              float: left;
+              position: relative;
+              margin-right: 12px;
+
+              &>img {
+                font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                list-style: none;
+                aspect-ratio: auto 185 / 117;
+
+                border: 0;
+                width: 185px;
+                height: 117px;
+                transition: transform .2s;
+                transform: scale(1);
+              }
+
+              .skinname {
+                font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                list-style: none;
+
+
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                font-size: 14px;
+                text-align: center;
+                color: #fff;
+                background: url(//game.gtimg.cn/images/lol/v3/dark70-bg-repeat.png) repeat;
+
+                .a2 {
+                  font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                  list-style: none;
+                  line-height: 30px;
+                  font-size: 14px;
+                  text-align: center;
+
+
+                  text-decoration: none;
+                  color: #cdbe91;
+                }
+              }
+
+              .herf-mask:after {
+                content: "\0020";
+                display: block;
+                width: 100%;
+                height: 100%;
+                font-size: 1000px;
+              }
+
+              .herf-mask {
+                font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                list-style: none;
+
+
+                text-decoration: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-size: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 视频区
+    .g-wrap-vp {
+      width: 100%;
+      min-width: 1358px;
+      background-color: #e3e2e2;
+      padding: 64px 0 66px 0;
+
+      .g-wrap {
+        width: 1358px;
+        height: auto;
+        margin: 0 auto;
+
+        .m-fresh-video {
+          width: 100%;
+          height: 463px;
+          // background-color: #fff;
+
+          .part-top-tab {
+
+            visibility: visible !important;
+
+
+            width: 100%;
+            height: 35px;
+            overflow: visible;
+            position: relative;
+
+            .part-h2-title:before {
+              content: '\0020';
+              display: inline-block;
+              vertical-align: middle;
+
+              width: 4px;
+              height: 28px;
+              background-color: #1da6ba;
+              margin-right: 10px;
+            }
+
+            .part-h2-title {
+
+              visibility: visible !important;
+
+
+              position: absolute;
+              width: auto;
+              height: 28px;
+              top: 5px;
+              left: -6px;
+              box-sizing: border-box;
+              color: #0b0b0b;
+              font-size: 24px;
+              line-height: 28px;
+              font-weight: 400;
+            }
+
+            .part-tab-title {
+
+              visibility: visible !important;
+
+
+              position: absolute;
+              height: 35px;
+              left: 128px;
+              box-sizing: border-box;
+              border-bottom: 1px #e0e2e2 solid;
+              border-bottom-color: #d6d7d8;
+              width: 1234px;
+
+              .selected::after {
+                content: '\0020';
+                position: absolute;
+                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAAHCAYAAACbWWcuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3FpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyNDFjNjRhMS1kNzE0LWQ3NDktYjhjNS01MDZjNTM5ZWNjNTMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjVDNjlGQzM2NDZEMTFFQjgwMzlCQTk0Njk3OEI0RDEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjVDNjlGQzI2NDZEMTFFQjgwMzlCQTk0Njk3OEI0RDEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjI0MWM2NGExLWQ3MTQtZDc0OS1iOGM1LTUwNmM1MzllY2M1MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyNDFjNjRhMS1kNzE0LWQ3NDktYjhjNS01MDZjNTM5ZWNjNTMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz63ScDxAAAAlUlEQVR42uzcsQnDMBAFUMl7ONtkCC8Y7+Bsk0UUghuX6qJvvdcIhBoJwfE5uNpaKwAws8f+Tr/Cr5jX5At8tqePCMD0Fk8AAPHh/LoCAAI6APCncF6EdADIV9fXoZgDQFDt7gjjPWcAgMHooANAdlDv3QcARi/uhsQBMLvwIXHtDuHckDgA0EEHgHQ1PZwDAKevAAMANfYWgoRjiMUAAAAASUVORK5CYII=);
+                background-position: center center;
+                box-sizing: border-box;
+                width: 100%;
+                height: 7px;
+                left: 0;
+                bottom: 0;
+                transition: width 0.2s, left 0.2s, margin-left 0.2s;
+              }
+
+              .selected {
+                font-weight: 700;
+                color: #1da6ba;
+              }
+
+              &>li {
+
+                visibility: visible !important;
+
+
+                list-style: none;
+                position: relative;
+                cursor: pointer;
+                float: left;
+                width: auto;
+                min-width: 40px;
+                height: 37px;
+                overflow: visible;
+                color: #676767;
+                font-size: 16px;
+                letter-spacing: 1px;
+                line-height: 35px;
+                text-align: center;
+                margin-right: 40px;
+              }
+            }
+
+            .herf-more:hover {
+              color: #1da6ba;
+              font-weight: 700;
+              text-decoration: underline;
+            }
+
+            .herf-more {
+
+              visibility: visible !important;
+
+
+              text-decoration: none;
+              position: absolute;
+              top: 0;
+              right: 2px;
+              display: block;
+              width: auto;
+              height: 35px;
+              font-size: 12px;
+              color: #7ea1a6;
+              line-height: 35px;
+              z-index: 1;
+
+              .more-arrow {
+                font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                visibility: visible !important;
+                font-size: 12px;
+                color: #7ea1a6;
+                line-height: 35px;
+
+                background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+                background-size: 393px 200px;
+                background-repeat: no-repeat;
+                background-position: -213px -126px;
+                width: 15px;
+                height: 9px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 5px;
+                margin-top: -2px;
+              }
+            }
+
+            #change-batche:after {
+              content: '';
+              width: 1px;
+              height: 10px;
+              position: absolute;
+              top: 12px;
+              right: -28px;
+              background-color: #cacbcc;
+            }
+
+            #change-batche span:hover {
+              color: #1da6ba;
+            }
+
+            #change-batche span:hover .icon-hyp,
+            .icon-hyp-hover {
+              background-position: -364px -72px;
+              width: 13px;
+              height: 12px;
+            }
+
+            #change-batche {
+
+              visibility: visible !important;
+
+
+              text-decoration: none;
+              position: absolute;
+              right: 90px;
+              top: 0;
+              color: #7ea1a6;
+              font-size: 12px;
+              height: 35px;
+              line-height: 35px;
+
+              .change-batche {
+                font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                visibility: visible !important;
+                color: #7ea1a6;
+                font-size: 12px;
+                line-height: 35px;
+
+                display: block;
+                position: relative;
+                padding: 0 3px;
+
+                .icon-hyp {
+                  font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                  visibility: visible !important;
+                  color: #7ea1a6;
+                  font-size: 12px;
+                  line-height: 35px;
+
+
+                  background-image: url(https://game.gtimg.cn/images/lol/v3/comm-spr.png);
+                  background-size: 393px 200px;
+                  background-repeat: no-repeat;
+                  background-position: -369px -46px;
+                  width: 13px;
+                  height: 12px;
+                  position: absolute;
+                  right: -14px;
+                  top: 11px;
+                }
+              }
+            }
+          }
+
+          .selected {
+            display: block !important;
+          }
+
+          .fresh-video-content {
+
+            visibility: visible !important;
+
+
+            height: auto;
+            min-height: 130px;
+            position: relative;
+            margin-top: 32px;
+            overflow: hidden;
+            width: 1378px;
+            display: none;
+
+
+
+
+            .video-item {
+
+              visibility: visible !important;
+
+              list-style: none;
+              float: left;
+              overflow: hidden;
+              margin: 0 16px 16px 0;
+              position: relative;
+              width: 213px;
+              height: 195px;
+
+              .mask-img {
+
+                visibility: visible !important;
+                list-style: none;
+
+
+                display: block;
+                overflow: hidden;
+                position: relative;
+                width: 213px;
+                height: 118px;
+
+                .video-cover {
+                  width: 216px;
+                  height: 120px;
+                }
+
+                .btn-play-1 {
+                  display: none;
+                  width: 54px;
+                  height: 54px;
+                  position: absolute;
+                  left: 50%;
+                  top: 50%;
+                  margin: -27px 0 0 -27px;
+
+                  &>i {
+                    font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                    visibility: visible !important;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+                    background-size: 638px 572px;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    display: block;
+                    background-position: -437px -253px;
+                    width: 54px;
+                    height: 54px;
+
+                  }
+
+                  &>a {
+                    font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                    visibility: visible !important;
+                    list-style: none;
+                    padding: 0;
+                    text-decoration: none;
+                    background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+                    background-size: 638px 572px;
+                    background-repeat: no-repeat;
+                    position: relative;
+                    display: block;
+                    background-position: -456px -316px;
+                    width: 11px;
+                    height: 13px;
+                    margin: 20px auto 0 auto;
+                  }
+                }
+              }
+
+              .video-length {
+
+                visibility: visible !important;
+                list-style: none;
+
+
+                text-decoration: none;
+                position: absolute;
+                right: 10px;
+                color: #fff;
+                font-size: 12px;
+                top: 95px;
+              }
+
+              .name-video {
+
+                visibility: visible !important;
+                list-style: none;
+
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 42px;
+                overflow: hidden;
+                padding: 0 10px;
+                box-sizing: border-box;
+                font-size: 14px;
+                line-height: 21px;
+                color: #424242;
+                top: 128px;
+
+                &>a {
+                  color: #424242;
+                }
+              }
+
+              .play-times {
+
+                visibility: visible !important;
+                list-style: none;
+
+
+                text-decoration: none;
+                position: absolute;
+                left: 9px;
+                bottom: 4px;
+                font-size: 12px;
+                color: #919091;
+              }
+
+              .update-time {
+
+                visibility: visible !important;
+                list-style: none;
+
+
+                text-decoration: none;
+                position: absolute;
+                right: 13px;
+                bottom: 4px;
+                font-size: 12px;
+                color: #919091;
+              }
+            }
+
+            .video-item:hover .btn-play-1 {
+              display: block;
+
+
+            }
+
+            .video-item:hover .name-video>a {
+              color: #0da0b4;
+              text-decoration: none;
+            }
+
+            .video-item:hover .btn-play-1>i {
+
+              animation: animrotate 3s linear infinite;
+
+            }
+          }
+        }
+      }
+    }
+
+    // 赛事
+    .g-wrap-match {
+      width: 1358px;
+      height: auto;
+      margin: 0 auto;
+      padding: 64px 0 80px 0;
+
+      .part-top-tab {
+        width: 100%;
+        height: 35px;
+        overflow: visible;
+        position: relative;
+
+        // background-color: lightgreen;
+        .part-h2-title-p1:before {
+          content: '\0020';
+          display: inline-block;
+          vertical-align: middle;
+          *zoom: 1;
+          *display: inline;
+          width: 4px;
+          height: 28px;
+          background-color: #1da6ba;
+          margin-right: 10px;
+        }
+
+        .part-h2-title {
+
+          visibility: visible !important;
+
+
+          position: absolute;
+          width: auto;
+          height: 28px;
+          top: 5px;
+          left: -6px;
+          box-sizing: border-box;
+          color: #0b0b0b;
+          font-size: 24px;
+          line-height: 28px;
+          font-weight: 400;
+        }
+
+        .part-tab-title {
+
+          visibility: visible !important;
+
+
+          position: absolute;
+          height: 35px;
+          left: 128px;
+          box-sizing: border-box;
+          border-bottom: 1px #e0e2e2 solid;
+          width: 1230px;
+
+          // display: flex;
+          .selected {
+            font-weight: 700;
+            color: #1da6ba;
+          }
+
+          .selected::after {
+            content: '\0020';
+            position: absolute;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA+gAAAAHCAYAAACbWWcuAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3FpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQyIDc5LjE2MDkyNCwgMjAxNy8wNy8xMy0wMTowNjozOSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyNDFjNjRhMS1kNzE0LWQ3NDktYjhjNS01MDZjNTM5ZWNjNTMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RjVDNjlGQzM2NDZEMTFFQjgwMzlCQTk0Njk3OEI0RDEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RjVDNjlGQzI2NDZEMTFFQjgwMzlCQTk0Njk3OEI0RDEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjI0MWM2NGExLWQ3MTQtZDc0OS1iOGM1LTUwNmM1MzllY2M1MyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyNDFjNjRhMS1kNzE0LWQ3NDktYjhjNS01MDZjNTM5ZWNjNTMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz63ScDxAAAAlUlEQVR42uzcsQnDMBAFUMl7ONtkCC8Y7+Bsk0UUghuX6qJvvdcIhBoJwfE5uNpaKwAws8f+Tr/Cr5jX5At8tqePCMD0Fk8AAPHh/LoCAAI6APCncF6EdADIV9fXoZgDQFDt7gjjPWcAgMHooANAdlDv3QcARi/uhsQBMLvwIXHtDuHckDgA0EEHgHQ1PZwDAKevAAMANfYWgoRjiMUAAAAASUVORK5CYII=);
+            background-position: center center;
+            box-sizing: border-box;
+
+            width: 100%;
+            height: 7px;
+            left: 0;
+            bottom: 0;
+            transition: width .2s, left .2s, margin-left .2s;
+            background-size: auto auto;
+            margin-left: 0;
+          }
+
+          &>li {
+
+            visibility: visible !important;
+
+
+            list-style: none;
+            position: relative;
+            cursor: pointer;
+            float: left;
+            width: auto;
+            min-width: 40px;
+            height: 37px;
+            overflow: visible;
+            color: #676767;
+            font-size: 16px;
+            letter-spacing: 1px;
+            line-height: 35px;
+            text-align: center;
+            margin-right: 54px;
+          }
+
+        }
+
+        .toptip-event:hover {
+          text-decoration: underline;
+        }
+
+        .toptip-event {
+
+          visibility: visible !important;
+
+
+          text-decoration: none;
+          position: absolute;
+          top: 0;
+          right: 61px;
+          width: auto;
+          height: 35px;
+          line-height: 35px;
+          font-size: 16px;
+          font-weight: 700;
+          color: #676767;
+          display: block;
+        }
+
+        .herf-more {
+
+          visibility: visible !important;
+
+
+          text-decoration: none;
+          position: absolute;
+          top: 0;
+          right: 2px;
+          display: block;
+          width: auto;
+          height: 35px;
+          font-size: 12px;
+          color: #7ea1a6;
+          line-height: 35px;
+          z-index: 1;
+
+          .more-arrow {
+            font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+            visibility: visible !important;
+            font-size: 12px;
+            color: #7ea1a6;
+            line-height: 35px;
+
+            background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+            background-size: 393px 200px;
+            background-repeat: no-repeat;
+            background-position: -213px -126px;
+            width: 15px;
+            height: 9px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+
+        .herf-more:hover {
+          color: #1da6ba;
+          font-weight: 700;
+          text-decoration: underline;
+        }
+      }
+
+      .m-events-container {
+        width: 100%;
+        height: auto;
+        min-height: 300px;
+        position: relative;
+        padding-top: 26px;
+        // background-color: lightgoldenrodyellow;
+
+        .match-show {
+
+          visibility: visible !important;
+
+
+          display: none;
+
+          .event-type-0 {
+            width: 1358px;
+            height: auto;
+
+            .power-rank {
+
+              visibility: visible !important;
+
+
+              float: left;
+              width: 820px;
+              height: 364px;
+              margin-top: 0;
+
+              .part-top-tab {
+
+                visibility: visible !important;
+
+
+                width: 100%;
+                height: 35px;
+                overflow: visible;
+                position: relative;
+
+                .part-h2-title {
+
+                  visibility: visible !important;
+
+
+                  position: absolute;
+                  width: auto;
+                  height: 28px;
+                  top: 5px;
+                  box-sizing: border-box;
+                  line-height: 28px;
+                  font-size: 18px;
+                  color: #0b0b0b;
+                  left: 0;
+                  font-weight: bold;
+                }
+              }
+
+
+              .LPL_R_power-rank-list {
+
+                visibility: visible !important;
+
+
+                width: 840px;
+                overflow: hidden;
+                margin-top: 21px;
+                position: relative;
+                height: 308px;
+
+                .LPL_R_player-item {
+
+                  visibility: visible !important;
+
+
+                  list-style: none;
+                  float: left;
+                  width: 151px;
+                  height: 257px;
+                  margin-right: 16px;
+                  background-color: #fefefe;
+
+                  .LPL_R_pic-player {
+
+                    visibility: visible !important;
+                    list-style: none;
+
+
+                    width: 151px;
+                    height: 203px;
+                    position: relative;
+                    background: -webkit-linear-gradient(top, #fefefe, #fefefe, #8a8a8a);
+
+                    .player {
+
+                      visibility: visible !important;
+                      list-style: none;
+
+
+                      border: 0;
+                      position: absolute;
+                      display: block;
+                      width: 151px;
+                      height: auto;
+                      bottom: 0;
+                      left: 0;
+                    }
+
+                    .LPL_R_power-rank-role {
+
+                      visibility: visible !important;
+                      list-style: none;
+
+
+                      text-decoration: none;
+                      display: block;
+                      position: absolute;
+                      left: 10px;
+                      top: 10px;
+                      text-align: center;
+                      width: 30px;
+                      height: 30px;
+
+                      .p-top {
+                        background-position: -52px 0;
+                        width: 18px;
+                        height: 18px;
+                      }
+                    }
+
+                    .player-team-logo {
+                      display: block;
+                      width: 30px;
+                      height: auto;
+                      position: absolute;
+                      top: 8px;
+                      right: 9px;
+                    }
+                  }
+
+                  .player-name {
+                    color: #424242;
+                    font-size: 16px;
+                    width: 100%;
+                    height: 54px;
+                    line-height: 54px;
+                    box-sizing: border-box;
+                    text-align: center;
+                  }
+                }
+              }
+            }
+
+            .score-rank {
+
+              visibility: visible !important;
+
+
+              width: 496px;
+              height: auto;
+              margin-top: 0;
+              float: right;
+
+              .part-top-tab {
+
+                visibility: visible !important;
+
+
+                width: 100%;
+                height: 35px;
+                overflow: visible;
+                position: relative;
+
+                .part-h2-title {
+
+                  visibility: visible !important;
+
+
+                  position: absolute;
+                  width: auto;
+                  height: 28px;
+                  top: 5px;
+                  box-sizing: border-box;
+                  line-height: 28px;
+                  font-size: 18px;
+                  color: #0b0b0b;
+                  left: 0;
+                  font-weight: bold;
+                }
+              }
+
+              .score-rank-content {
+
+                visibility: visible !important;
+
+
+                width: 496px;
+                margin-top: 21px;
+                height: 308px;
+
+                .score-rank-list-title {
+
+                  visibility: visible !important;
+
+                  width: 496px;
+                  height: 32px;
+                  line-height: 32px;
+                  box-sizing: border-box;
+                  padding: 0 18px;
+                  color: #151517;
+                  font-size: 16px;
+                  font-weight: 400;
+                  background-color: #e0e0e0;
+
+                  .a-1 {
+
+                    visibility: visible !important;
+                    line-height: 32px;
+                    color: #151517;
+                    font-size: 16px;
+                    font-weight: 400;
+
+
+                    text-decoration: none;
+                    float: left;
+                    width: 44px;
+                  }
+
+                  .a-2 {
+
+                    visibility: visible !important;
+                    line-height: 32px;
+                    color: #151517;
+                    font-size: 16px;
+                    font-weight: 400;
+
+
+                    text-decoration: none;
+                    float: left;
+                    width: 124px;
+                    margin-left: 69px;
+                  }
+
+                  .a-3 {
+
+                    visibility: visible !important;
+                    line-height: 32px;
+                    color: #151517;
+                    font-size: 16px;
+                    font-weight: 400;
+
+
+                    text-decoration: none;
+                    float: left;
+                    width: 100px;
+                    text-align: center;
+                    margin-left: 45px;
+                  }
+
+                  .a-4 {
+
+                    visibility: visible !important;
+                    line-height: 32px;
+                    color: #151517;
+                    font-size: 16px;
+                    font-weight: 400;
+
+
+                    text-decoration: none;
+                    float: right;
+                    width: 44px;
+                    text-align: center;
+                  }
+                }
+
+                .score-rank-list-container {
+
+                  visibility: visible !important;
+
+                  margin: 0 auto;
+
+                  backface-visibility: hidden;
+                  z-index: 1;
+                  width: 496px;
+                  // width: 515px;
+                  background-color: #fefefe;
+                  // overflow-y:scroll;
+                  overflow: hidden;
+                  position: relative;
+                  height: 276px;
+
+                  .swiper-wrapper {
+
+                    visibility: visible !important;
+
+
+                    position: relative;
+                    transition-property: transform, left, top;
+                    box-sizing: content-box;
+                    transition-timing-function: ease-out;
+                    margin: 0 auto;
+                    transition-duration: 0s;
+                    transform: translate3d(0px, 0px, 0px);
+                    // width: 532px;
+                    width: 479px;
+                    height: 782px;
+
+                    .score-rank-list {
+
+                      visibility: visible !important;
+
+
+                      float: left;
+                      width: 496px;
+                      // width: 474px;
+                      height: auto;
+                      box-sizing: border-box !important;
+                      padding: 0 18px;
+
+                      &>li {
+                        width: 460px;
+                        height: 46px;
+                        line-height: 46px;
+                        overflow: hidden;
+                        list-style: none;
+                        box-sizing: border-box;
+                        border-bottom: 1px #e0e2e2 solid;
+
+                        .a-1 {
+                          float: left;
+                          width: 44px;
+                          height: 46px;
+                          text-align: center;
+                          font-family: tttgbnumber, sans-serif;
+                          font-size: 18px;
+                          color: #7b7b7b;
+                        }
+
+                        .a-2 {
+
+                          visibility: visible !important;
+
+
+                          line-height: 46px;
+                          list-style: none;
+
+
+                          float: left;
+                          font-size: 13px;
+                          color: #151517;
+                          width: 150px;
+                          margin-left: 58px;
+
+                          &>img {
+
+                            visibility: visible !important;
+
+
+                            line-height: 46px;
+                            list-style: none;
+                            font-size: 13px;
+                            color: #151517;
+
+                            border: 0;
+                            display: inline-block;
+                            vertical-align: middle;
+                            width: 25px;
+                            height: auto;
+                            margin: -2px 12px 0 0;
+                          }
+                        }
+
+                        .a-3 {
+
+                          visibility: visible !important;
+
+
+                          line-height: 46px;
+                          list-style: none;
+
+
+                          text-decoration: none;
+                          float: left;
+                          width: 100px;
+                          text-align: center;
+                          font-size: 16px;
+                          color: #5f8d94;
+                          margin-left: 30px;
+                        }
+
+                        .a-4 {
+
+                          visibility: visible !important;
+
+                          line-height: 46px;
+                          list-style: none;
+
+
+                          text-decoration: none;
+                          float: right;
+                          width: 44px;
+                          text-align: center;
+                          font-size: 16px;
+                          color: #5f8d94;
+                        }
+                      }
+                    }
+                  }
+
+                  .scrollbar {
+                    font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                    visibility: visible !important;
+                    direction: ltr;
+                    cursor: -webkit-grab;
+                    z-index: 2;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 5px;
+                    height: 100%;
+                    transition: width .2s;
+                    transition-duration: 0ms;
+                    opacity: 1;
+
+                    .swiper-scrollbar-drag {
+                      font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                      visibility: visible !important;
+                      direction: ltr;
+                      width: 100%;
+                      position: relative;
+                      background: rgba(0, 0, 0, 0.5);
+                      border-radius: 10px;
+                      background-color: #abc0c3;
+                      cursor: n-resize !important;
+                      height: 97.4118px;
+                      transition-duration: 0ms;
+                      transform: translate3d(0px, 0px, 0px);
+                    }
+                  }
+                }
+
+                .score-rank-list-container:hover>.scrollbar {
+                  width: 8px;
+                }
+              }
+            }
+          }
+
+          .event-type-1 {
+            font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+            visibility: visible !important;
+
+            position: relative;
+            overflow: hidden;
+
+            .lpl-play-offs-21-bubbling {
+              font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+              visibility: visible !important;
+
+              --red-line: #86a2ad;
+              --gray-line: #d9d9d9;
+              --m-line-width: 2px;
+              overflow: hidden;
+
+              .list-col:nth-of-type(4) .list-col-one:nth-of-type(3) {
+                margin: 131px 0 121px 0;
+              }
+
+              .list-col:nth-of-type(6) .list-col-one:nth-of-type(3) {
+                margin: 259px 0 0 0;
+              }
+
+
+              .list-col {
+
+                height: auto;
+                width: 268px;
+                overflow: hidden;
+                float: left;
+
+                .list-col-one:nth-of-type(3),
+                .list-col-one:nth-of-type(5) {
+                  margin: 55px 0 0 0;
+                }
+
+                .list-col-one {
+                  font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                  visibility: visible !important;
+                  --red-line: #86a2ad;
+                  --gray-line: #d9d9d9;
+                  --m-line-width: 2px;
+
+                  width: 100%;
+                  height: auto;
+                  margin-bottom: -5px;
+
+                  .match-part-name {
+                    font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                    visibility: visible !important;
+                    --red-line: #86a2ad;
+                    --gray-line: #d9d9d9;
+                    --m-line-width: 2px;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: left;
+                    color: #29a2b4;
+                    font-size: 16px;
+                    font-weight: 700;
+                    box-sizing: border-box;
+                    padding-left: 1px;
+
+                    .sheaves-num {
+                      font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                      visibility: visible !important;
+                      --red-line: #86a2ad;
+                      --gray-line: #d9d9d9;
+                      --m-line-width: 2px;
+                      line-height: 35px;
+                      text-align: left;
+                      color: #29a2b4;
+                      font-size: 16px;
+                      font-weight: 700;
+                      margin: 0;
+                      padding: 0;
+                    }
+                  }
+
+                  .info {
+                    font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                    visibility: visible !important;
+                    --red-line: #86a2ad;
+                    --gray-line: #d9d9d9;
+                    --m-line-width: 2px;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    height: 20px;
+                    overflow: hidden;
+                    margin-bottom: 7px;
+
+                    .status {
+                      font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                      visibility: visible !important;
+                      --red-line: #86a2ad;
+                      --gray-line: #d9d9d9;
+                      --m-line-width: 2px;
+                      margin: 0;
+                      float: left;
+                      height: 15px;
+                      line-height: 15px;
+                      padding: 0 2px;
+                      font-size: 12px;
+                      color: #fff;
+                      border-radius: 2px;
+                      margin-top: 3px;
+                      background-color: #bcbcbc;
+                    }
+
+                    .time {
+                      font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                      visibility: visible !important;
+                      --red-line: #86a2ad;
+                      --gray-line: #d9d9d9;
+                      --m-line-width: 2px;
+                      margin: 0;
+                      padding: 0;
+                      float: left;
+                      margin-left: 10px;
+                      height: 15px;
+                      line-height: 15px;
+                      color: #676767;
+                      font-size: 12px;
+                      margin-top: 3px;
+                    }
+
+                    .herf-video {
+                      font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                      visibility: visible !important;
+                      --red-line: #86a2ad;
+                      --gray-line: #d9d9d9;
+                      --m-line-width: 2px;
+                      margin: 0;
+                      text-decoration: none;
+                      float: right;
+                      padding: 0 6px;
+                      box-sizing: border-box;
+                      border: 1px solid;
+                      font-size: 14px;
+                      height: 20px;
+                      line-height: 18px;
+                      margin-left: 10px;
+                      transition: background-color .2s, color .2s;
+                      border-color: #bb9a6c;
+                      color: #bb9a6c;
+                    }
+
+                    .herf-data {
+                      font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                      visibility: visible !important;
+                      --red-line: #86a2ad;
+                      --gray-line: #d9d9d9;
+                      --m-line-width: 2px;
+                      margin: 0;
+                      text-decoration: none;
+                      float: right;
+                      padding: 0 6px;
+                      box-sizing: border-box;
+                      border: 1px solid;
+                      font-size: 14px;
+                      height: 20px;
+                      line-height: 18px;
+                      margin-left: 10px;
+                      transition: background-color .2s, color .2s;
+                      border-color: #7ea1a6;
+                      color: #7ea1a6;
+                    }
+                  }
+
+                  .team {
+                    font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                    visibility: visible !important;
+                    --red-line: #86a2ad;
+                    --gray-line: #d9d9d9;
+                    --m-line-width: 2px;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    height: 44px;
+                    overflow: hidden;
+                    position: relative;
+                    background-color: #f7f6f6;
+                    margin-bottom: 1px;
+
+                    .img-wrap {
+                      font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                      visibility: visible !important;
+                      --red-line: #86a2ad;
+                      --gray-line: #d9d9d9;
+                      --m-line-width: 2px;
+                      margin: 0;
+                      padding: 0;
+                      float: left;
+                      width: 40px;
+                      height: 44px;
+                      text-align: center;
+                      line-height: 41px;
+                      margin-left: 6px;
+                      position: relative;
+
+                      &>img {
+                        font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                        visibility: visible !important;
+                        --red-line: #86a2ad;
+                        --gray-line: #d9d9d9;
+                        --m-line-width: 2px;
+                        text-align: center;
+                        line-height: 41px;
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                        display: inline-block;
+                        vertical-align: middle;
+                        zoom: 1;
+
+                        width: auto;
+                        height: auto;
+                        max-height: 30px;
+                      }
+                    }
+
+                    .team-name {
+                      font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                      visibility: visible !important;
+                      --red-line: #86a2ad;
+                      --gray-line: #d9d9d9;
+                      --m-line-width: 2px;
+                      margin: 0;
+                      padding: 0;
+                      text-decoration: none;
+                      position: relative;
+                      float: left;
+                      font-size: 16px;
+                      height: 44px;
+                      line-height: 44px;
+                      color: #676767;
+                      margin-left: 8px;
+                    }
+
+                    .score {
+                      font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                      visibility: visible !important;
+                      --red-line: #86a2ad;
+                      --gray-line: #d9d9d9;
+                      --m-line-width: 2px;
+                      margin: 0;
+                      padding: 0;
+                      text-decoration: none;
+                      position: relative;
+                      float: right;
+                      width: 23px;
+                      height: 44px;
+                      text-align: center;
+                      line-height: 44px;
+                      color: #fff;
+                      background-color: #bcbcbc;
+                      font-size: 16px;
+                      font-family: tttgbnumber, sans-serif;
+                    }
+                  }
+
+                  .win {
+                    .score {
+                      background-color: #86a2ad;
+                    }
+                  }
+                }
+
+                .list-col-one.wait .team {
+                  background-color: #faf6ec;
+                }
+
+                .list-col-one.wait .score {
+                  background-color: #d1a662;
+                }
+
+                .wait .status {
+                  background-color: #e68f21 !important;
+                }
+
+                .link-0 {
+                  font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                  visibility: visible !important;
+                  --red-line: #86a2ad;
+                  --gray-line: #d9d9d9;
+                  --m-line-width: 2px;
+                  font-size: 0;
+                  margin: 0;
+                  padding: 0;
+                  float: left;
+                  display: block;
+                  box-sizing: border-box;
+                  border-top: 1px #c2c2c2 solid;
+                  border-bottom: 1px #c2c2c2 solid;
+                  width: 171px;
+                  height: 148px;
+                  margin-top: 106px;
+                }
+
+                .link-wirebox {
+                  font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                  visibility: visible !important;
+                  --red-line: #86a2ad;
+                  --gray-line: #d9d9d9;
+                  --m-line-width: 2px;
+                  font-size: 0;
+                  margin: 0;
+                  padding: 0;
+                  margin-top: 395px;
+
+                  .link-wire1 {
+                    font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                    visibility: visible !important;
+                    --red-line: #86a2ad;
+                    --gray-line: #d9d9d9;
+                    --m-line-width: 2px;
+                    font-size: 0;
+                    margin: 0;
+                    padding: 0;
+                    display: inline-block;
+                    width: 85px;
+                    height: 146px;
+                    border: 1px #c2c2c2 solid;
+                    border-left: none;
+                    margin-top: 59px;
+                    vertical-align: middle;
+                  }
+
+                  .link-wire2 {
+                    font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                    visibility: visible !important;
+                    --red-line: #86a2ad;
+                    --gray-line: #d9d9d9;
+                    --m-line-width: 2px;
+                    font-size: 0;
+                    margin: 0;
+                    padding: 0;
+                    display: inline-block;
+                    width: 85px;
+                    height: 1px;
+                    background-color: #c2c2c2;
+                    vertical-align: middle;
+                    margin-top: 64px;
+                  }
+                }
+
+                .link-line {
+                  font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                  visibility: visible !important;
+                  --red-line: #86a2ad;
+                  --gray-line: #d9d9d9;
+                  --m-line-width: 2px;
+                  font-size: 0;
+                  margin: 0;
+                  padding: 0;
+                  width: 171px;
+                  height: 1px;
+                  background-color: #c2c2c2;
+                  margin-top: 200px;
+                }
+              }
+
+              .format {
+                font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                visibility: visible !important;
+                --red-line: #86a2ad;
+                --gray-line: #d9d9d9;
+                --m-line-width: 2px;
+
+                height: auto;
+                overflow: hidden;
+                float: left;
+                width: 130px;
+                text-align: center;
+
+                .format-name {
+                  font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                  visibility: visible !important;
+                  --gray-line: #d9d9d9;
+                  --m-line-width: 2px;
+                  text-align: center;
+
+                  width: 30px;
+                  font-size: 25px;
+                  margin: 120px auto 0;
+                  color: #000;
+                }
+
+                .format-name-both {
+                  width: 30px;
+                  font-size: 25px;
+                  margin: 308px auto 0;
+                  color: #000;
+                }
+              }
+
+              .front-box {
+                width: 171px;
+              }
+
+              .list-wire {
+                width: 171px;
+                font-size: 0;
+              }
+
+              .list-wire2>.link-wirebox {
+                margin-top: 391px;
+
+                .link-wire1 {
+                  font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                  visibility: visible !important;
+                  --red-line: #86a2ad;
+                  --gray-line: #d9d9d9;
+                  --m-line-width: 2px;
+                  font-size: 0;
+                  margin: 0;
+                  padding: 0;
+                  display: inline-block;
+                  width: 85px;
+                  border: 1px #c2c2c2 solid;
+                  border-left: none;
+                  margin-top: 139px;
+                  vertical-align: middle;
+                  height: 271px;
+                }
+
+                .link-wire2 {
+                  font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+                  visibility: visible !important;
+                  --red-line: #86a2ad;
+                  --gray-line: #d9d9d9;
+                  --m-line-width: 2px;
+                  font-size: 0;
+                  margin: 0;
+                  padding: 0;
+                  display: inline-block;
+                  width: 85px;
+                  height: 1px;
+                  background-color: #c2c2c2;
+                  vertical-align: middle;
+                  margin-top: 122px;
+                }
+              }
+
+            }
+          }
+        }
+
+        .match-show-selected {
+          display: block;
+        }
+      }
+    }
+
+    // 英雄
+    .g-wrap-championlist {
+      height: auto;
+      margin-top: 0;
+      padding: 66px 0 66px 0;
+      position: relative;
+      width: 100%;
+      min-width: 1358px;
+      overflow: hidden;
+      background-color: #e3e2e2;
+
+      .g-wrap:after {
+        content: '\20';
+        display: block;
+        height: 0;
+        line-height: 0;
+        visibility: hidden;
+        clear: both;
+      }
+
+      .g-wrap {
+        width: 1358px;
+        height: auto;
+        margin: 0 auto;
+
+        .part-top-tab {
+          width: 100%;
+          height: 35px;
+          overflow: visible;
+          position: relative;
+
+          .herf-more:hover {
+            color: #1da6ba;
+            font-weight: 700;
+            text-decoration: underline;
+          }
+
+          // background-color: lightcoral;
+          .part-h2-title:before {
+            content: '\0020';
+            display: inline-block;
+            vertical-align: middle;
+            *zoom: 1;
+            *display: inline;
+            width: 4px;
+            height: 28px;
+            background-color: #1da6ba;
+            margin-right: 10px;
+          }
+
+          .part-h2-title {
+            font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+            visibility: visible !important;
+
+
+            position: absolute;
+            width: auto;
+            height: 28px;
+            top: 5px;
+            left: -6px;
+            box-sizing: border-box;
+            color: #0b0b0b;
+            font-size: 24px;
+            line-height: 28px;
+            font-weight: 400;
+          }
+
+
+          .hero-part-tab-title {
+            font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+            visibility: visible !important;
+
+
+            position: absolute;
+            height: 35px;
+            left: 128px;
+            box-sizing: border-box;
+            border: none;
+
+
+
+            .hero-part-tab-title-li:after {
+              content: '\0020';
+              position: absolute;
+              box-sizing: border-box;
+              bottom: 0;
+              transition: width .2s, left .2s, margin-left .2s;
+              display: block;
+              top: 11px;
+              left: 2px;
+              margin-left: 0;
+              background-position: -406px -316px;
+              width: 20px;
+              height: 19px;
+              background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+              background-size: 638px 572px;
+              background-repeat: no-repeat;
+
+
+            }
+
+            .hero-part-tab-title-li {
+              font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+              visibility: visible !important;
+
+
+              list-style: none;
+              position: relative;
+              cursor: pointer;
+              float: left;
+              width: auto;
+              min-width: 40px;
+              height: 37px;
+              overflow: visible;
+              color: #676767;
+              font-size: 16px;
+              letter-spacing: 1px;
+              text-align: center;
+              padding-left: 28px;
+              line-height: 42px;
+              margin-right: 40px;
+            }
+
+            .selected {
+              font-weight: 700;
+              color: #1da6ba;
+
+            }
+
+            .selected::after {
+              background-position: -431px -316px;
+              width: 20px;
+              height: 19px;
+              left: 2px;
+            }
+
+
+
+          }
+
+          .herf-more {
+            font: 12px/1.5 tahoma, '\5FAE\8F6F\96C5\9ED1', sans-serif;
+            visibility: visible !important;
+
+
+            text-decoration: none;
+            position: absolute;
+            top: 0;
+            right: 2px;
+            display: block;
+            width: auto;
+            height: 35px;
+            font-size: 12px;
+            color: #7ea1a6;
+            line-height: 35px;
+            z-index: 1;
+
+            .more-arrow {
+
+              font-size: 12px;
+              color: #7ea1a6;
+              line-height: 35px;
+
+              background-image: url(//game.gtimg.cn/images/lol/v3/comm-spr.png);
+              background-size: 393px 200px;
+              background-repeat: no-repeat;
+              background-position: -213px -126px;
+              width: 15px;
+              height: 9px;
+              display: inline-block;
+              vertical-align: middle;
+              margin: -2px 0 0 5px;
+
+            }
+          }
+        }
+
+        .heroselected {
+          display: block !important;
+        }
+
+        .m-champion-list-container:hover .scrollbar {
+          width: 10px;
+        }
+
+        .m-champion-list-container {
+          width: 1395px;
+          height: 438px;
+          margin-top: 21px !important;
+          margin: 0 auto;
+          position: relative;
+          overflow: hidden;
+          // background-color: lightsalmon;
+          display: none;
+
+          .m-champion-list-wrapper {
+
+
+            position: relative;
+            transition-property: transform, left, top;
+            box-sizing: content-box;
+            transition-timing-function: ease-out;
+            margin: 0 auto;
+            transform: translate3d(0px, 0px, 0px);
+            transition-duration: 0s;
+            width: 1395px;
+            // height: 1456px;
+
+            .swiper-slide {
+
+
+              float: left;
+              box-sizing: content-box;
+
+              .champion-item {
+
+                float: left;
+                width: 90px;
+                height: 100px;
+                overflow: visible;
+                margin: 0 16px 12px 0;
+                position: relative;
+                cursor: pointer;
+                display: block;
+
+                &>img {
+                  display: block;
+                  margin: 0 auto;
+                  width: 66px;
+                  height: 66px;
+                }
+
+
+
+                .hover-icon {
+                  display: none;
+                  position: absolute;
+                  width: 66px;
+                  height: 66px;
+                  top: 0;
+                  left: 12px;
+                  background: url(//game.gtimg.cn/images/lol/v3/dark70-bg-repeat.png) repeat;
+
+
+                }
+
+                .hover-icon:after {
+                  content: '\0020';
+                  display: block;
+                  margin: 24px auto 0 auto;
+                  background-position: -401px -226px;
+                  width: 22px;
+                  height: 21px;
+                  background-image: url(//game.gtimg.cn/images/lol/v3/index-spr.png);
+                  background-size: 638px 572px;
+                  background-repeat: no-repeat;
+                }
+
+                &>p {
+                  width: 90px;
+                  height: 30px;
+                  line-height: 30px;
+                  text-align: center;
+                  font-size: 12px;
+                  color: #333;
+                }
+
+                .herf-mask {
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  font-size: 0;
+                }
+              }
+
+              .champion-item:hover .hover-icon {
+                display: block;
+              }
+
+              .champion-item:hover>p {
+                color: #1da6ba;
+              }
+            }
+          }
+
+          .scrollbar {
+
+
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            transition: width .2s;
+            right: 23px;
+            width: 5px;
+            height: 438px;
+
+            .swiper-scrollbar-drag {
+
+              width: 100%;
+              position: relative;
+              background: rgba(0, 0, 0, 0.5);
+              border-radius: 10px;
+              background-color: #abc0c3;
+              cursor: n-resize !important;
+              transition-duration: 0ms;
+              transform: translate3d(0px, 90.2473px, 0px);
+              height: 131.761px;
+              // top:0;
+            }
+          }
+
+        }
+
+
+      }
+    }
+  }
+}
